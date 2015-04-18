@@ -1,0 +1,682 @@
+---
+title: 'DOHMH Roadmap: DALY Estimates'
+author: "Ryan Quan (rcq2102)"
+date: "April 17, 2015"
+output:
+  pdf_document:
+    toc: yes
+  html_document:
+    theme:
+    - cosmo
+    toc:
+    - yes
+---
+
+# Background
+
+## Objective
+
+The objective of this analysis is to estimate DALYs lost in New York City due to the following major categories of conditions (with about 100 conditions in total within these categories):
+
+* Major depression
+* Alcohol use
+* Marijuana use
+* Heroin use
+* Cocaine use
+* Stimulant use
+* Sedative use
+* Tranquilizer use
+
+## Definition of Key Terms
+
+### DALY
+
+**Disability-adjusted life years.** The DALY is a year of life lived in perfect health and consists of two elements: YLLs and YLDs. The DALY is a measure of overall disease burden, expressed as the number of years lost due to ill-health, disability or early death. It was developed in the 1990s as a way of comparing the overall health and life expectancy of different countries.
+
+$$
+DALY = YLL + YLD
+$$
+
+### YLL
+
+**Years of life lost.** Years of life lost is an estimate of the average years a person would have lived if he or she had not died prematurely.
+
+$$
+YLL = (Number\ of\ deaths) * (Standard\ life\ expectancy\ at\ age\ of\ death\ in\ years)
+$$
+
+### YLD
+
+**Years of life lost due to disability.** This is the morbidity component of the DALY score. To estimate YLD for a particular cause in a particular time period, the number of incident cases in that period is multiplied by the average duration of the disease and a weight factor that reflects the severity of the disease on a scale from 0 (perfect health) to 1 (dead). The basic formula for YLD is the following:
+
+$$
+YLD = (number\ of\ incident\ cases) * (disability\ weight) * (average\ duration\ of\ disease)
+$$
+
+# Methods
+
+## Data Sources
+
+* 2013 NYCHANES - prevalence estimates
+* 2002-2008 NSDUH - drug use prevalence estimates
+* 2013 NYC Vital Statistics - mortality estimates
+* 2010 Global Burden of Disease Study - national YLD/YLL rates
+* 2013 NYC American Community Survey - population estimates
+
+The challenge with using NYCHANES and NSDUH data to estimate the prevalence of a condition is that the `n` may be too small. To increase their utility of these surveys, we will aggregate age groups into the following strata: childhood (0-14), late adolescence/early adulthood (15-24), adulthood (25-64), and later life (65+).
+
+## DALY Estimation
+
+### YLLs
+
+To estimate compute NYC YLLs, we will use NYC mortality counts stratified by age, sex, and race. In concodrance with the literature on DALY estimation, life expectancy estimates based on the life expectancy in Japan (82.5 years for women and 80.0 years for men) were used for the calculation of YLL. In order to remain consistent with the methodology of the 2010 Global Burden Disease Study, no age weighting or discounting was applied.
+
+### YLDs
+
+To compute NYC YLDs, we will use the two approaches described below:
+
+#### 2005 NYC DOHMH / Michaud (2006)
+
+In order to compare the magnitude of the DALY scores to the [2005 NYC DOHMH study](http://www.nyc.gov/html/doh/downloads/pdf/epi/datatable11.pdf), we will replicate the previous study's methodology, which was based on [Michaud CM, et al](http://www.pophealthmetrics.com/content/4/1/11). The burden of disease and injury in the United States 1996. Population Health Metrics 2006,4:11.
+
+"For NYC YLD, U.S. Census Bureau population estimates for New York City in 2005 by sex were used to calculate years lived with disability (YLD) by applying national YLD rates and ratios from the Michaud et al. study. If the national YLL:YLD ratio was less than 10, then the NYC YLD was equal to the national YLD:YLL ratio multiplied by NYC YLL. If the national YLD:YLL ratio was greater than or equal to 10 (producing unreliable City estimates), then NYC YLD was equal to the national YLD rate multiplied by the NYC population."
+
+Implementing the Michaud approach will thus require the following data elements:
+
+* NYC Population by age, sex
+* National YLD rates by age, sex
+* NYC YLLs by age, sex
+
+In order to remain consistent with the demographic weighting approach used by NYC DOHMH for the 2013 NYCHANES data, NYC population estimates were obtained from the [2013 American Community Survey](http://www.nyc.gov/html/dcp/download/census/boro_demo_2013_acs.xlsx), which is available on the NYC Department of City Planning website. Since the data from the Michaud study are from 1996 and patterns of disease and disability have changed, we will update the approach using national YLD/YLL rates from the 2010 Global Burden of Disease Study. 
+
+#### Prevalence-based YLDs
+
+Years lived with a disability (YLD) due to each disease can be calculated on the basis of either the incidence or the prevalence of the disease. The initial GBD studies estimated YLD on the basis of the incidence of each disease. Thus, in the 1990 study for example, the YLD estimates measured the future loss of health resulting from disease episodes that began in 1990. One advantage of this approach is that it is consistent with that used for mortality: YLL measure the future loss of life resulting from deaths in a particular year.
+
+The 2010 GBD study adopted the alternative approach and calculated YLD based on the prevalence of the impairments resulting from each disease in the year for which the estimates are made. This approach has the advantage that it assigns YLD to the ages at which they are lived, rather than to the age at which the disease episode that produced them began.
+
+Because prevalence is approximately incidence x duration, prevalence YLD for a condition (across all ages) is approximately the same as the no frills incidence YLD. As such, we can estimate YLDs using the following formula:
+
+$$
+YLD = (number\ of\ prevalent\ cases) * (disability\ weight)
+$$
+
+We can estimate the number of prevalent cases for each condition using survey data from 2013 NYCHANES. Annual prevalence for drug use can be estimated using data from 2002-2008 NSDUH. Disability weights can be extracted from the 2010 Global Burden of Disease study.However, we should note that the prevalence YLD for a condition may be quite different in magnitude to the incidence-based YLD, depending on how age weighting and discounting are applied. As such, comparisons to previous NYC DALY studies should be done with caution. 
+
+Further information about estimating DALYs can be found from the Global Burden of Disease concept paper ([WHO, 2006](http://www.who.int/quantifying_ehimpacts/publications/en/9241546204chap3.pdf)).
+
+## Disease Rankings
+
+Since our goal is to communicate the burden of diseases in New York City, we will rank each condition in decreasing order of the DALY score. We will also test the stability of the rankings by comparing the results generated from the Michaud approach and the prevalence-based YLDs approach. Moreover, since the 2010 GBD study also provides 95% confidence intervals around point estimates for disability weights and national YLD/YLL rates, further stability checks can be conducted by reporting DALY estimations with their respective upper and lower bounds.
+
+## Estimation of Substance Use Dependence
+
+Prevalence estimates of substance use cannot be directly substituted for prevalence of drug dependence or abuse disorders. We make the following assumptions about the average proportion of dependence among users ([National Addiction Centre, 2003](http://www.nta.nhs.uk/uploads/dangerousnessofdrugsdh_4086293.pdf)):
+
+* Alcohol - 15.4%
+* Cocaine - 16.7%
+* Heroin - 23.1%
+* Cannabis - 9.1%
+
+# Code
+
+## Preliminaries
+
+First, we load our dependencies into the R environment. 
+
+```{r, message=FALSE, warning=FALSE}
+library("plyr")
+library("dplyr")
+library("reshape2")
+library("magrittr")
+library("ggplot2")
+library("grid")
+library("scales")
+dir.create("results")
+dir.create("data")
+```
+
+Next, we define a set of functions that we will be using for our analysis. Details on the parameters and return values for each function can be found in the comment blocks below:
+
+```{r}
+readData <- function(url) {
+    ## Reads CSV data from input URL string
+    filename <- tail(unlist(strsplit(url, "/")), 1)
+    filepath <- paste("data", "/", filename, sep="")
+    if (!file.exists(filepath)) {
+    download.file(url, filename, method="curl")
+    }
+    data <- read.csv(filepath, stringsAsFactors=FALSE)
+    return(data)
+}
+
+assignAgeGroup <- function(ageVar) {
+    ## logic for childhood, teenage, young adult, adult, and later-life age groups
+    if (ageVar %in% c("Under 5 years", "5-14 years")) {
+        return("00-14")
+    } else if (ageVar %in% c("15-19 years", "20-24 years")) {
+        return("15-24")
+    } else if (ageVar %in% c("25-29 years", "30-34 years", "35-39 years", "40-44 years")) {
+        return("25-44")
+    } else if (ageVar %in% c("45-49 years", "50-54 years", "55-59 years", "60-64 years")) {
+        return("45-64")
+    } else if (ageVar %in% c("65-69 years", "70+ years")) {
+        return("65+")
+    } else {
+        return("")
+    }
+}
+
+addAgeGroup <- function(data, ageVar="age_name") {
+    ## replaces age grouping in current data.frame to childhood, teenage, YA, adult, later-life
+    ## Args:
+    ##      data: data.frame object
+    ##      ageVar: string denoting the column of ages to be replaced
+    ## Returns:
+    ##      data: data.frame object with new age groupings
+    ageGroup <- vector(length=nrow(data))
+    for (i in 1:nrow(data)) {
+        ageGroup[i] <- assignAgeGroup(as.vector(data[i, ageVar]))
+    }
+    data$ageGroup <- ageGroup
+    return(data)
+}
+
+preprocessGBD <- function(data) {
+    ## extracts YLD and YLL rates from 2010 Global Burden of Disase data
+    ## Args:
+    ##      data: GBD dataset downloaded from the web
+    ## Returns:
+    ##      data: a pre-processed 2010 GBD dataset
+    data %<>%
+        ## filter out unnecessary variables
+        select(-c(pc_mean, pc_upper, pc_lower)) %>%
+        filter(year == 2010) %>%
+        filter(sex %in% c("Females", "Males")) %>%
+        ## extract only YLD and YLL rates
+        filter(measure %in% c("yll", "yld")) %>%
+        ## create long-form dataset
+        melt(measure.vars=c("nm_mean", "nm_upper", "nm_lower", "rt_mean", "rt_upper", "rt_lower")) %>%
+        ## create wide-form dataset with national YLD/YLL rates
+        dcast(cause_name + age_name + sex ~ measure + variable, value.var="value") %>%
+        ## age group manipulations
+        addAgeGroup("age_name") %>%
+        filter(ageGroup != "") %>%
+        select(-age_name) %>%
+        ## averaging YLD/YLL rates with respect to new age groupings
+        group_by(cause_name, sex, ageGroup) %>%
+        summarise_each(funs(mean))
+    return(data)
+}
+    
+getDiseaseIndex <- function(diseaseName, data) {
+    ## searches disease index and returns indices of the first match
+    ## Args:
+    ##      diseaseName: string vector denoting diseases of interest
+    ##      data: data.frame to be searched
+    ## Returns:
+    ##      indices of the first string match
+    index <- grep(diseaseName, data$cause_name)
+    pattern <- unique(data$cause_name[index])[1]
+    return(which(data$cause_name == pattern))
+}
+
+subsetDataByDisease <- function(diseaseName, data) {
+    ## subsets data frame from first string match
+    index <- getDiseaseIndex(diseaseName, data)
+    return(data[index, ])
+}
+
+```
+
+This function contains the logic from the Michaud, 2006 study.
+
+```{r}
+calculateMichaudYLD <- function(checkRatio, yldyllRatio, nationalYLD, nycPop, nycYLL) {
+    ## calculates YLDs based on the 2006 Michaud study
+    ## Args:
+    ##      checkRatio: numeric. National YLD:YLL ratio to check if > 10 or < 10
+    ##      yldyllRatio: numeric. National YLD:YLL ratio to evaluate
+    ##      nationalYLD: numeric. National YLD rate
+    ##      nycPop: numeric. NYC Population
+    ##      nycYLL: numeric. NYC YLL
+    ## Returns:
+    ##      nycYLD: New York City YLD estimate
+    nycYLDLogic <- (checkRatio >= 10 | is.na(checkRatio) | is.infinite(checkRatio))
+    nycYLD <- ifelse(nycYLDLogic, nationalYLD * (nycPop / 100000), yldyllRatio * nycYLL)
+    return(nycYLD)
+}
+
+```
+
+This function implements prevalence-based YLD estimates.
+
+```{r}
+calculatePrevalenceYLD <- function(nycPrevalence) {
+   ## calculates prevalence-based YLD estimates from 2010 GBD Study
+    ## Args:
+    ##      nycPrevalence: data.frame. NYC prevalence data with associated disability weights
+    ## Returns:
+    ##      nycYLD: data.frame. NYC YLD estimates.
+    nycYLD <- nycPrevalence %>%
+        mutate(yld = prevalence * dependence_rate * dw_estimate,
+               yld_upper = prevalence * dependence_rate * dw_upper,
+               yld_lower = prevalence * dependence_rate * dw_lower)
+    return(nycYLD)
+}
+```
+
+```{r}
+calculateYLL <- function(mortalityData) {
+    ## calculates YLLs from mortality data
+    nycYLL <- mortalityData %>%
+        mutate(le = sle - mean_age,
+               yll = mortality * (1 - exp((-0.03 * le))) / 0.03)
+    return(nycYLL)
+}
+```
+
+```{r}
+calculatePrevalenceDALY <- function(diseaseName, nycYLL, nycYLD) {
+    ## calculates DALYs using prevalence-based YLDs from the 2010 GBD study
+    ## Args:
+    ##      diseaseName: chr. The disease of interest.
+    ##      nycYLL: data.frame. New York City YLL estimates
+    ##      nycYLD: data.frame. New York City YLD estimates 
+    ## Returns:
+    ##      dalys: data.frame. New York City DALY estimates
+        diseaseYLL <- subsetDataByDisease(diseaseName, nycYLL)
+        nycYLD <- subsetDataByDisease(diseaseName, nycYLD)
+        dalys <- diseaseYLL %>%
+            group_by(cause_name, sex) %>%
+            summarize(yll = sum(yll)) %>%
+            join(nycYLD, c("cause_name", "sex"), type = "right") %>%
+            ungroup() %>%
+            mutate(daly = ifelse(is.na(yll), 0 + yld, yll + yld),
+                   daly_upper = ifelse(is.na(yll), 0 + yld_upper, yll + yld_upper),
+                   daly_lower = ifelse(is.na(yll), 0 + yld_lower, yll + yld_lower))
+        return(dalys)
+}
+
+```
+
+```{r}
+calculateDALY <- function(diseaseName, population, nycYLL, nycYLD=NULL, nationalRates=NULL) {
+    ## workhorse function to calculate DALY scores for specified disease using either
+    ## prevalence-based YLD estimates or the Michaud approach using national YLD/YLL rates
+    diseaseYLL <- subsetDataByDisease(diseaseName, nycYLL)
+    if (!is.null(nycYLD) & !is.null(nationalRates)) {
+        stop("You cannot provide values to both nycYLD and nationalRates parameters.")
+        
+    } else if (!is.null(nycYLD)) {
+        nycYLD <- subsetDataByDisease(diseaseName, nycYLD)
+        dalys <- calculatePrevalenceDALY(diseaseName, nycYLL, nycYLD)
+        return(dalys)
+        
+    } else if (!is.null(nationalRates)) {
+        ## subset datasets for specified disease
+        diseaseRates <- subsetDataByDisease(diseaseName, nationalRates)
+        ## if disease not found in gbdData, return YLL data as DALYs
+        if (nrow(diseaseRates) == 0) {
+            dalys <- diseaseYLL %>%
+                group_by(cause_name, sex) %>%
+                summarize(yll = sum(yll),
+                          daly = sum(yll))
+            return(dalys)
+        }
+        ## compute national YLD:YLL ratio and join to NYC YLL and population data by age, sex
+        dalys <- diseaseRates %>% 
+            ## compute national YLD:YLL ratio
+            mutate(yldyll_ratio_mean = yld_nm_mean / yll_nm_mean,
+                   yldyll_ratio_upper = yld_nm_upper / yll_nm_mean,
+                   yldyll_ratio_lower = yld_nm_lower / yll_nm_mean) %>%
+            # join tables
+            join(population, by=c("ageGroup", "sex")) %>%
+            join(diseaseYLL, by=c("cause_name", "ageGroup", "sex")) %>%
+            ## estimate YLDs using Michaud logic
+            mutate(yld = calculateMichaudYLD(yldyll_ratio_mean, yldyll_ratio_mean, yld_rt_mean, population, yll),
+                   yld_upper = calculateMichaudYLD(yldyll_ratio_mean, yldyll_ratio_upper, yld_rt_upper, population, yll),
+                   yld_lower = calculateMichaudYLD(yldyll_ratio_mean, yldyll_ratio_lower, yld_rt_lower, population, yll)) %>%
+            ## collapse age groups
+            group_by(cause_name, sex) %>%
+            summarise_each(funs(sum(., na.rm=TRUE)), -c(cause_name, sex, ageGroup)) %>%
+            ## calculate DALY estimates with lower and upper bounds
+            mutate(daly = yll + yld,
+                   daly_upper = yll + yld_upper,
+                   daly_lower = yll + yld_lower) %>%
+            select(cause_name, sex, yll, yld, yld_upper, yld_lower, daly, daly_upper, daly_lower)
+        return(dalys)
+    }
+}
+
+```
+
+
+```{r}
+segmentDALY <- function(dalyObj, strata) {
+    ## helper function to subset DALY data
+    if (strata == "total") {
+        dalyObj %>% group_by(cause_name) %>% summarise_each(funs(sum), -c(sex)) %>% arrange(desc(daly)) %>% as.data.frame()
+    } else if (strata == "male") {
+        dalyObj %>% filter(sex == "Male") %>% arrange(desc(daly))
+    } else if (strata == "female") {
+        dalyObj %>% filter(sex == "Female") %>% arrange(desc(daly))
+    }
+}
+```
+
+
+```{r}
+# Multiple plot function
+#
+# ggplot objects can be passed in ..., or to plotlist (as a list of ggplot objects)
+# - cols:   Number of columns in layout
+# - layout: A matrix specifying the layout. If present, 'cols' is ignored.
+#
+# If the layout is something like matrix(c(1,2,3,3), nrow=2, byrow=TRUE),
+# then plot 1 will go in the upper left, 2 will go in the upper right, and
+# 3 will go all the way across the bottom.
+#
+multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
+  library(grid)
+
+  # Make a list from the ... arguments and plotlist
+  plots <- c(list(...), plotlist)
+
+  numPlots = length(plots)
+
+  # If layout is NULL, then use 'cols' to determine layout
+  if (is.null(layout)) {
+    # Make the panel
+    # ncol: Number of columns of plots
+    # nrow: Number of rows needed, calculated from # of cols
+    layout <- matrix(seq(1, cols * ceiling(numPlots/cols)),
+                    ncol = cols, nrow = ceiling(numPlots/cols))
+  }
+
+ if (numPlots==1) {
+    print(plots[[1]])
+
+  } else {
+    # Set up the page
+    grid.newpage()
+    pushViewport(viewport(layout = grid.layout(nrow(layout), ncol(layout))))
+
+    # Make each plot, in the correct location
+    for (i in 1:numPlots) {
+      # Get the i,j matrix positions of the regions that contain this subplot
+      matchidx <- as.data.frame(which(layout == i, arr.ind = TRUE))
+
+      print(plots[[i]], vp = viewport(layout.pos.row = matchidx$row,
+                                      layout.pos.col = matchidx$col))
+    }
+  }
+}
+```
+
+```{r}
+plotDALY <- function(data, title, stackedBar=FALSE) {
+    ## plot function for DALY object
+    if (stackedBar) {
+        meltedData <- melt(data, id.vars="cause_name", measure.vars=c("yll", "yld"), value.name="daly")
+        ggplot(meltedData, aes(x=reorder(cause_name, daly, FUN=sum, na.rm=TRUE), y=daly, fill=variable)) + 
+            geom_bar(stat="identity") +
+            ggtitle(title) +
+            ylab("Disability-Adjusted Life Years (DALYs)") + xlab("Causes") +
+            scale_y_continuous(breaks=seq(0, max(data$daly_upper, na.rm=TRUE), by=100000), labels=comma) +
+            scale_fill_brewer() + 
+            coord_flip() +
+            theme_bw()
+    } else {
+        limits <- aes(ymin=daly_lower, ymax=daly_upper)
+        ggplot(data, aes(x=reorder(cause_name, daly), y=daly)) + 
+            geom_pointrange(limits) + 
+            ggtitle(title) +
+            ylab("Disability-Adjusted Life Years (DALYs)") + xlab("Causes") +
+            scale_y_continuous(breaks=seq(0, max(data$daly_upper, na.rm=TRUE), by=100000), labels=comma) +
+            coord_flip() +
+            theme_bw()
+    }
+}
+```
+
+## Reading in the Data
+
+To make our analysis reproducible, we download the 2010 Global Burden of Disease data straight from the source using the `readData()` function.
+
+```{r, cache=TRUE}
+url <- "http://ghdx.healthdata.org/sites/default/files/record-attached-files/IHME_USA_GBD_2010_RESULTS_1990_2010_BY_CAUSE_Y2013M08D29.CSV"
+cause <- readData(url) %>%
+    preprocessGBD()
+                  
+url <- "http://ghdx.healthdata.org/sites/default/files/record-attached-files/IHME_USA_GBD_2010_RESULTS_1990_2010_BY_RISK_UPDATED_Y2013M11D21.CSV"
+risk <- readData(url) %>%
+    rename(cause_name = risk_name) %>%
+    preprocessGBD()
+```
+
+Next, we read in the mortality, population, and prevalence data provided by NYCDOHMH.
+
+```{r}
+mortality <- read.csv("data/2013_nyc_mortality.csv", stringsAsFactors=FALSE)
+population <- read.csv("data/2013_nyc_population.csv", stringsAsFactors=FALSE)
+prevalence <- read.csv("data/2013_nyc_prevalence.csv", stringsAsFactors=FALSE)
+```
+
+## Data Preparation
+
+We pre-process the national YLD/YLL rates by substituting values for `cause_name` in order to match the indices of the other datasets. This will allow us to merge datasets using `cause_name` as the key. We also write out the resulting dataset for inspection.
+
+
+```{r}
+nationalRates <- rbind(cause, risk) %>%
+    ungroup() %>%
+    mutate(sex = ifelse(sex == "Females", "Female", "Male")) %>%
+    mutate(cause_name = ifelse(cause_name == "Road injury", "Motor vehicle accidents", cause_name),
+           cause_name = ifelse(cause_name == "Trachea, bronchus, and lung cancers", "Lung cancer", cause_name)) %>% 
+    arrange(cause_name)
+write.csv(nationalRates, "results/national_yldyll_rates.csv")
+```
+
+Next, we pre-process the NYC mortality and calculate the YLLs for each disease by age, sex, and race. For the analysis, we only use YLLs stratified by age and sex.
+
+```{r}
+nycYLL <- calculateYLL(mortality)
+write.csv(nycYLL, "results/nyc_yll_by_age_sex_race.csv")
+
+nycYLL %<>%
+    group_by(cause_name, sex, ageGroup) %>%
+    summarize(yll = sum(yll))
+write.csv(nycYLL, "results/nyc_yll_by_age_sex.csv")
+```
+
+We calculate YLDs for each condition using NYC prevalence data, which also contains the associated disability weights for each disease. To capture the level of uncertainty around disability weights, we include the upper and lower bounds of the resulting YLDs in the output.
+
+```{r}
+nycYLD <- calculatePrevalenceYLD(prevalence)
+write.csv(nycYLD, "results/nyc_yld_by_age_sex.csv")
+
+nycYLD %<>%
+    group_by(cause_name, sex) %>%
+    summarize(yld = sum(yld, na.rm=TRUE),
+              yld_upper = sum(yld_upper, na.rm=TRUE),
+              yld_lower = sum(yld_lower, na.rm=TRUE))
+write.csv(nycYLD, "results/nyc_yld_by_sex.csv")
+```
+
+## DALY Estimation
+
+### Michaud YLD Approach
+
+This section contains an implementation of the Michaud approach described in the above methods section. We first create a search index containing all the disease conditions of interest. 
+
+```{r}
+## create a search index
+disease <- unique(c(nycYLL$cause_name, nycYLD$cause_name))
+drug <- c("Amphetamine", "Heroin", "Cocaine", "Cannabis")
+mental <- c("Major depressive disorder", "Anxiety", "Bipolar")
+index <- unique(c(disease, drug, mental))
+```
+
+This search index is then fed through the `calculateDALY` workhorse function to estimate DALYs for each disease condition. The result is a `data.frame` object containing the following columns: `cause_name`, `sex`, `yll`, `yld`, `yld_upper`, `yld_lower`, `daly`, `daly_upper`, `daly_lower`.
+
+```{r}
+michaudDALY <- lapply(index, calculateDALY, population, nycYLL=nycYLL, nationalRates=nationalRates)
+michaudDALY <- do.call(rbind.fill, michaudDALY)
+write.csv(michaudDALY, "results/nyc_daly_michaud.csv")
+```
+
+### Prevalence-Based YLD Approach
+
+Similar to the section, we implement the prevalence-based YLD approach here using the same search index.
+
+```{r}
+prevalenceDALY <- lapply(index, calculateDALY, population, nycYLL=nycYLL, nycYLD=nycYLD)
+prevalenceDALY <- do.call(rbind.fill, prevalenceDALY)
+write.csv(prevalenceDALY, "results/nyc_daly_prevalence.csv")
+```
+
+# Results
+
+## Michaud YLD Approach
+
+Raw results for this approach can be found under the `results` directory under the filename `nyc_daly_michaud.csv`. The file can be opened in Excel and manipulated with a pivot table for aggregation and stratification purposes.
+
+### 2013 NYC DALY Estimates, Total
+
+```{r, warning=FALSE, message=FALSE}
+michaudTotal <- segmentDALY(michaudDALY, strata="total")
+michaudTotal
+```
+
+```{r, warning=FALSE, message=FALSE}
+plotDALY(michaudTotal, "Leading Causes of DALYs, NYC 2013")
+plotDALY(michaudTotal, "Leading Causes of DALYs, NYC 2013", stackedBar=TRUE)
+```
+
+* `Diabetes mellitus` is the leading cause of disease in 2013, but has a wide range of uncertainty
+* Disaggregated drug use disorders ranked relatively low, particuarly for non-alcohol-related substances
+* `Major depressive disorder` just missed the top 10 cutoff
+
+### 2013 NYC DALY Estimates, Male
+
+```{r}
+michaudMale <- segmentDALY(michaudDALY, strata="male")
+michaudMale
+```
+
+```{r, warning=FALSE, message=FALSE}
+plotDALY(michaudMale, "Leading Causes of DALYs in Males, NYC 2013")
+plotDALY(michaudMale, "Leading Causes of DALYs in Males, NYC 2013", stackedBar=TRUE)
+```
+
+* `Alcohol use disorders` rises to the #4 slot
+* `Homicide` and accidental deaths such as `poisonings` and `motor vehicle accidents` rise in rankings
+
+### 2013 NYC DALY Estimates, Female
+
+```{r}
+michaudFemale <- segmentDALY(michaudDALY, strata="female")
+michaudFemale
+```
+
+```{r, warning=FALSE, message=FALSE}
+plotDALY(michaudFemale, "Leading Causes of DALYs in Females, NYC 2013")
+plotDALY(michaudFemale, "Leading Causes of DALYs in Females, NYC 2013", stackedBar=TRUE)
+```
+
+* `Breast cancer` makes the top 3
+* `Alzheimer's disease and other dementias` ranks very high
+* Drug-related disorders get pushed to the bottom
+
+## Prevalence-Based YLD Approach
+
+Raw results for this approach can be found under the `results` directory under the filename `nyc_daly_prevalence.csv`. The file can be opened in Excel and manipulated with a pivot table for aggregation and stratification purposes.
+
+### 2013 NYC DALY Estimates, Total
+
+```{r}
+prevalenceTotal <- segmentDALY(prevalenceDALY, strata="total")
+prevalenceTotal
+```
+
+* `Major depressive disorder` ranks number one, beating out the number two slot by almost twice the number of DALYs However, DALY estimates appear to be unstable, taking a wide range of possible values.
+* Not enough information to calculate DALY estimates for `sedative use`, `stimulant use`, `tranquilizer use`.
+
+```{r, warning=FALSE, message=FALSE}
+plotDALY(prevalenceTotal, "Leading Causes of DALYs, NYC 2013")
+plotDALY(prevalenceTotal, "Leading Causes of DALYs, NYC 2013", stackedBar=TRUE)
+```
+
+### 2013 NYC DALY Estimates, Male
+
+```{r}
+prevalenceMale <- segmentDALY(prevalenceDALY, strata="male")
+prevalenceMale
+```
+
+```{r, warning=FALSE, message=FALSE}
+plotDALY(prevalenceMale, "Leading Causes of DALYs in Males, NYC 2013")
+plotDALY(prevalenceMale, "Leading Causes of DALYs in Males, NYC 2013", stackedBar=TRUE)
+```
+
+* `Alcohol use disorders` rises in proportion to `major depressive disorder`
+
+### 2013 NYC DALY Estimates, Female
+
+```{r, warning=FALSE, message=FALSE}
+prevalenceFemale <- segmentDALY(prevalenceDALY, strata="female")
+prevalenceFemale
+```
+
+```{r, warning=FALSE, message=FALSE}
+plotDALY(prevalenceFemale, "Leading Causes of DALYs in Females, NYC 2013")
+plotDALY(prevalenceFemale, "Leading Causes of DALYs in Females, NYC 2013", stackedBar=TRUE)
+```
+
+## Michaud YLDs vs. Prevalence-Based YLDs: Side-by-Side Comparison
+
+### Total
+
+```{r, warning=FALSE, message=FALSE, fig.height=10}
+multiplot(plotDALY(michaudTotal, "Michaud YLDs"), plotDALY(prevalenceTotal, "Prevalence-Based YLDs"))
+```
+
+### Male
+
+```{r, warning=FALSE, message=FALSE, fig.height=10}
+multiplot(plotDALY(michaudMale, "Michaud YLDs"), plotDALY(prevalenceMale, "Prevalence-Based YLDs"))
+```
+
+### Female
+
+```{r, warning=FALSE, message=FALSE, fig.height=10}
+multiplot(plotDALY(michaudFemale, "Michaud YLDs"), plotDALY(prevalenceFemale, "Prevalence-Based YLDs"))
+```
+
+## Disease Conditions with Small Sample Sizes
+
+```{r, warning=FALSE, message=FALSE, fig.height=10}
+prevalence[prevalence$small_sample == "yes", c("cause_name", "sequlae", "sex", "age")]
+```
+
+# Discussion
+
+The magnitude of the DALY scores should be interpreted and reported with caution. Due to the instability of NYC prevalence estimates and the standard errors of disability weights and national YLL/YLD rates, DALY estimates for each condition can assume a wide range of values, changing how one disease ranks against the others. For this reason, DALY magnitudes obtained via Michaud approach and the Prevalence-based YLDs cannot be directly compared. 
+
+Furthermore, summation of prevalence YLDs across all causes can result in overestimation of the total average severity-weighted health state prevalence because of comorbidity between conditions ([Mathers, 2006](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC547900/)).
+
+Over-reporting of some conditions due to misclassifcation (e.g. where symptoms such as joint pain are labeled as osteoarthritis or occasional wheezing as asthma), under-reporting of undiagnosed conditions (e.g. most mental health problems), and lack of information on condition severity (resulting in high prevalences due to inclusion of very minor conditions or minor symptoms) may also contribute to biased DALY estimates.
+
+# References
+
+Jiang, Yongwen, and Jana Earl Hesser. “Using Disability-Adjusted Life Years to Assess the Burden of Disease and Injury in Rhode Island.” Public Health Reports 127, no. 3 (2012): 293–303.
+
+Lozano, Rafael, Mohsen Naghavi, Kyle Foreman, Stephen Lim, Kenji Shibuya, Victor Aboyans, Jerry Abraham, et al. “Global and Regional Mortality from 235 Causes of Death for 20 Age Groups in 1990 and 2010: A Systematic Analysis for the Global Burden of Disease Study 2010.” The Lancet 380, no. 9859 (December 15, 2012): 2095–2128. doi:10.1016/S0140-6736(12)61728-0.
+
+Michaud, Catherine M, Matthew T McKenna, Stephen Begg, Niels Tomijima, Meghna Majmudar, Maria T Bulzacchelli, Shahul Ebrahim, et al. “The Burden of Disease and Injury in the United States 1996.” Population Health Metrics 4 (October 18, 2006): 11. doi:10.1186/1478-7954-4-11.
+
+Schroeder, S Andrew. “Incidence, Prevalence, and Hybrid Approaches to Calculating Disability-Adjusted Life Years.” Population Health Metrics 10 (September 12, 2012): 19. doi:10.1186/1478-7954-10-19.
+
+U.S. Department of Health and Human Services, Substance Abuse and Mental Health Services Administration, and Center for Behavioral Health Statistics and Quality. “Results from the 2012 NSDUH: Summary of National Findings, SAMHSA, CBHSQ.” Accessed April 18, 2015. http://archive.samhsa.gov/data/NSDUH/2012SummNatFindDetTables/NationalFindings/NSDUHresults2012.htm.
+Üstün, T. B., J. L. Ayuso-Mateos, S. Chatterji, C. Mathers, and C. J. L. Murray. “Global Burden of Depressive Disorders in the Year 2000.” The British Journal of Psychiatry 184, no. 5 (May 1, 2004): 386–92. doi:10.1192/bjp.184.5.386.
