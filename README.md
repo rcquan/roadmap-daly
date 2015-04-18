@@ -12,5 +12,6 @@ Project to estimate disability-adjusted life years for selected conditions in Ne
 * `results` - contains comma-delimited file outputs from `main.R`
 * `docs` - contains write-up (technical and brief versions)
 * `main.R` - main script to run DALY estimations
+* `roadmap_daly_database.xlsx` - workbook of DALY outputs from `results`
 * `roadmap_daly_brief.Rmd`
 * `roadmap_daly_technical.Rmd`
