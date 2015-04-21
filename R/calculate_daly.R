@@ -115,7 +115,7 @@ calculateMichaudYLD <- function(checkRatio, yldyllRatio, nationalYLD, nycPop, ny
     ##      nycYLL: numeric. NYC YLL
     ## Returns:
     ##      nycYLD: New York City YLD estimate
-    nycYLDLogic <- (checkRatio >= 10 | is.na(checkRatio) | is.infinite(checkRatio))
+    nycYLDLogic <- (checkRatio >= 10 | is.na(checkRatio) | is.infinite(checkRatio) | is.na(nycYLL))
     nycYLD <- ifelse(nycYLDLogic, nationalYLD * (nycPop / 100000), yldyllRatio * nycYLL)
     return(nycYLD)
 }
