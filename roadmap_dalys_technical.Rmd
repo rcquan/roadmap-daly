@@ -4,7 +4,10 @@ author: "Ryan Quan (rcq2102)"
 date: "April 17, 2015"
 output:
   pdf_document:
-    toc: yes
+    highlight:
+    - pygments
+    toc:
+    - yes
   html_document:
     theme:
     - cosmo
@@ -108,6 +111,8 @@ Further information about estimating DALYs can be found from the Global Burden o
 ## Disease Rankings
 
 Since our goal is to communicate the burden of diseases in New York City, we will rank each condition in decreasing order of the DALY score. We will also test the stability of the rankings by comparing the results generated from the Michaud approach and the prevalence-based YLDs approach. Moreover, since the 2010 GBD study also provides 95% confidence intervals around point estimates for disability weights and national YLD/YLL rates, further stability checks can be conducted by reporting DALY estimations with their respective upper and lower bounds.
+
+However, we should note that since the DALY estimations are not inclusive of all disease conditions, we will not be able to report our findings as the "top X conditions contributing to DALYs." Instead, we can only report mental health DALYs in reference to other highly prevalent chronic diseases.
 
 ## Estimation of Substance Use Dependence
 
@@ -242,7 +247,7 @@ calculateMichaudYLD <- function(checkRatio, yldyllRatio, nationalYLD, nycPop, ny
     ##      nycYLL: numeric. NYC YLL
     ## Returns:
     ##      nycYLD: New York City YLD estimate
-    nycYLDLogic <- (checkRatio >= 10 | is.na(checkRatio) | is.infinite(checkRatio))
+    nycYLDLogic <- (checkRatio >= 10 | is.na(checkRatio) | is.infinite(checkRatio) | is.na(nycYLL))
     nycYLD <- ifelse(nycYLDLogic, nationalYLD * (nycPop / 100000), yldyllRatio * nycYLL)
     return(nycYLD)
 }
@@ -662,11 +667,11 @@ prevalence[prevalence$small_sample == "yes", c("cause_name", "sequlae", "sex", "
 
 # Discussion
 
-The magnitude of the DALY scores should be interpreted and reported with caution. Due to the instability of NYC prevalence estimates and the standard errors of disability weights and national YLL/YLD rates, DALY estimates for each condition can assume a wide range of values, changing how one disease ranks against the others. For this reason, DALY magnitudes obtained via Michaud approach and the Prevalence-based YLDs cannot be directly compared. 
+There are key limitations to this analysis. First and foremost, the magnitude of the DALY scores should be interpreted and reported with caution. Due to the small sample size of NYC prevalence estimates and the uncertainty around disability weights and national YLL/YLD rates for some conditions, DALY estimates can assume a wide range of values, changing how one condition ranks against the others (for example, `alcohol use disorders` and `diabetes mellitus`). For this reason, DALY magnitudes obtained via Michaud approach and the Prevalence-based YLDs cannot be directly compared. 
 
-Furthermore, summation of prevalence YLDs across all causes can result in overestimation of the total average severity-weighted health state prevalence because of comorbidity between conditions ([Mathers, 2006](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC547900/)).
+Moreover, the accuracy of DALY estimations suffers from potential biases introduced in the data collection and computation processes. For example, comorbidities with respect to chronic diseases means that DALY estimates based on Vital Statistics mortality counts are overestimating the contribution of YLLs. Summation of prevalence YLDs across all causes can result in overestimation of the total average severity-weighted health state prevalence because of comorbidity between conditions ([Mathers, 2006](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC547900/)). Over-reporting of some conditions due to misclassification (e.g. where symptoms such as joint pain are labeled as osteoarthritis or occasional wheezing as asthma), under-reporting of undiagnosed conditions (e.g. most mental health problems), and lack of information on condition severity (resulting in high prevalences due to inclusion of very minor conditions or minor symptoms) may also contribute to biased DALY estimates. 
 
-Over-reporting of some conditions due to misclassifcation (e.g. where symptoms such as joint pain are labeled as osteoarthritis or occasional wheezing as asthma), under-reporting of undiagnosed conditions (e.g. most mental health problems), and lack of information on condition severity (resulting in high prevalences due to inclusion of very minor conditions or minor symptoms) may also contribute to biased DALY estimates.
+In order to convey the uncertainty around our estimates, we visualize the range of values that NYC DALY estimates can take for each condition.
 
 # References
 
