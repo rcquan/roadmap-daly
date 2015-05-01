@@ -3,14 +3,12 @@ title: 'DOHMH Roadmap: DALY Estimates'
 author: "Ryan Quan (rcq2102@columbia.edu)"
 date: "April 17, 2015"
 output:
-  pdf_document:
-    toc:
-    - yes
   html_document:
-    theme:
-    - cosmo
-    toc:
-    - yes
+    theme: cosmo
+    toc: yes
+  pdf_document:
+    toc: yes
+  word_document: default
 ---
 
 ```{r setup, cache=FALSE, include=FALSE}
@@ -126,6 +124,13 @@ Prevalence estimates of substance use cannot be directly substituted for prevale
 * Heroin - 23.1%
 * Cannabis - 9.1%
 
+## Estimation of Major Depressive Disorder Using PHQ-9
+
+Prevalence estimates for 2-week depression was obtained for 2013 NYCHANES. While 2-week depression prevalence would lead to underestimation of 1-year depression, the use of PHQ-9 scores can also overestimate both MDD and any depressive disorder due to its low positive predictive value (~55%) for PHQ-9 scores below 10, the cutoff between mild and moderate depression ([Kroenke, 2002](http://www.lphi.org/LPHIadmin/uploads/.PHQ-9-Review-Kroenke-63754.PDF)). To adjust for this in the prevalence-based YLD approach, we did not consider PHQ-9 scores below 10 and assumed - from expert opinion - that only half of those with PHQ-9 scores above 10 were actually diagnosed with MDD. 
+
+## Sensitivity Analysis
+
+In order to validate the Michaud approach, we will use 2005 NYC mortality estimates from the previous DOHMH to test the stability of our DALY rankings. However, since age-weighting is no longer used by the 2010 GBD due to ethical concerns, we suspect the magnitude of 2013 NYC DALYs to be slightly higher than that of the 2005 NYC DALYs.
 
 ```{r, message=FALSE, warning=FALSE}
 library("plyr")
@@ -136,6 +141,7 @@ library("ggplot2")
 library("grid")
 library("scales")
 dir.create("results")
+dir.create("results/sensitivity_analysis")
 dir.create("data")
 ```
 
@@ -242,7 +248,7 @@ calculateMichaudYLD <- function(checkRatio, yldyllRatio, nationalYLD, nycPop, ny
     ##      nycYLL: numeric. NYC YLL
     ## Returns:
     ##      nycYLD: New York City YLD estimate
-    nycYLDLogic <- (checkRatio >= 10 | is.na(checkRatio) | is.infinite(checkRatio) | is.na(nycYLL))
+    nycYLDLogic <- (checkRatio >= 5 | is.na(checkRatio) | is.infinite(checkRatio) | is.na(nycYLL))
     nycYLD <- ifelse(nycYLDLogic, nationalYLD * (nycPop / 100000), yldyllRatio * nycYLL)
     return(nycYLD)
 }
@@ -450,7 +456,7 @@ risk <- readData(url) %>%
 ```
 
 ```{r}
-mortality <- read.csv("data/2013_nyc_mortality.csv", stringsAsFactors=FALSE)
+mortality <- read.csv("data/2005_nyc_mortality.csv", stringsAsFactors=FALSE)
 population <- read.csv("data/2013_nyc_population.csv", stringsAsFactors=FALSE)
 prevalence <- read.csv("data/2013_nyc_prevalence.csv", stringsAsFactors=FALSE)
 ```
@@ -530,15 +536,15 @@ Raw results for this approach can be found under the `results` directory under t
 
 ```{r, warning=FALSE, message=FALSE}
 michaudTotal <- segmentDALY(michaudDALY, strata="total")
-michaudTotal
+knitr::kable(michaudTotal, digits=0)
 ```
 
 ```{r, warning=FALSE, message=FALSE}
-plotDALY(michaudTotal, "Leading Causes of DALYs, NYC 2013")
-plotDALY(michaudTotal, "Leading Causes of DALYs, NYC 2013", stackedBar=TRUE)
+plotDALY(michaudTotal, "Leading Causes of Dalys,\n  NYC 2013")
+plotDALY(michaudTotal, "Leading Causes of Dalys,\n  NYC 2013", stackedBar=TRUE)
 ```
 
-* `Diabetes mellitus` is the leading cause of disease in 2013, but has a wide range of uncertainty
+* `Ischemic heart disease ` is the leading cause of disease in 2013, but has a wide range of uncertainty
 * Disaggregated drug use disorders ranked relatively low, particuarly for non-alcohol-related substances
 * `Major depressive disorder` just missed the top 10 cutoff
 
@@ -546,12 +552,12 @@ plotDALY(michaudTotal, "Leading Causes of DALYs, NYC 2013", stackedBar=TRUE)
 
 ```{r}
 michaudMale <- segmentDALY(michaudDALY, strata="male")
-michaudMale
+knitr::kable(michaudMale, digits=0)
 ```
 
 ```{r, warning=FALSE, message=FALSE}
-plotDALY(michaudMale, "Leading Causes of DALYs in Males, NYC 2013")
-plotDALY(michaudMale, "Leading Causes of DALYs in Males, NYC 2013", stackedBar=TRUE)
+plotDALY(michaudMale, "Leading Causes of DALYs in Males,\n NYC 2013")
+plotDALY(michaudMale, "Leading Causes of DALYs in Males,\n NYC 2013", stackedBar=TRUE)
 ```
 
 * `Alcohol use disorders` rises to the #4 slot
@@ -561,12 +567,12 @@ plotDALY(michaudMale, "Leading Causes of DALYs in Males, NYC 2013", stackedBar=T
 
 ```{r}
 michaudFemale <- segmentDALY(michaudDALY, strata="female")
-michaudFemale
+knitr::kable(michaudFemale, digits=0)
 ```
 
 ```{r, warning=FALSE, message=FALSE}
-plotDALY(michaudFemale, "Leading Causes of DALYs in Females, NYC 2013")
-plotDALY(michaudFemale, "Leading Causes of DALYs in Females, NYC 2013", stackedBar=TRUE)
+plotDALY(michaudFemale, "Leading Causes of DALYs in Females,\n NYC 2013")
+plotDALY(michaudFemale, "Leading Causes of DALYs in Females,\n NYC 2013", stackedBar=TRUE)
 ```
 
 * `Breast cancer` makes the top 3
@@ -581,27 +587,27 @@ Raw results for this approach can be found under the `results` directory under t
 
 ```{r}
 prevalenceTotal <- segmentDALY(prevalenceDALY, strata="total")
-prevalenceTotal
+knitr::kable(prevalenceTotal, digits=0)
 ```
 
 * `Major depressive disorder` ranks number one, beating out the number two slot by almost twice the number of DALYs However, DALY estimates appear to be unstable, taking a wide range of possible values.
 * Not enough information to calculate DALY estimates for `sedative use`, `stimulant use`, `tranquilizer use`.
 
 ```{r, warning=FALSE, message=FALSE}
-plotDALY(prevalenceTotal, "Leading Causes of DALYs, NYC 2013")
-plotDALY(prevalenceTotal, "Leading Causes of DALYs, NYC 2013", stackedBar=TRUE)
+plotDALY(prevalenceTotal, "Leading Causes of Dalys,\n  NYC 2013")
+plotDALY(prevalenceTotal, "Leading Causes of Dalys,\n  NYC 2013", stackedBar=TRUE)
 ```
 
 ### 2013 NYC DALY Estimates, Male
 
 ```{r}
 prevalenceMale <- segmentDALY(prevalenceDALY, strata="male")
-prevalenceMale
+knitr::kable(prevalenceMale, digits=0)
 ```
 
 ```{r, warning=FALSE, message=FALSE}
-plotDALY(prevalenceMale, "Leading Causes of DALYs in Males, NYC 2013")
-plotDALY(prevalenceMale, "Leading Causes of DALYs in Males, NYC 2013", stackedBar=TRUE)
+plotDALY(prevalenceMale, "Leading Causes of DALYs in Males,\n NYC 2013")
+plotDALY(prevalenceMale, "Leading Causes of DALYs in Males,\n NYC 2013", stackedBar=TRUE)
 ```
 
 * `Alcohol use disorders` rises in proportion to `major depressive disorder`
@@ -610,12 +616,12 @@ plotDALY(prevalenceMale, "Leading Causes of DALYs in Males, NYC 2013", stackedBa
 
 ```{r, warning=FALSE, message=FALSE}
 prevalenceFemale <- segmentDALY(prevalenceDALY, strata="female")
-prevalenceFemale
+knitr::kable(prevalenceFemale, digits=0)
 ```
 
 ```{r, warning=FALSE, message=FALSE}
-plotDALY(prevalenceFemale, "Leading Causes of DALYs in Females, NYC 2013")
-plotDALY(prevalenceFemale, "Leading Causes of DALYs in Females, NYC 2013", stackedBar=TRUE)
+plotDALY(prevalenceFemale, "Leading Causes of DALYs in Females,\n NYC 2013")
+plotDALY(prevalenceFemale, "Leading Causes of DALYs in Females,\n NYC 2013", stackedBar=TRUE)
 ```
 
 ## Michaud YLDs vs. Prevalence-Based YLDs: Side-by-Side Comparison
@@ -644,13 +650,79 @@ multiplot(plotDALY(michaudFemale, "Michaud YLDs"), plotDALY(prevalenceFemale, "P
 prevalence[prevalence$small_sample == "yes", c("cause_name", "sequlae", "sex", "age")]
 ```
 
+# Sensitivity Analysis
+
+```{r}
+mortality <- read.csv("data/2005_nyc_mortality.csv", stringsAsFactors=FALSE)
+
+
+nycYLL <- calculateYLL(mortality)
+write.csv(nycYLL, "results/sensitivity_analysis/nyc_yll_by_age_sex_race.csv")
+
+nycYLL %<>%
+    group_by(cause_name, sex, ageGroup) %>%
+    summarize(yll = sum(yll))
+write.csv(nycYLL, "results/sensitivity_analysis/nyc_yll_by_age_sex.csv")
+
+disease <- unique(c(nycYLL$cause_name, nycYLD$cause_name))
+drug <- c("Amphetamine", "Heroin", "Cocaine", "Cannabis")
+mental <- c("Major depressive disorder", "Anxiety", "Bipolar")
+index <- unique(c(disease, drug, mental))
+
+michaudDALY <- lapply(index, calculateDALY, population, nycYLL=nycYLL, nationalRates=nationalRates)
+michaudDALY <- do.call(rbind.fill, michaudDALY)
+write.csv(michaudDALY, "results/sensitivity_analysis/nyc_daly_michaud.csv")
+```
+### 2005 NYC DALY Estimates, Total
+
+```{r, warning=FALSE, message=FALSE}
+michaudTotal <- segmentDALY(michaudDALY, strata="total")
+knitr::kable(michaudTotal, digits=0)
+```
+
+```{r daly_total_2005, warning=FALSE, message=FALSE}
+plotDALY(michaudTotal, "Leading Causes of Dalys,\n  NYC 2005")
+plotDALY(michaudTotal, "Leading Causes of Dalys,\n  NYC 2005", stackedBar=TRUE)
+```
+
+### 2005 NYC DALY Estimates, Male
+
+```{r}
+michaudMale <- segmentDALY(michaudDALY, strata="male")
+knitr::kable(michaudMale, digits=0)
+```
+
+```{r daly_males_2005, warning=FALSE, message=FALSE}
+plotDALY(michaudMale, "Leading Causes of DALYs in Males,\n NYC 2005")
+plotDALY(michaudMale, "Leading Causes of DALYs in Males,\n NYC 2005", stackedBar=TRUE)
+```
+
+### 2005 NYC DALY Estimates, Female
+
+```{r}
+michaudFemale <- segmentDALY(michaudDALY, strata="female")
+knitr::kable(michaudFemale, digits=0)
+```
+
+```{r daly_females_2005, warning=FALSE, message=FALSE}
+plotDALY(michaudFemale, "Leading Causes of DALYs in Females,\n NYC 2005")
+plotDALY(michaudFemale, "Leading Causes of DALYs in Females,\n NYC 2005", stackedBar=TRUE)
+```
+
+
 # Discussion
+
+## Limitations
 
 There are key limitations to this analysis. First and foremost, the magnitude of the DALY scores should be interpreted and reported with caution. Due to the small sample size of NYC prevalence estimates and the uncertainty around disability weights and national YLL/YLD rates for some conditions, DALY estimates can assume a wide range of values, changing how one condition ranks against the others (for example, `alcohol use disorders` and `diabetes mellitus`). For this reason, DALY magnitudes obtained via Michaud approach and the Prevalence-based YLDs cannot be directly compared. 
 
 Moreover, the accuracy of DALY estimations suffers from potential biases introduced in the data collection and computation processes. For example, comorbidities with respect to chronic diseases means that DALY estimates based on Vital Statistics mortality counts are overestimating the contribution of YLLs. Summation of prevalence YLDs across all causes can result in overestimation of the total average severity-weighted health state prevalence because of comorbidity between conditions ([Mathers, 2006](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC547900/)). Over-reporting of some conditions due to misclassification (e.g. where symptoms such as joint pain are labeled as osteoarthritis or occasional wheezing as asthma), under-reporting of undiagnosed conditions (e.g. most mental health problems), and lack of information on condition severity (resulting in high prevalences due to inclusion of very minor conditions or minor symptoms) may also contribute to biased DALY estimates. 
 
 In order to convey the uncertainty around our estimates, we visualize the range of values that NYC DALY estimates can take for each condition.
+
+## Sensitivity Analysis
+
+NYC DALY rankings and magnitudes using the Michaud approach are fairly consistent using both 2005 and 2013 NYC mortality counts. Moreover, the Michaud approach implemented in this analysis replicated the 2005 NYC DALY estimates from the previous NYC DOHMH study, producing comparable rankings. However, since age-weighting is no longer used due to ethical concerns, the 2013 NYC DALYs are slightly larger in magnitude. Recommendations for future work include running simulations to test the stability of DALY rankings for an even wider range of assumptions.
 
 # References
 
@@ -659,6 +731,8 @@ Jiang, Yongwen, and Jana Earl Hesser. “Using Disability-Adjusted Life Years to
 Lozano, Rafael, Mohsen Naghavi, Kyle Foreman, Stephen Lim, Kenji Shibuya, Victor Aboyans, Jerry Abraham, et al. “Global and Regional Mortality from 235 Causes of Death for 20 Age Groups in 1990 and 2010: A Systematic Analysis for the Global Burden of Disease Study 2010.” The Lancet 380, no. 9859 (December 15, 2012): 2095–2128. doi:10.1016/S0140-6736(12)61728-0.
 
 Michaud, Catherine M, Matthew T McKenna, Stephen Begg, Niels Tomijima, Meghna Majmudar, Maria T Bulzacchelli, Shahul Ebrahim, et al. “The Burden of Disease and Injury in the United States 1996.” Population Health Metrics 4 (October 18, 2006): 11. doi:10.1186/1478-7954-4-11.
+
+Kroenke, Kurt, and Robert L. Spitzer. “The PHQ-9: A New Depression Diagnostic and Severity Measure.” Psychiatric Annals 32, no. 9 (2002): 509–15.
 
 Schroeder, S Andrew. “Incidence, Prevalence, and Hybrid Approaches to Calculating Disability-Adjusted Life Years.” Population Health Metrics 10 (September 12, 2012): 19. doi:10.1186/1478-7954-10-19.
 
