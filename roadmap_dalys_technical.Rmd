@@ -15,113 +15,10 @@ output:
     - yes
 ---
 
-# Background
-
-## Objective
-
-The objective of this analysis is to estimate DALYs lost in New York City due to the following major categories of conditions (with about 100 conditions in total within these categories):
-
-* Major depression
-* Alcohol use
-* Marijuana use
-* Heroin use
-* Cocaine use
-* Stimulant use
-* Sedative use
-* Tranquilizer use
-
-## Definition of Key Terms
-
-### DALY
-
-**Disability-adjusted life years.** The DALY is a year of life lived in perfect health and consists of two elements: YLLs and YLDs. The DALY is a measure of overall disease burden, expressed as the number of years lost due to ill-health, disability or early death. It was developed in the 1990s as a way of comparing the overall health and life expectancy of different countries.
-
-$$
-DALY = YLL + YLD
-$$
-
-### YLL
-
-**Years of life lost.** Years of life lost is an estimate of the average years a person would have lived if he or she had not died prematurely.
-
-$$
-YLL = (Number\ of\ deaths) * (Standard\ life\ expectancy\ at\ age\ of\ death\ in\ years)
-$$
-
-### YLD
-
-**Years of life lost due to disability.** This is the morbidity component of the DALY score. To estimate YLD for a particular cause in a particular time period, the number of incident cases in that period is multiplied by the average duration of the disease and a weight factor that reflects the severity of the disease on a scale from 0 (perfect health) to 1 (dead). The basic formula for YLD is the following:
-
-$$
-YLD = (number\ of\ incident\ cases) * (disability\ weight) * (average\ duration\ of\ disease)
-$$
-
-# Methods
-
-## Data Sources
-
-* 2013 NYCHANES - prevalence estimates
-* 2002-2008 NSDUH - drug use prevalence estimates
-* 2013 NYC Vital Statistics - mortality estimates
-* 2010 Global Burden of Disease Study - national YLD/YLL rates
-* 2013 NYC American Community Survey - population estimates
-
-The challenge with using NYCHANES and NSDUH data to estimate the prevalence of a condition is that the `n` may be too small. To increase their utility of these surveys, we will aggregate age groups into the following strata: childhood (0-14), late adolescence/early adulthood (15-24), adulthood (25-64), and later life (65+).
-
-## DALY Estimation
-
-### YLLs
-
-To estimate compute NYC YLLs, we will use NYC mortality counts stratified by age, sex, and race. In concodrance with the literature on DALY estimation, life expectancy estimates based on the life expectancy in Japan (82.5 years for women and 80.0 years for men) were used for the calculation of YLL. In order to remain consistent with the methodology of the 2010 Global Burden Disease Study, no age weighting or discounting was applied.
-
-### YLDs
-
-To compute NYC YLDs, we will use the two approaches described below:
-
-#### 2005 NYC DOHMH / Michaud (2006)
-
-In order to compare the magnitude of the DALY scores to the [2005 NYC DOHMH study](http://www.nyc.gov/html/doh/downloads/pdf/epi/datatable11.pdf), we will replicate the previous study's methodology, which was based on [Michaud CM, et al](http://www.pophealthmetrics.com/content/4/1/11). The burden of disease and injury in the United States 1996. Population Health Metrics 2006,4:11.
-
-"For NYC YLD, U.S. Census Bureau population estimates for New York City in 2005 by sex were used to calculate years lived with disability (YLD) by applying national YLD rates and ratios from the Michaud et al. study. If the national YLL:YLD ratio was less than 10, then the NYC YLD was equal to the national YLD:YLL ratio multiplied by NYC YLL. If the national YLD:YLL ratio was greater than or equal to 10 (producing unreliable City estimates), then NYC YLD was equal to the national YLD rate multiplied by the NYC population."
-
-Implementing the Michaud approach will thus require the following data elements:
-
-* NYC Population by age, sex
-* National YLD rates by age, sex
-* NYC YLLs by age, sex
-
-In order to remain consistent with the demographic weighting approach used by NYC DOHMH for the 2013 NYCHANES data, NYC population estimates were obtained from the [2013 American Community Survey](http://www.nyc.gov/html/dcp/download/census/boro_demo_2013_acs.xlsx), which is available on the NYC Department of City Planning website. Since the data from the Michaud study are from 1996 and patterns of disease and disability have changed, we will update the approach using national YLD/YLL rates from the 2010 Global Burden of Disease Study. 
-
-#### Prevalence-based YLDs
-
-Years lived with a disability (YLD) due to each disease can be calculated on the basis of either the incidence or the prevalence of the disease. The initial GBD studies estimated YLD on the basis of the incidence of each disease. Thus, in the 1990 study for example, the YLD estimates measured the future loss of health resulting from disease episodes that began in 1990. One advantage of this approach is that it is consistent with that used for mortality: YLL measure the future loss of life resulting from deaths in a particular year.
-
-The 2010 GBD study adopted the alternative approach and calculated YLD based on the prevalence of the impairments resulting from each disease in the year for which the estimates are made. This approach has the advantage that it assigns YLD to the ages at which they are lived, rather than to the age at which the disease episode that produced them began.
-
-Because prevalence is approximately incidence x duration, prevalence YLD for a condition (across all ages) is approximately the same as the no frills incidence YLD. As such, we can estimate YLDs using the following formula:
-
-$$
-YLD = (number\ of\ prevalent\ cases) * (disability\ weight)
-$$
-
-We can estimate the number of prevalent cases for each condition using survey data from 2013 NYCHANES. Annual prevalence for drug use can be estimated using data from 2002-2008 NSDUH. Disability weights can be extracted from the 2010 Global Burden of Disease study.However, we should note that the prevalence YLD for a condition may be quite different in magnitude to the incidence-based YLD, depending on how age weighting and discounting are applied. As such, comparisons to previous NYC DALY studies should be done with caution. 
-
-Further information about estimating DALYs can be found from the Global Burden of Disease concept paper ([WHO, 2006](http://www.who.int/quantifying_ehimpacts/publications/en/9241546204chap3.pdf)).
-
-## Disease Rankings
-
-Since our goal is to communicate the burden of diseases in New York City, we will rank each condition in decreasing order of the DALY score. We will also test the stability of the rankings by comparing the results generated from the Michaud approach and the prevalence-based YLDs approach. Moreover, since the 2010 GBD study also provides 95% confidence intervals around point estimates for disability weights and national YLD/YLL rates, further stability checks can be conducted by reporting DALY estimations with their respective upper and lower bounds.
-
-However, we should note that since the DALY estimations are not inclusive of all disease conditions, we will not be able to report our findings as the "top X conditions contributing to DALYs." Instead, we can only report mental health DALYs in reference to other highly prevalent chronic diseases.
-
-## Estimation of Substance Use Dependence
-
-Prevalence estimates of substance use cannot be directly substituted for prevalence of drug dependence or abuse disorders. We make the following assumptions about the average proportion of dependence among users ([National Addiction Centre, 2003](http://www.nta.nhs.uk/uploads/dangerousnessofdrugsdh_4086293.pdf)):
-
-* Alcohol - 15.4%
-* Cocaine - 16.7%
-* Heroin - 23.1%
-* Cannabis - 9.1%
+```{r setup, cache=FALSE, include=FALSE}
+library(knitr)
+opts_chunk$set(eval=FALSE)
+```
 
 # Code
 
@@ -247,7 +144,7 @@ calculateMichaudYLD <- function(checkRatio, yldyllRatio, nationalYLD, nycPop, ny
     ##      nycYLL: numeric. NYC YLL
     ## Returns:
     ##      nycYLD: New York City YLD estimate
-    nycYLDLogic <- (checkRatio >= 10 | is.na(checkRatio) | is.infinite(checkRatio) | is.na(nycYLL))
+    nycYLDLogic <- (checkRatio >= 5 | is.na(checkRatio) | is.infinite(checkRatio) | is.na(nycYLL))
     nycYLD <- ifelse(nycYLDLogic, nationalYLD * (nycPop / 100000), yldyllRatio * nycYLL)
     return(nycYLD)
 }
@@ -551,7 +448,7 @@ Raw results for this approach can be found under the `results` directory under t
 
 ```{r, warning=FALSE, message=FALSE}
 michaudTotal <- segmentDALY(michaudDALY, strata="total")
-michaudTotal
+knitr::kable(michaudTotal, digits=0)
 ```
 
 ```{r, warning=FALSE, message=FALSE}
@@ -567,7 +464,7 @@ plotDALY(michaudTotal, "Leading Causes of DALYs, NYC 2013", stackedBar=TRUE)
 
 ```{r}
 michaudMale <- segmentDALY(michaudDALY, strata="male")
-michaudMale
+knitr::kable(michaudMale, digits=0)
 ```
 
 ```{r, warning=FALSE, message=FALSE}
@@ -582,7 +479,7 @@ plotDALY(michaudMale, "Leading Causes of DALYs in Males, NYC 2013", stackedBar=T
 
 ```{r}
 michaudFemale <- segmentDALY(michaudDALY, strata="female")
-michaudFemale
+knitr::kable(michaudFemale, digits=0)
 ```
 
 ```{r, warning=FALSE, message=FALSE}
@@ -602,7 +499,7 @@ Raw results for this approach can be found under the `results` directory under t
 
 ```{r}
 prevalenceTotal <- segmentDALY(prevalenceDALY, strata="total")
-prevalenceTotal
+knitr::kable(prevalenceTotal, digits=0)
 ```
 
 * `Major depressive disorder` ranks number one, beating out the number two slot by almost twice the number of DALYs However, DALY estimates appear to be unstable, taking a wide range of possible values.
@@ -617,7 +514,7 @@ plotDALY(prevalenceTotal, "Leading Causes of DALYs, NYC 2013", stackedBar=TRUE)
 
 ```{r}
 prevalenceMale <- segmentDALY(prevalenceDALY, strata="male")
-prevalenceMale
+knitr::kable(prevalenceMale, digits=0)
 ```
 
 ```{r, warning=FALSE, message=FALSE}
@@ -631,7 +528,7 @@ plotDALY(prevalenceMale, "Leading Causes of DALYs in Males, NYC 2013", stackedBa
 
 ```{r, warning=FALSE, message=FALSE}
 prevalenceFemale <- segmentDALY(prevalenceDALY, strata="female")
-prevalenceFemale
+knitr::kable(prevalenceFemale, digits=0)
 ```
 
 ```{r, warning=FALSE, message=FALSE}
@@ -665,23 +562,9 @@ multiplot(plotDALY(michaudFemale, "Michaud YLDs"), plotDALY(prevalenceFemale, "P
 prevalence[prevalence$small_sample == "yes", c("cause_name", "sequlae", "sex", "age")]
 ```
 
-# Discussion
+# Session Info
 
-There are key limitations to this analysis. First and foremost, the magnitude of the DALY scores should be interpreted and reported with caution. Due to the small sample size of NYC prevalence estimates and the uncertainty around disability weights and national YLL/YLD rates for some conditions, DALY estimates can assume a wide range of values, changing how one condition ranks against the others (for example, `alcohol use disorders` and `diabetes mellitus`). For this reason, DALY magnitudes obtained via Michaud approach and the Prevalence-based YLDs cannot be directly compared. 
+```{r}
+sessionInfo()
+```
 
-Moreover, the accuracy of DALY estimations suffers from potential biases introduced in the data collection and computation processes. For example, comorbidities with respect to chronic diseases means that DALY estimates based on Vital Statistics mortality counts are overestimating the contribution of YLLs. Summation of prevalence YLDs across all causes can result in overestimation of the total average severity-weighted health state prevalence because of comorbidity between conditions ([Mathers, 2006](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC547900/)). Over-reporting of some conditions due to misclassification (e.g. where symptoms such as joint pain are labeled as osteoarthritis or occasional wheezing as asthma), under-reporting of undiagnosed conditions (e.g. most mental health problems), and lack of information on condition severity (resulting in high prevalences due to inclusion of very minor conditions or minor symptoms) may also contribute to biased DALY estimates. 
-
-In order to convey the uncertainty around our estimates, we visualize the range of values that NYC DALY estimates can take for each condition.
-
-# References
-
-Jiang, Yongwen, and Jana Earl Hesser. “Using Disability-Adjusted Life Years to Assess the Burden of Disease and Injury in Rhode Island.” Public Health Reports 127, no. 3 (2012): 293–303.
-
-Lozano, Rafael, Mohsen Naghavi, Kyle Foreman, Stephen Lim, Kenji Shibuya, Victor Aboyans, Jerry Abraham, et al. “Global and Regional Mortality from 235 Causes of Death for 20 Age Groups in 1990 and 2010: A Systematic Analysis for the Global Burden of Disease Study 2010.” The Lancet 380, no. 9859 (December 15, 2012): 2095–2128. doi:10.1016/S0140-6736(12)61728-0.
-
-Michaud, Catherine M, Matthew T McKenna, Stephen Begg, Niels Tomijima, Meghna Majmudar, Maria T Bulzacchelli, Shahul Ebrahim, et al. “The Burden of Disease and Injury in the United States 1996.” Population Health Metrics 4 (October 18, 2006): 11. doi:10.1186/1478-7954-4-11.
-
-Schroeder, S Andrew. “Incidence, Prevalence, and Hybrid Approaches to Calculating Disability-Adjusted Life Years.” Population Health Metrics 10 (September 12, 2012): 19. doi:10.1186/1478-7954-10-19.
-
-U.S. Department of Health and Human Services, Substance Abuse and Mental Health Services Administration, and Center for Behavioral Health Statistics and Quality. “Results from the 2012 NSDUH: Summary of National Findings, SAMHSA, CBHSQ.” Accessed April 18, 2015. http://archive.samhsa.gov/data/NSDUH/2012SummNatFindDetTables/NationalFindings/NSDUHresults2012.htm.
-Üstün, T. B., J. L. Ayuso-Mateos, S. Chatterji, C. Mathers, and C. J. L. Murray. “Global Burden of Depressive Disorders in the Year 2000.” The British Journal of Psychiatry 184, no. 5 (May 1, 2004): 386–92. doi:10.1192/bjp.184.5.386.
