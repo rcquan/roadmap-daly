@@ -1,191 +1,201 @@
 "","cause_name","sex","ageGroup","yll"
 "1","Alcohol use disorders","Female","00-14",0
-"2","Alcohol use disorders","Female","15-24",84.6645033155072
-"3","Alcohol use disorders","Female","25-44",1443.03391990415
-"4","Alcohol use disorders","Female","45-64",3033.53104068927
-"5","Alcohol use disorders","Female","65+",338.614665592763
+"2","Alcohol use disorders","Female","15-24",0.564430022103381
+"3","Alcohol use disorders","Female","25-44",106.835142842027
+"4","Alcohol use disorders","Female","45-64",359.155094817409
+"5","Alcohol use disorders","Female","65+",16.5634353964203
 "6","Alcohol use disorders","Male","00-14",0
-"7","Alcohol use disorders","Male","15-24",278.233703926138
-"8","Alcohol use disorders","Male","25-44",5580.39003646762
-"9","Alcohol use disorders","Male","45-64",11467.2335870953
-"10","Alcohol use disorders","Male","65+",1141.7414270302
-"11","Alzheimer's disease and other dementias","Female","00-14",59.6400516958757
-"12","Alzheimer's disease and other dementias","Female","15-24",0
-"13","Alzheimer's disease and other dementias","Female","25-44",75.9491536791658
-"14","Alzheimer's disease and other dementias","Female","45-64",1067.3535143166
-"15","Alzheimer's disease and other dementias","Female","65+",47744.6678485796
-"16","Alzheimer's disease and other dementias","Male","00-14",147.731974388206
+"7","Alcohol use disorders","Male","15-24",151.080901231893
+"8","Alcohol use disorders","Male","25-44",1416.82646147129
+"9","Alcohol use disorders","Male","45-64",2653.29272844968
+"10","Alcohol use disorders","Male","65+",217.132354916978
+"11","Alzheimer's disease and other dementias","Female","00-14",0
+"12","Alzheimer's disease and other dementias","Female","15-24",0.564430022103381
+"13","Alzheimer's disease and other dementias","Female","25-44",0
+"14","Alzheimer's disease and other dementias","Female","45-64",97.1853463035638
+"15","Alzheimer's disease and other dementias","Female","65+",3074.48910358315
+"16","Alzheimer's disease and other dementias","Male","00-14",29.5463948776412
 "17","Alzheimer's disease and other dementias","Male","15-24",0
-"18","Alzheimer's disease and other dementias","Male","25-44",24.6919913118036
-"19","Alzheimer's disease and other dementias","Male","45-64",1213.55692869567
-"20","Alzheimer's disease and other dementias","Male","65+",17730.5727491748
-"21","Asthma","Female","00-14",506.940439414944
-"22","Asthma","Female","15-24",395.101015472367
-"23","Asthma","Female","25-44",1746.83053462081
-"24","Asthma","Female","45-64",3070.98204119161
-"25","Asthma","Female","65+",1277.50078382724
-"26","Asthma","Male","00-14",975.03103096216
-"27","Asthma","Male","15-24",834.701111778413
-"28","Asthma","Male","25-44",1777.82337444986
-"29","Asthma","Male","45-64",3148.21290197861
-"30","Asthma","Male","65+",584.302965597807
+"18","Alzheimer's disease and other dementias","Male","25-44",0
+"19","Alzheimer's disease and other dementias","Male","45-64",73.868682616258
+"20","Alzheimer's disease and other dementias","Male","65+",1176.79960496607
+"21","Asthma","Female","00-14",119.280103391751
+"22","Asthma","Female","15-24",150.702815901603
+"23","Asthma","Female","25-44",398.226729124426
+"24","Asthma","Female","45-64",781.602380483767
+"25","Asthma","Female","65+",328.823629369886
+"26","Asthma","Male","00-14",236.37115902113
+"27","Asthma","Male","15-24",157.480276422194
+"28","Asthma","Male","25-44",450.875761353534
+"29","Asthma","Male","45-64",455.523542800257
+"30","Asthma","Male","65+",108.465435567869
 "31","Breast cancer","Female","00-14",0
-"32","Breast cancer","Female","15-24",56.4430022103381
-"33","Breast cancer","Female","25-44",10202.5029775679
-"34","Breast cancer","Female","45-64",35297.5679734524
-"35","Breast cancer","Female","65+",23310.54141092
-"36","Breast cancer","Male","00-14",0
+"32","Breast cancer","Female","15-24",608.455563827445
+"33","Breast cancer","Female","25-44",2389.61353859215
+"34","Breast cancer","Female","45-64",8747.99195233832
+"35","Breast cancer","Female","65+",5401.41515627454
+"36","Breast cancer","Male","00-14",29.5463948776412
 "37","Breast cancer","Male","15-24",0
-"38","Breast cancer","Male","25-44",49.3839826236072
-"39","Breast cancer","Male","45-64",228.641160478894
-"40","Breast cancer","Male","65+",221.632159364685
-"41","Chronic obstructive pulmonary disease","Female","00-14",29.8200258479379
-"42","Chronic obstructive pulmonary disease","Female","15-24",56.4430022103381
-"43","Chronic obstructive pulmonary disease","Female","25-44",455.694922074995
-"44","Chronic obstructive pulmonary disease","Female","45-64",8351.57311202109
-"45","Chronic obstructive pulmonary disease","Female","65+",27635.5741850821
-"46","Chronic obstructive pulmonary disease","Male","00-14",0
-"47","Chronic obstructive pulmonary disease","Male","15-24",0
-"48","Chronic obstructive pulmonary disease","Male","25-44",518.531817547876
-"49","Chronic obstructive pulmonary disease","Male","45-64",9004.94416655335
-"50","Chronic obstructive pulmonary disease","Male","65+",19564.0751584645
-"51","Colon and rectum cancers","Female","00-14",29.8200258479379
-"52","Colon and rectum cancers","Female","15-24",84.6645033155072
-"53","Colon and rectum cancers","Female","25-44",2683.53676333052
-"54","Colon and rectum cancers","Female","45-64",14587.1646956602
-"55","Colon and rectum cancers","Female","65+",19424.1685444576
-"56","Colon and rectum cancers","Male","00-14",0
-"57","Colon and rectum cancers","Male","15-24",111.293481570455
-"58","Colon and rectum cancers","Male","25-44",3135.88289659906
-"59","Colon and rectum cancers","Male","45-64",17376.7281963959
-"60","Colon and rectum cancers","Male","65+",14479.9677451594
-"61","Congenital anomalies","Female","00-14",9751.14845227568
-"62","Congenital anomalies","Female","15-24",903.08803536541
-"63","Congenital anomalies","Female","25-44",1417.71753534443
-"64","Congenital anomalies","Female","45-64",1254.60851682828
-"65","Congenital anomalies","Female","65+",223.177847777049
-"66","Congenital anomalies","Male","00-14",10282.1454174191
-"67","Congenital anomalies","Male","15-24",1307.69840845285
-"68","Congenital anomalies","Male","25-44",1802.51536576166
-"69","Congenital anomalies","Male","45-64",1582.90034177696
-"70","Congenital anomalies","Male","65+",235.064411447393
-"71","Diabetes mellitus","Female","00-14",178.920155087627
-"72","Diabetes mellitus","Female","15-24",84.6645033155072
-"73","Diabetes mellitus","Female","25-44",2582.27122509164
-"74","Diabetes mellitus","Female","45-64",15467.2632074651
-"75","Diabetes mellitus","Female","65+",27258.4805802174
-"76","Diabetes mellitus","Male","00-14",59.0927897552824
-"77","Diabetes mellitus","Male","15-24",389.527185496593
-"78","Diabetes mellitus","Male","25-44",5086.55021023154
-"79","Diabetes mellitus","Male","45-64",21386.7423955642
-"80","Diabetes mellitus","Male","65+",17428.3470773139
-"81","HIV/AIDS","Female","00-14",29.8200258479379
-"82","HIV/AIDS","Female","15-24",677.316026524057
-"83","HIV/AIDS","Female","25-44",7037.9549076027
-"84","HIV/AIDS","Female","45-64",14493.5371944043
-"85","HIV/AIDS","Female","65+",808.057724710003
-"86","HIV/AIDS","Male","00-14",59.0927897552824
-"87","HIV/AIDS","Male","15-24",918.171222956255
-"88","HIV/AIDS","Male","25-44",12271.9196819664
-"89","HIV/AIDS","Male","45-64",27313.8247864401
-"90","HIV/AIDS","Male","65+",1974.5410561581
-"91","Homicide","Female","00-14",1162.98100806958
-"92","Homicide","Female","15-24",2060.16958067734
-"93","Homicide","Female","25-44",3417.71191556246
-"94","Homicide","Female","45-64",1928.72652587034
-"95","Homicide","Female","65+",230.873635631429
-"96","Homicide","Male","00-14",1861.4228772914
-"97","Homicide","Male","15-24",17890.4271624507
-"98","Homicide","Male","25-44",21383.2644760219
-"99","Homicide","Male","45-64",4361.76983067428
-"100","Homicide","Male","65+",429.832066646662
-"101","Hypertensive heart disease","Female","00-14",0
-"102","Hypertensive heart disease","Female","15-24",253.993509946521
-"103","Hypertensive heart disease","Female","25-44",3670.87576115968
-"104","Hypertensive heart disease","Female","45-64",22002.4627951228
-"105","Hypertensive heart disease","Female","65+",43288.806680893
-"106","Hypertensive heart disease","Male","00-14",0
-"107","Hypertensive heart disease","Male","15-24",306.057074318752
-"108","Hypertensive heart disease","Male","25-44",7950.82120240076
-"109","Hypertensive heart disease","Male","45-64",34278.5862902587
-"110","Hypertensive heart disease","Male","65+",24251.9311353296
-"111","Ischemic heart disease","Female","00-14",29.8200258479379
-"112","Ischemic heart disease","Female","15-24",112.886004420676
-"113","Ischemic heart disease","Female","25-44",962.022613269433
-"114","Ischemic heart disease","Female","45-64",10317.7506383938
-"115","Ischemic heart disease","Female","65+",45535.9767343723
-"116","Ischemic heart disease","Male","00-14",29.5463948776412
-"117","Ischemic heart disease","Male","15-24",83.4701111778413
-"118","Ischemic heart disease","Male","25-44",2716.1190442984
-"119","Ischemic heart disease","Male","45-64",22635.4748874105
-"120","Ischemic heart disease","Male","65+",30276.2961944243
-"121","Ischemic stroke","Female","00-14",268.380232631441
-"122","Ischemic stroke","Female","15-24",225.772008841352
-"123","Ischemic stroke","Female","25-44",2911.38422436802
-"124","Ischemic stroke","Female","45-64",12171.5751632594
-"125","Ischemic stroke","Female","65+",29828.8737235807
-"126","Ischemic stroke","Male","00-14",561.381502675183
-"127","Ischemic stroke","Male","15-24",306.057074318752
-"128","Ischemic stroke","Male","25-44",3629.72272283513
-"129","Ischemic stroke","Male","45-64",15195.8432810588
-"130","Ischemic stroke","Male","65+",14688.1676524414
-"131","Lower respiratory infections","Female","00-14",834.96072374226
-"132","Lower respiratory infections","Female","15-24",310.43651215686
-"133","Lower respiratory infections","Female","25-44",2101.25991845692
-"134","Lower respiratory infections","Female","45-64",9231.671623826
-"135","Lower respiratory infections","Female","65+",41511.079686531
-"136","Lower respiratory infections","Male","00-14",1329.58776949385
-"137","Lower respiratory infections","Male","15-24",222.58696314091
-"138","Lower respiratory infections","Male","25-44",2345.73917462134
-"139","Lower respiratory infections","Male","45-64",13806.4085366101
-"140","Lower respiratory infections","Male","65+",31075.5151933454
-"141","Lung cancer","Female","00-14",0
-"142","Lung cancer","Female","15-24",28.2215011051691
-"143","Lung cancer","Female","25-44",2354.42376405414
-"144","Lung cancer","Female","45-64",32657.2724380376
-"145","Lung cancer","Female","65+",36524.2091568921
-"146","Lung cancer","Male","00-14",29.5463948776412
-"147","Lung cancer","Male","15-24",139.116851963069
-"148","Lung cancer","Male","25-44",2518.58311380397
-"149","Lung cancer","Male","45-64",38904.1728445625
-"150","Lung cancer","Male","65+",35165.6359525301
-"151","Motor vehicle accidents","Female","00-14",685.860594502571
-"152","Motor vehicle accidents","Female","15-24",1608.62556299464
-"153","Motor vehicle accidents","Female","25-44",2227.84184125553
-"154","Motor vehicle accidents","Female","45-64",1741.47152335866
-"155","Motor vehicle accidents","Female","65+",1300.58814739039
-"156","Motor vehicle accidents","Male","00-14",1034.12382071744
-"157","Motor vehicle accidents","Male","15-24",4451.73926281821
-"158","Motor vehicle accidents","Male","25-44",7629.82531534732
-"159","Motor vehicle accidents","Male","45-64",4537.64764642727
-"160","Motor vehicle accidents","Male","65+",1370.08971243624
-"161","Osteoarthritis","Female","00-14",0
-"162","Osteoarthritis","Female","15-24",0
-"163","Osteoarthritis","Female","25-44",0
-"164","Osteoarthritis","Female","45-64",112.35300150701
-"165","Osteoarthritis","Female","65+",223.177847777049
-"166","Osteoarthritis","Male","00-14",0
-"167","Osteoarthritis","Male","15-24",0
-"168","Osteoarthritis","Male","25-44",0
-"169","Osteoarthritis","Male","45-64",193.465597328295
-"170","Osteoarthritis","Male","65+",114.17414270302
-"171","Other musculoskeletal disorders","Female","00-14",178.920155087627
-"172","Other musculoskeletal disorders","Female","15-24",423.322516577536
-"173","Other musculoskeletal disorders","Female","25-44",2531.63845597219
-"174","Other musculoskeletal disorders","Female","45-64",3501.66854696848
-"175","Other musculoskeletal disorders","Female","65+",2693.52574903334
-"176","Other musculoskeletal disorders","Male","00-14",59.0927897552824
-"177","Other musculoskeletal disorders","Male","15-24",250.410333533524
-"178","Other musculoskeletal disorders","Male","25-44",888.91168722493
-"179","Other musculoskeletal disorders","Male","45-64",2286.41160478894
-"180","Other musculoskeletal disorders","Male","65+",1370.08971243624
-"181","Poisonings","Female","00-14",29.8200258479379
-"182","Poisonings","Female","15-24",1241.74604862744
-"183","Poisonings","Female","25-44",7493.64982967769
-"184","Poisonings","Female","45-64",8557.55361478394
-"185","Poisonings","Female","65+",223.177847777049
-"186","Poisonings","Male","00-14",118.185579510565
-"187","Poisonings","Male","15-24",3867.44848457332
-"188","Poisonings","Male","25-44",22247.4841719351
-"189","Poisonings","Male","45-64",17816.4227357784
-"190","Poisonings","Male","65+",355.954680191767
+"38","Breast cancer","Male","25-44",0
+"39","Breast cancer","Male","45-64",57.1602901197234
+"40","Breast cancer","Male","65+",35.259661717109
+"41","Cerebrovascular disease","Female","00-14",0
+"42","Cerebrovascular disease","Female","15-24",35.559091392513
+"43","Cerebrovascular disease","Female","25-44",199.239946485012
+"44","Cerebrovascular disease","Female","45-64",739.65725992115
+"45","Cerebrovascular disease","Female","65+",3986.74002641647
+"46","Cerebrovascular disease","Male","00-14",0
+"47","Cerebrovascular disease","Male","15-24",0.278233703926138
+"48","Cerebrovascular disease","Male","25-44",164.201742223494
+"49","Cerebrovascular disease","Male","45-64",1092.37711364185
+"50","Cerebrovascular disease","Male","65+",1827.65937963369
+"51","Chronic obstructive pulmonary disease","Female","00-14",0
+"52","Chronic obstructive pulmonary disease","Female","15-24",28.7859311272724
+"53","Chronic obstructive pulmonary disease","Female","25-44",186.834918050748
+"54","Chronic obstructive pulmonary disease","Female","45-64",1356.28798319212
+"55","Chronic obstructive pulmonary disease","Female","65+",5582.19322260119
+"56","Chronic obstructive pulmonary disease","Male","00-14",0
+"57","Chronic obstructive pulmonary disease","Male","15-24",0
+"58","Chronic obstructive pulmonary disease","Male","25-44",192.844452145186
+"59","Chronic obstructive pulmonary disease","Male","45-64",1813.82791386064
+"60","Chronic obstructive pulmonary disease","Male","65+",3598.29884917628
+"61","Colon and rectum cancers","Female","00-14",0
+"62","Colon and rectum cancers","Female","15-24",179.488747028875
+"63","Colon and rectum cancers","Female","25-44",456.707577457384
+"64","Colon and rectum cancers","Female","45-64",2709.76714134657
+"65","Colon and rectum cancers","Female","65+",4782.1004194522
+"66","Colon and rectum cancers","Male","00-14",0
+"67","Colon and rectum cancers","Male","15-24",0
+"68","Colon and rectum cancers","Male","25-44",401.738698643045
+"69","Colon and rectum cancers","Male","45-64",2868.7430527471
+"70","Colon and rectum cancers","Male","65+",3207.42031356948
+"71","Congenital anomalies","Female","00-14",1878.66162842008
+"72","Congenital anomalies","Female","15-24",296.043546593223
+"73","Congenital anomalies","Female","25-44",273.416953244997
+"74","Congenital anomalies","Female","45-64",157.668712114838
+"75","Congenital anomalies","Female","65+",145.679357986611
+"76","Congenital anomalies","Male","00-14",2097.79403631253
+"77","Congenital anomalies","Male","15-24",238.168050560774
+"78","Congenital anomalies","Male","25-44",465.19711631438
+"79","Congenital anomalies","Male","45-64",284.570305888346
+"80","Congenital anomalies","Male","65+",22.2303771968821
+"81","Diabetes mellitus","Female","00-14",0
+"82","Diabetes mellitus","Female","15-24",356.437558958285
+"83","Diabetes mellitus","Female","25-44",689.871479252423
+"84","Diabetes mellitus","Female","45-64",3237.4517384245
+"85","Diabetes mellitus","Female","65+",4697.86351943612
+"86","Diabetes mellitus","Male","00-14",0
+"87","Diabetes mellitus","Male","15-24",66.2196215344208
+"88","Diabetes mellitus","Male","25-44",982.00049447043
+"89","Diabetes mellitus","Male","45-64",4396.41776037762
+"90","Diabetes mellitus","Male","65+",2995.52653696475
+"91","Drug use disorders","Female","00-14",0
+"92","Drug use disorders","Female","15-24",58.1362922766482
+"93","Drug use disorders","Female","25-44",369.366050726343
+"94","Drug use disorders","Female","45-64",278.260933732362
+"95","Drug use disorders","Female","65+",0
+"96","Drug use disorders","Male","00-14",0
+"97","Drug use disorders","Male","15-24",64.8284530147901
+"98","Drug use disorders","Male","25-44",559.273603212352
+"99","Drug use disorders","Male","45-64",981.925845348972
+"100","Drug use disorders","Male","65+",14.3053484680842
+"101","HIV/AIDS","Female","00-14",60.5346524713138
+"102","HIV/AIDS","Female","15-24",2076.53805131834
+"103","HIV/AIDS","Female","25-44",4921.75832225554
+"104","HIV/AIDS","Female","45-64",4387.75921885377
+"105","HIV/AIDS","Female","65+",159.245600311298
+"106","HIV/AIDS","Male","00-14",59.0927897552824
+"107","HIV/AIDS","Male","15-24",222.58696314091
+"108","HIV/AIDS","Male","25-44",7270.80376167369
+"109","HIV/AIDS","Male","45-64",10094.8589907747
+"110","HIV/AIDS","Male","65+",301.083930433904
+"111","Homicide","Female","00-14",208.740180935565
+"112","Homicide","Female","15-24",1072.41704199642
+"113","Homicide","Female","25-44",987.338997829155
+"114","Homicide","Female","45-64",468.137506279209
+"115","Homicide","Female","65+",23.6620505663147
+"116","Homicide","Male","00-14",472.742318042259
+"117","Homicide","Male","15-24",4368.26915164036
+"118","Homicide","Male","25-44",5901.38592352106
+"119","Homicide","Male","45-64",1072.85467609327
+"120","Homicide","Male","65+",87.3096385376033
+"121","Hypertensive heart disease","Female","00-14",0
+"122","Hypertensive heart disease","Female","15-24",255.969015023883
+"123","Hypertensive heart disease","Female","25-44",987.592161674752
+"124","Hypertensive heart disease","Female","45-64",4237.76796184191
+"125","Hypertensive heart disease","Female","65+",7926.15595170032
+"126","Hypertensive heart disease","Male","00-14",0
+"127","Hypertensive heart disease","Male","15-24",88.4783178485118
+"128","Hypertensive heart disease","Male","25-44",2205.4886639703
+"129","Hypertensive heart disease","Male","45-64",5589.22110681443
+"130","Hypertensive heart disease","Male","65+",3982.99854882505
+"131","Ischemic heart disease","Female","00-14",0
+"132","Ischemic heart disease","Female","15-24",107.523919210694
+"133","Ischemic heart disease","Female","25-44",1182.27515893901
+"134","Ischemic heart disease","Female","45-64",12094.6133572271
+"135","Ischemic heart disease","Female","65+",67267.2660849383
+"136","Ischemic heart disease","Male","00-14",29.5463948776412
+"137","Ischemic heart disease","Male","15-24",30.327473727949
+"138","Ischemic heart disease","Male","25-44",2542.78126528954
+"139","Ischemic heart disease","Male","45-64",21332.747906128
+"140","Ischemic heart disease","Male","65+",38305.4920381235
+"141","Lower respiratory infections","Female","00-14",195.321169303993
+"142","Lower respiratory infections","Female","15-24",141.954150559
+"143","Lower respiratory infections","Female","25-44",331.897801577955
+"144","Lower respiratory infections","Female","45-64",2060.36679263605
+"145","Lower respiratory infections","Female","65+",10916.1715347617
+"146","Lower respiratory infections","Male","00-14",346.874675863508
+"147","Lower respiratory infections","Male","15-24",0
+"148","Lower respiratory infections","Male","25-44",527.174014507007
+"149","Lower respiratory infections","Male","45-64",2904.09449371346
+"150","Lower respiratory infections","Male","65+",6878.85777533611
+"151","Lung cancer","Female","00-14",0
+"152","Lung cancer","Female","15-24",90.8732335586444
+"153","Lung cancer","Female","25-44",981.263065534822
+"154","Lung cancer","Female","45-64",6638.93885904923
+"155","Lung cancer","Female","65+",7624.85917448924
+"156","Lung cancer","Male","00-14",0
+"157","Lung cancer","Male","15-24",0
+"158","Lung cancer","Male","25-44",840.268464340677
+"159","Lung cancer","Male","45-64",9072.12949217099
+"160","Lung cancer","Male","65+",7436.09475298726
+"161","Motor vehicle accidents","Female","00-14",238.560206783503
+"162","Motor vehicle accidents","Female","15-24",366.879514367198
+"163","Motor vehicle accidents","Female","25-44",354.429383836107
+"164","Motor vehicle accidents","Female","45-64",74.9020010046734
+"165","Motor vehicle accidents","Female","65+",39.4367509438578
+"166","Motor vehicle accidents","Male","00-14",88.6391846329236
+"167","Motor vehicle accidents","Male","15-24",1001.6413341341
+"168","Motor vehicle accidents","Male","25-44",617.29978279509
+"169","Motor vehicle accidents","Male","45-64",298.992286780092
+"170","Motor vehicle accidents","Male","65+",53.7290083308328
+"171","Osteoarthritis","Female","00-14",0
+"172","Osteoarthritis","Female","15-24",0.564430022103381
+"173","Osteoarthritis","Female","25-44",0
+"174","Osteoarthritis","Female","45-64",20.4107952737735
+"175","Osteoarthritis","Female","65+",69.329808159302
+"176","Osteoarthritis","Male","00-14",0
+"177","Osteoarthritis","Male","15-24",0
+"178","Osteoarthritis","Male","25-44",0
+"179","Osteoarthritis","Male","45-64",37.461974755388
+"180","Osteoarthritis","Male","65+",21.6259258531602
+"181","Other musculoskeletal disorders","Female","00-14",59.6400516958757
+"182","Other musculoskeletal disorders","Female","15-24",339.222443284132
+"183","Other musculoskeletal disorders","Female","25-44",764.301649858005
+"184","Other musculoskeletal disorders","Female","45-64",735.350394863381
+"185","Other musculoskeletal disorders","Female","65+",382.615357657308
+"186","Other musculoskeletal disorders","Male","00-14",0
+"187","Other musculoskeletal disorders","Male","15-24",67.0543226461992
+"188","Other musculoskeletal disorders","Male","25-44",190.128333100888
+"189","Other musculoskeletal disorders","Male","45-64",247.284208948711
+"190","Other musculoskeletal disorders","Male","65+",99.1300203703865
+"191","Poisonings","Female","00-14",0
+"192","Poisonings","Female","15-24",536.208520998212
+"193","Poisonings","Female","25-44",1721.51415006109
+"194","Poisonings","Female","45-64",1722.74602310749
+"195","Poisonings","Female","65+",7.88735018877156
+"196","Poisonings","Male","00-14",0
+"197","Poisonings","Male","15-24",918.171222956255
+"198","Poisonings","Male","25-44",4963.09025367253
+"199","Poisonings","Male","45-64",5012.51774896036
+"200","Poisonings","Male","65+",141.038646868436

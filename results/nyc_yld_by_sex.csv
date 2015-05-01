@@ -1,12 +1,12 @@
 "","cause_name","sex","yld","yld_upper","yld_lower"
-"1","Alcohol use disorders","Female",94687.20184,129096.72622,63938.26516
-"2","Alcohol use disorders","Male",109295.729312,149014.022696,73802.786288
+"1","Alcohol use disorders","Female",63206.14762,87610.06562,42950.89568
+"2","Alcohol use disorders","Male",72957.716216,101126.718616,49577.444224
 "3","Amphetamine use","Female",1510.48347,2246.46975,919.98285
 "4","Amphetamine use","Male",2514.4543,3739.6275,1531.4665
 "5","Anxiety","Female",19353.15,30965.04,10966.785
 "6","Anxiety","Male",11398.98,18238.368,6459.422
-"7","Arthritis","Female",99544.844,139771.87,67158.679
-"8","Arthritis","Male",47958.372,67338.81,32355.477
+"7","Arthritis","Female",38863.398,54204.213,26249.839
+"8","Arthritis","Male",18723.474,26114.319,12646.557
 "9","Asthma","Female",12789.252,21315.42,7105.14
 "10","Asthma","Male",7268.832,12114.72,4038.24
 "11","Breast cancer","Female",24768.618,34625.517,16765.153
@@ -31,10 +31,10 @@
 "30","Ischemic stroke","Male",607.635,1070.595,318.285
 "31","Lung cancer","Female",3011.442,4209.873,2038.357
 "32","Lung cancer","Male",1925.994,2692.461,1303.649
-"33","Major depressive disorder","Female",244504.948,333007.073,166536.842
-"34","Major depressive disorder","Male",146547.662,201639.65,99306.914
-"35","Other arthritis","Female",147420.58,206994.65,99458.405
-"36","Other arthritis","Male",79497.292,111622.91,53633.447
+"33","Major depressive disorder","Female",85478.437,114431.62335,58620.9019
+"34","Major depressive disorder","Male",40351.91435,54451.53175,27532.79595
+"35","Other arthritis","Female",57554.61,80273.535,38874.605
+"36","Other arthritis","Male",31036.614,43287.909,20963.327
 "37","Sedative use","Female",0,0,0
 "38","Sedative use","Male",0,0,0
 "39","Stimulant use","Female",938.98,1396.5,571.9

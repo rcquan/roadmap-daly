@@ -1,22 +1,22 @@
 "","cause_name","sequlae","sex","age","source","small_sample","prevalence","dependence_rate","dw_estimate","dw_lower","dw_upper","yld","yld_upper","yld_lower"
-"1","Alcohol use disorders","Alcohol use disorders","Male","15-44","2013 CHS","no",1087219,0.154,0.388,0.262,0.529,64963.509688,88571.383054,43867.112212
-"2","Alcohol use disorders","Alcohol use disorders","Male","45-64","2013 CHS","no",546776,0.154,0.388,0.262,0.529,32670.959552,44543.653616,22061.318048
-"3","Alcohol use disorders","Alcohol use disorders","Male","65+","2013 CHS","no",195161,0.154,0.388,0.262,0.529,11661.260072,15898.986026,7874.356028
-"4","Alcohol use disorders","Alcohol use disorders","Female","15-44","2013 CHS","no",933795,0.154,0.388,0.262,0.529,55796.11884,76072.54347,37676.76066
-"5","Alcohol use disorders","Alcohol use disorders","Female","45-64","2013 CHS","no",465757,0.154,0.388,0.262,0.529,27829.912264,37943.359762,18792.363436
-"6","Alcohol use disorders","Alcohol use disorders","Female","65+","2013 CHS","no",185118,0.154,0.388,0.262,0.529,11061.170736,15080.822988,7469.141064
+"1","Alcohol use disorders","Alcohol use disorders","Male","15-44","2013 CHS","no",1087219,0.154,0.259,0.176,0.359,43364.817034,60107.989634,29467.983776
+"2","Alcohol use disorders","Alcohol use disorders","Male","45-64","2013 CHS","no",546776,0.154,0.259,0.176,0.359,21808.707536,30229.057936,14819.816704
+"3","Alcohol use disorders","Alcohol use disorders","Male","65+","2013 CHS","no",195161,0.154,0.259,0.176,0.359,7784.191646,10789.671046,5289.643744
+"4","Alcohol use disorders","Alcohol use disorders","Female","15-44","2013 CHS","no",933795,0.154,0.259,0.176,0.359,37245.34737,51625.79037,25309.57968
+"5","Alcohol use disorders","Alcohol use disorders","Female","45-64","2013 CHS","no",465757,0.154,0.259,0.176,0.359,18577.183702,25749.841502,12623.877728
+"6","Alcohol use disorders","Alcohol use disorders","Female","65+","2013 CHS","no",185118,0.154,0.259,0.176,0.359,7383.616548,10234.433748,5017.438272
 "7","Anxiety","Anxiety","Male","20-39 ","NYCHANES 2013","no",124164,1,0.03,0.017,0.048,3724.92,5959.872,2110.788
 "8","Anxiety","Anxiety","Male","40-59 ","NYCHANES 2013","no",170300,1,0.03,0.017,0.048,5109,8174.4,2895.1
 "9","Anxiety","Anxiety","Male","60+ ","NYCHANES 2013","no",85502,1,0.03,0.017,0.048,2565.06,4104.096,1453.534
 "10","Anxiety","Anxiety","Female","20-39 ","NYCHANES 2013","no",257569,1,0.03,0.017,0.048,7727.07,12363.312,4378.673
 "11","Anxiety","Anxiety","Female","40-59 ","NYCHANES 2013","no",256485,1,0.03,0.017,0.048,7694.55,12311.28,4360.245
 "12","Anxiety","Anxiety","Female","60+ ","NYCHANES 2013","no",131051,1,0.03,0.017,0.048,3931.53,6290.448,2227.867
-"13","Arthritis","Arthritis","Male","20-39 ","NYCHANES 2013","no",23116,1,0.292,0.197,0.41,6749.872,9477.56,4553.852
-"14","Arthritis","Arthritis","Male","40-59 ","NYCHANES 2013","no",38102,1,0.292,0.197,0.41,11125.784,15621.82,7506.094
-"15","Arthritis","Arthritis","Male","60+ ","NYCHANES 2013","no",103023,1,0.292,0.197,0.41,30082.716,42239.43,20295.531
-"16","Arthritis","Arthritis","Female","20-39 ","NYCHANES 2013","no",25321,1,0.292,0.197,0.41,7393.732,10381.61,4988.237
-"17","Arthritis","Arthritis","Female","40-59 ","NYCHANES 2013","no",101633,1,0.292,0.197,0.41,29676.836,41669.53,20021.701
-"18","Arthritis","Arthritis","Female","60+ ","NYCHANES 2013","no",213953,1,0.292,0.197,0.41,62474.276,87720.73,42148.741
+"13","Arthritis","Arthritis","Male","20-39 ","NYCHANES 2013","no",23116,1,0.114,0.077,0.159,2635.224,3675.444,1779.932
+"14","Arthritis","Arthritis","Male","40-59 ","NYCHANES 2013","no",38102,1,0.114,0.077,0.159,4343.628,6058.218,2933.854
+"15","Arthritis","Arthritis","Male","60+ ","NYCHANES 2013","no",103023,1,0.114,0.077,0.159,11744.622,16380.657,7932.771
+"16","Arthritis","Arthritis","Female","20-39 ","NYCHANES 2013","no",25321,1,0.114,0.077,0.159,2886.594,4026.039,1949.717
+"17","Arthritis","Arthritis","Female","40-59 ","NYCHANES 2013","no",101633,1,0.114,0.077,0.159,11586.162,16159.647,7825.741
+"18","Arthritis","Arthritis","Female","60+ ","NYCHANES 2013","no",213953,1,0.114,0.077,0.159,24390.642,34018.527,16474.381
 "19","Asthma","Asthma","Male","15-44","2013 CHS","no",166675,1,0.027,0.015,0.045,4500.225,7500.375,2500.125
 "20","Asthma","Asthma","Male","45-64","2013 CHS","no",74107,1,0.027,0.015,0.045,2000.889,3334.815,1111.605
 "21","Asthma","Asthma","Male","65+","2013 CHS","no",28434,1,0.027,0.015,0.045,767.718,1279.53,426.51
@@ -91,30 +91,30 @@
 "90","Amphetamine use","Methamphetamine use","Female","20-39 ","NYCHANES 2013","yes",11467,0.19,0.353,0.215,0.525,769.09169,1143.83325,468.42695
 "91","Amphetamine use","Methamphetamine use","Female","40-59 ","NYCHANES 2013","yes",6907,0.19,0.353,0.215,0.525,463.25249,688.97325,282.15095
 "92","Amphetamine use","Methamphetamine use","Female","60+ ","NYCHANES 2013","yes",4147,0.19,0.353,0.215,0.525,278.13929,413.66325,169.40495
-"93","Major depressive disorder","mild depression","Male","20-39 ","NYCHANES 2013","no",237061,1,0.159,0.107,0.223,37692.699,52864.603,25365.527
-"94","Major depressive disorder","mild depression","Male","40-59 ","NYCHANES 2013","no",127358,1,0.159,0.107,0.223,20249.922,28400.834,13627.306
-"95","Major depressive disorder","mild depression","Male","60+ ","NYCHANES 2013","no",95836,1,0.159,0.107,0.223,15237.924,21371.428,10254.452
-"96","Major depressive disorder","mild depression","Female","20-39 ","NYCHANES 2013","no",233394,1,0.159,0.107,0.223,37109.646,52046.862,24973.158
-"97","Major depressive disorder","mild depression","Female","40-59 ","NYCHANES 2013","no",238852,1,0.159,0.107,0.223,37977.468,53263.996,25557.164
-"98","Major depressive disorder","mild depression","Female","60+ ","NYCHANES 2013","no",88066,1,0.159,0.107,0.223,14002.494,19638.718,9423.062
-"99","Major depressive disorder","moderate depression","Male","20-39 ","NYCHANES 2013","no",88689,1,0.406,0.276,0.551,36007.734,48867.639,24478.164
-"100","Major depressive disorder","moderate depression","Male","40-59 ","NYCHANES 2013","no",42313,1,0.406,0.276,0.551,17179.078,23314.463,11678.388
-"101","Major depressive disorder","moderate depression","Male","60+ ","NYCHANES 2013","yes",27585,1,0.406,0.276,0.551,11199.51,15199.335,7613.46
-"102","Major depressive disorder","moderate depression","Female","20-39 ","NYCHANES 2013","no",76755,1,0.406,0.276,0.551,31162.53,42292.005,21184.38
-"103","Major depressive disorder","moderate depression","Female","40-59 ","NYCHANES 2013","no",87834,1,0.406,0.276,0.551,35660.604,48396.534,24242.184
-"104","Major depressive disorder","moderate depression","Female","60+ ","NYCHANES 2013","no",36339,1,0.406,0.276,0.551,14753.634,20022.789,10029.564
-"105","Major depressive disorder","moderately severe depression","Male","20-39 ","NYCHANES 2013","yes",7667,1,0.406,0.276,0.551,3112.802,4224.517,2116.092
-"106","Major depressive disorder","moderately severe depression","Male","40-59 ","NYCHANES 2013","yes",1913,1,0.406,0.276,0.551,776.678,1054.063,527.988
-"107","Major depressive disorder","moderately severe depression","Male","60+ ","NYCHANES 2013","yes",0,1,0.406,0.276,0.551,0,0,0
-"108","Major depressive disorder","moderately severe depression","Female","20-39 ","NYCHANES 2013","no",58179,1,0.406,0.276,0.551,23620.674,32056.629,16057.404
-"109","Major depressive disorder","moderately severe depression","Female","40-59 ","NYCHANES 2013","no",24732,1,0.406,0.276,0.551,10041.192,13627.332,6826.032
-"110","Major depressive disorder","moderately severe depression","Female","60+ ","NYCHANES 2013","no",35616,1,0.406,0.276,0.551,14460.096,19624.416,9830.016
-"111","Other arthritis","Other arthritis","Male","20-39 ","NYCHANES 2013","yes",20228,1,0.292,0.197,0.41,5906.576,8293.48,3984.916
-"112","Other arthritis","Other arthritis","Male","40-59 ","NYCHANES 2013","no",94824,1,0.292,0.197,0.41,27688.608,38877.84,18680.328
-"113","Other arthritis","Other arthritis","Male","60+ ","NYCHANES 2013","no",157199,1,0.292,0.197,0.41,45902.108,64451.59,30968.203
-"114","Other arthritis","Other arthritis","Female","20-39 ","NYCHANES 2013","no",47844,1,0.292,0.197,0.41,13970.448,19616.04,9425.268
-"115","Other arthritis","Other arthritis","Female","40-59 ","NYCHANES 2013","no",244580,1,0.292,0.197,0.41,71417.36,100277.8,48182.26
-"116","Other arthritis","Other arthritis","Female","60+ ","NYCHANES 2013","no",212441,1,0.292,0.197,0.41,62032.772,87100.81,41850.877
+"93","Major depressive disorder","mild depression","Male","20-39 ","NYCHANES 2013","no",237061,0,0.159,0.107,0.223,0,0,0
+"94","Major depressive disorder","mild depression","Male","40-59 ","NYCHANES 2013","no",127358,0,0.159,0.107,0.223,0,0,0
+"95","Major depressive disorder","mild depression","Male","60+ ","NYCHANES 2013","no",95836,0,0.159,0.107,0.223,0,0,0
+"96","Major depressive disorder","mild depression","Female","20-39 ","NYCHANES 2013","no",233394,0,0.159,0.107,0.223,0,0,0
+"97","Major depressive disorder","mild depression","Female","40-59 ","NYCHANES 2013","no",238852,0,0.159,0.107,0.223,0,0,0
+"98","Major depressive disorder","mild depression","Female","60+ ","NYCHANES 2013","no",88066,0,0.159,0.107,0.223,0,0,0
+"99","Major depressive disorder","moderate depression","Male","20-39 ","NYCHANES 2013","no",88689,0.55,0.406,0.276,0.551,19804.2537,26877.20145,13462.9902
+"100","Major depressive disorder","moderate depression","Male","40-59 ","NYCHANES 2013","no",42313,0.55,0.406,0.276,0.551,9448.4929,12822.95465,6423.1134
+"101","Major depressive disorder","moderate depression","Male","60+ ","NYCHANES 2013","yes",27585,0.55,0.406,0.276,0.551,6159.7305,8359.63425,4187.403
+"102","Major depressive disorder","moderate depression","Female","20-39 ","NYCHANES 2013","no",76755,0.55,0.406,0.276,0.551,17139.3915,23260.60275,11651.409
+"103","Major depressive disorder","moderate depression","Female","40-59 ","NYCHANES 2013","no",87834,0.55,0.406,0.276,0.551,19613.3322,26618.0937,13333.2012
+"104","Major depressive disorder","moderate depression","Female","60+ ","NYCHANES 2013","no",36339,0.55,0.406,0.276,0.551,8114.4987,11012.53395,5516.2602
+"105","Major depressive disorder","moderately severe depression","Male","20-39 ","NYCHANES 2013","yes",7667,0.55,0.406,0.276,0.551,1712.0411,2323.48435,1163.8506
+"106","Major depressive disorder","moderately severe depression","Male","40-59 ","NYCHANES 2013","yes",1913,0.55,0.406,0.276,0.551,427.1729,579.73465,290.3934
+"107","Major depressive disorder","moderately severe depression","Male","60+ ","NYCHANES 2013","yes",0,0.55,0.406,0.276,0.551,0,0,0
+"108","Major depressive disorder","moderately severe depression","Female","20-39 ","NYCHANES 2013","no",58179,0.55,0.406,0.276,0.551,12991.3707,17631.14595,8831.5722
+"109","Major depressive disorder","moderately severe depression","Female","40-59 ","NYCHANES 2013","no",24732,0.55,0.406,0.276,0.551,5522.6556,7495.0326,3754.3176
+"110","Major depressive disorder","moderately severe depression","Female","60+ ","NYCHANES 2013","no",35616,0.55,0.406,0.276,0.551,7953.0528,10793.4288,5406.5088
+"111","Other arthritis","Other arthritis","Male","20-39 ","NYCHANES 2013","yes",20228,1,0.114,0.077,0.159,2305.992,3216.252,1557.556
+"112","Other arthritis","Other arthritis","Male","40-59 ","NYCHANES 2013","no",94824,1,0.114,0.077,0.159,10809.936,15077.016,7301.448
+"113","Other arthritis","Other arthritis","Male","60+ ","NYCHANES 2013","no",157199,1,0.114,0.077,0.159,17920.686,24994.641,12104.323
+"114","Other arthritis","Other arthritis","Female","20-39 ","NYCHANES 2013","no",47844,1,0.114,0.077,0.159,5454.216,7607.196,3683.988
+"115","Other arthritis","Other arthritis","Female","40-59 ","NYCHANES 2013","no",244580,1,0.114,0.077,0.159,27882.12,38888.22,18832.66
+"116","Other arthritis","Other arthritis","Female","60+ ","NYCHANES 2013","no",212441,1,0.114,0.077,0.159,24218.274,33778.119,16357.957
 "117","Sedative use","sedative use","Male","15-24","2002-08 NSDUH","no",5000,NA,NA,NA,NA,NA,NA,NA
 "118","Sedative use","sedative use","Male","25-44","2002-08 NSDUH","no",16000,NA,NA,NA,NA,NA,NA,NA
 "119","Sedative use","sedative use","Male","45-64","2002-08 NSDUH","no",9000,NA,NA,NA,NA,NA,NA,NA
@@ -123,12 +123,12 @@
 "122","Sedative use","sedative use","Female","25-44","2002-08 NSDUH","no",9000,NA,NA,NA,NA,NA,NA,NA
 "123","Sedative use","sedative use","Female","45-64","2002-08 NSDUH","no",7000,NA,NA,NA,NA,NA,NA,NA
 "124","Sedative use","sedative use","Female","65+","2002-08 NSDUH","no",0,NA,NA,NA,NA,NA,NA,NA
-"125","Major depressive disorder","severe depression","Male","20-39 ","NYCHANES 2013","yes",7773,1,0.655,0.469,0.816,5091.315,6342.768,3645.537
-"126","Major depressive disorder","severe depression","Male","40-59 ","NYCHANES 2013","yes",0,1,0.655,0.469,0.816,0,0,0
-"127","Major depressive disorder","severe depression","Male","60+ ","NYCHANES 2013","yes",0,1,0.655,0.469,0.816,0,0,0
-"128","Major depressive disorder","severe depression","Female","20-39 ","NYCHANES 2013","yes",9134,1,0.655,0.469,0.816,5982.77,7453.344,4283.846
-"129","Major depressive disorder","severe depression","Female","40-59 ","NYCHANES 2013","no",30128,1,0.655,0.469,0.816,19733.84,24584.448,14130.032
-"130","Major depressive disorder","severe depression","Female","60+ ","NYCHANES 2013","yes",0,1,0.655,0.469,0.816,0,0,0
+"125","Major depressive disorder","severe depression","Male","20-39 ","NYCHANES 2013","yes",7773,0.55,0.655,0.469,0.816,2800.22325,3488.5224,2005.04535
+"126","Major depressive disorder","severe depression","Male","40-59 ","NYCHANES 2013","yes",0,0.55,0.655,0.469,0.816,0,0,0
+"127","Major depressive disorder","severe depression","Male","60+ ","NYCHANES 2013","yes",0,0.55,0.655,0.469,0.816,0,0,0
+"128","Major depressive disorder","severe depression","Female","20-39 ","NYCHANES 2013","yes",9134,0.55,0.655,0.469,0.816,3290.5235,4099.3392,2356.1153
+"129","Major depressive disorder","severe depression","Female","40-59 ","NYCHANES 2013","no",30128,0.55,0.655,0.469,0.816,10853.612,13521.4464,7771.5176
+"130","Major depressive disorder","severe depression","Female","60+ ","NYCHANES 2013","yes",0,0.55,0.655,0.469,0.816,0,0,0
 "131","Stimulant use","Stimulant use","Male","15-24","2002-08 NSDUH","no",12000,0.19,0.353,0.215,0.525,804.84,1197,490.2
 "132","Stimulant use","Stimulant use","Male","25-44","2002-08 NSDUH","no",12000,0.19,0.353,0.215,0.525,804.84,1197,490.2
 "133","Stimulant use","Stimulant use","Male","45-64","2002-08 NSDUH","no",0,0.19,0.353,0.215,0.525,0,0,0
