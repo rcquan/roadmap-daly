@@ -1,0 +1,15 @@
+base
+methods
+datasets
+utils
+grDevices
+graphics
+stats
+knitr
+plyr
+dplyr
+reshape2
+magrittr
+ggplot2
+grid
+scales

@@ -415,7 +415,7 @@ This section contains an implementation of the Michaud approach described in the
 ```{r}
 ## create a search index
 disease <- unique(c(nycYLL$cause_name, nycYLD$cause_name))
-drug <- c("Amphetamine", "Heroin", "Cocaine", "Cannabis")
+drug <- "Cannabis"
 mental <- c("Major depressive disorder", "Anxiety", "Bipolar")
 index <- unique(c(disease, drug, mental))
 ```

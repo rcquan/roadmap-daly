@@ -1,7 +1,7 @@
 ---
 title: 'DOHMH Roadmap: DALY Estimates'
 author: "Ryan Quan (rcq2102@columbia.edu)"
-date: "April 17, 2015"
+date: "April 30, 2015"
 output:
   html_document:
     theme: cosmo
@@ -456,7 +456,7 @@ risk <- readData(url) %>%
 ```
 
 ```{r}
-mortality <- read.csv("data/2005_nyc_mortality.csv", stringsAsFactors=FALSE)
+mortality <- read.csv("data/2013_nyc_mortality.csv", stringsAsFactors=FALSE)
 population <- read.csv("data/2013_nyc_population.csv", stringsAsFactors=FALSE)
 prevalence <- read.csv("data/2013_nyc_prevalence.csv", stringsAsFactors=FALSE)
 ```
@@ -503,7 +503,7 @@ This section contains an implementation of the Michaud approach described in the
 ```{r}
 ## create a search index
 disease <- unique(c(nycYLL$cause_name, nycYLD$cause_name))
-drug <- c("Amphetamine", "Heroin", "Cocaine", "Cannabis")
+drug <- "Cannabis"
 mental <- c("Major depressive disorder", "Anxiety", "Bipolar")
 index <- unique(c(disease, drug, mental))
 ```
@@ -665,7 +665,7 @@ nycYLL %<>%
 write.csv(nycYLL, "results/sensitivity_analysis/nyc_yll_by_age_sex.csv")
 
 disease <- unique(c(nycYLL$cause_name, nycYLD$cause_name))
-drug <- c("Amphetamine", "Heroin", "Cocaine", "Cannabis")
+drug <- "Cannabis"
 mental <- c("Major depressive disorder", "Anxiety", "Bipolar")
 index <- unique(c(disease, drug, mental))
 
