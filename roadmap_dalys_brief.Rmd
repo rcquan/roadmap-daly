@@ -1,19 +1,23 @@
 ---
 title: 'DOHMH Roadmap: DALY Estimates'
 author: "Ryan Quan (rcq2102@columbia.edu)"
-date: "April 30, 2015"
+date: "May 20, 2015"
 output:
+  word_document: default
   pdf_document:
     toc: yes
   html_document:
     theme: cosmo
     toc: yes
-  word_document: default
 ---
 
 ```{r setup, cache=FALSE, include=FALSE}
 library(knitr)
-opts_chunk$set(echo=FALSE)
+opts_chunk$set(echo=FALSE, cache=TRUE)
+```
+
+```{r, message=FALSE, warning=FALSE}
+source("R/plot_daly.R")
 ```
 
 # Background
@@ -132,40 +136,17 @@ Prevalence estimates for 2-week depression was obtained for 2013 NYCHANES. While
 
 In order to validate the Michaud approach, we will use 2005 NYC mortality estimates from the previous DOHMH to test the stability of our DALY rankings. However, since age-weighting is no longer used by the 2010 GBD due to ethical concerns, we suspect the magnitude of 2013 NYC DALYs to be slightly higher than that of the 2005 NYC DALYs.
 
-
-
 ## DALY Estimation
 
 ### Michaud YLD Approach
 
 This section contains an implementation of the Michaud approach described in the above methods section. We first create a search index containing all the disease conditions of interest. 
 
-```{r}
-## create a search index
-disease <- unique(c(nycYLL$cause_name, nycYLD$cause_name))
-drug <- "Cannabis"
-mental <- c("Major depressive disorder", "Anxiety", "Bipolar")
-index <- unique(c(disease, drug, mental))
-```
-
 This search index is then fed through the `calculateDALY` workhorse function to estimate DALYs for each disease condition. The result is a `data.frame` object containing the following columns: `cause_name`, `sex`, `yll`, `yld`, `yld_upper`, `yld_lower`, `daly`, `daly_upper`, `daly_lower`.
-
-```{r}
-michaudDALY <- lapply(index, calculateDALY, population, nycYLL=nycYLL, nationalRates=nationalRates)
-michaudDALY <- do.call(rbind.fill, michaudDALY)
-write.csv(michaudDALY, "results/nyc_daly_michaud.csv")
-```
 
 ### Prevalence-Based YLD Approach
 
 Similar to the section, we implement the prevalence-based YLD approach here using the same search index.
-
-```{r}
-prevalenceDALY <- lapply(index, calculateDALY, population, nycYLL=nycYLL, nycYLD=nycYLD)
-prevalenceDALY <- do.call(rbind.fill, prevalenceDALY)
-prevalenceDALY$cause_name <- sapply(prevalenceDALY$cause_name, renameDiseaseLabel, USE.NAMES=FALSE)
-write.csv(prevalenceDALY, "results/nyc_daly_prevalence.csv")
-```
 
 # Results
 
@@ -175,50 +156,40 @@ Raw results for this approach can be found under the `results` directory under t
 
 ### 2013 NYC DALY Estimates, Total
 
-```{r, warning=FALSE, message=FALSE}
+```{r 2013_michaud_total_table, warning=FALSE, message=FALSE}
+michaudDALY <- read.csv("results/nyc_daly_michaud.csv", stringsAsFactors=FALSE)
 michaudTotal <- segmentDALY(michaudDALY, strata="total")
 knitr::kable(michaudTotal, digits=0)
 ```
 
-```{r, warning=FALSE, message=FALSE}
+```{r 2013_michaud_total_plot, warning=FALSE, message=FALSE}
 plotDALY(michaudTotal, "Selected Causes of Dalys,\n  NYC 2013")
 plotDALY(michaudTotal, "Selected Causes of Dalys,\n  NYC 2013", stackedBar=TRUE)
 ```
 
-* `Ischemic heart disease ` is the Selected cause of disease in 2013, but has a wide range of uncertainty
-* Disaggregated drug use disorders ranked relatively low, particuarly for non-alcohol-related substances
-* `Major depressive disorder` just missed the top 10 cutoff
-
 ### 2013 NYC DALY Estimates, Male
 
-```{r}
+```{r 2013_michaud_male_table}
 michaudMale <- segmentDALY(michaudDALY, strata="male")
 knitr::kable(michaudMale, digits=0)
 ```
 
-```{r, warning=FALSE, message=FALSE}
+```{r 2013_michaud_male_plot, warning=FALSE, message=FALSE}
 plotDALY(michaudMale, "Selected Causes of DALYs in Males,\n NYC 2013")
 plotDALY(michaudMale, "Selected Causes of DALYs in Males,\n NYC 2013", stackedBar=TRUE)
 ```
 
-* `Alcohol use disorders` rises to the #4 slot
-* `Homicide` and accidental deaths such as `poisonings` and `motor vehicle accidents` rise in rankings
-
 ### 2013 NYC DALY Estimates, Female
 
-```{r}
+```{r 2013_michaud_female_table}
 michaudFemale <- segmentDALY(michaudDALY, strata="female")
 knitr::kable(michaudFemale, digits=0)
 ```
 
-```{r, warning=FALSE, message=FALSE}
+```{r 2013_michaud_female_plot, warning=FALSE, message=FALSE}
 plotDALY(michaudFemale, "Selected Causes of DALYs in Females,\n NYC 2013")
 plotDALY(michaudFemale, "Selected Causes of DALYs in Females,\n NYC 2013", stackedBar=TRUE)
 ```
-
-* `Breast cancer` makes the top 3
-* `Alzheimer's disease and other dementias` ranks very high
-* Drug-related disorders get pushed to the bottom
 
 ## Prevalence-Based YLD Approach
 
@@ -226,41 +197,37 @@ Raw results for this approach can be found under the `results` directory under t
 
 ### 2013 NYC DALY Estimates, Total
 
-```{r}
+```{r 2013_prevalence_total_table}
+prevalenceDALY <- read.csv("results/nyc_daly_prevalence.csv", stringsAsFactors=FALSE)
 prevalenceTotal <- segmentDALY(prevalenceDALY, strata="total")
 knitr::kable(prevalenceTotal, digits=0)
 ```
 
-* `Major depressive disorder` ranks number one, beating out the number two slot by almost twice the number of DALYs However, DALY estimates appear to be unstable, taking a wide range of possible values.
-* Not enough information to calculate DALY estimates for `sedative use`, `stimulant use`, `tranquilizer use`.
-
-```{r, warning=FALSE, message=FALSE}
+```{r 2013_prevalnece_total_plot, warning=FALSE, message=FALSE}
 plotDALY(prevalenceTotal, "Selected Causes of Dalys,\n  NYC 2013")
 plotDALY(prevalenceTotal, "Selected Causes of Dalys,\n  NYC 2013", stackedBar=TRUE)
 ```
 
 ### 2013 NYC DALY Estimates, Male
 
-```{r}
+```{r 2013_prevalence_male_table, warning=FALSE, message=FALSE}
 prevalenceMale <- segmentDALY(prevalenceDALY, strata="male")
 knitr::kable(prevalenceMale, digits=0)
 ```
 
-```{r, warning=FALSE, message=FALSE}
+```{r 2013_prevalene_male_plot, warning=FALSE, message=FALSE}
 plotDALY(prevalenceMale, "Selected Causes of DALYs in Males,\n NYC 2013")
 plotDALY(prevalenceMale, "Selected Causes of DALYs in Males,\n NYC 2013", stackedBar=TRUE)
 ```
 
-* `Alcohol use disorders` rises in proportion to `major depressive disorder`
-
 ### 2013 NYC DALY Estimates, Female
 
-```{r, warning=FALSE, message=FALSE}
+```{r 2013_prevalence_female_table, warning=FALSE, message=FALSE}
 prevalenceFemale <- segmentDALY(prevalenceDALY, strata="female")
 knitr::kable(prevalenceFemale, digits=0)
 ```
 
-```{r, warning=FALSE, message=FALSE}
+```{r 2013_prevalence_female_plot, warning=FALSE, message=FALSE}
 plotDALY(prevalenceFemale, "Selected Causes of DALYs in Females,\n NYC 2013")
 plotDALY(prevalenceFemale, "Selected Causes of DALYs in Females,\n NYC 2013", stackedBar=TRUE)
 ```
@@ -269,83 +236,62 @@ plotDALY(prevalenceFemale, "Selected Causes of DALYs in Females,\n NYC 2013", st
 
 ### Total
 
-```{r, warning=FALSE, message=FALSE, fig.height=10}
+```{r 2013_total_comparison, warning=FALSE, message=FALSE, fig.height=10}
 multiplot(plotDALY(michaudTotal, "Michaud YLDs"), plotDALY(prevalenceTotal, "Prevalence-Based YLDs"))
 ```
 
 ### Male
 
-```{r, warning=FALSE, message=FALSE, fig.height=10}
+```{r 2013_male_comparison, warning=FALSE, message=FALSE, fig.height=10}
 multiplot(plotDALY(michaudMale, "Michaud YLDs"), plotDALY(prevalenceMale, "Prevalence-Based YLDs"))
 ```
 
 ### Female
 
-```{r, warning=FALSE, message=FALSE, fig.height=10}
+```{r 2013_female_comparison, warning=FALSE, message=FALSE, fig.height=10}
 multiplot(plotDALY(michaudFemale, "Michaud YLDs"), plotDALY(prevalenceFemale, "Prevalence-Based YLDs"))
 ```
 
 ## Disease Conditions with Small Sample Sizes
 
-```{r, warning=FALSE, message=FALSE, fig.height=10}
-knitr::kable(prevalence[prevalence$small_sample == "yes", c("cause_name", "sequlae", "sex", "age")])
+```{r small_sample_sizes, warning=FALSE, message=FALSE, fig.height=10}
+prevalence <- read.csv("data/2013_nyc_prevalence.csv", stringsAsFactors=FALSE)
+kable(prevalence[prevalence$small_sample == "yes", c("cause_name", "sequlae", "sex", "age")])
 ```
 
 # Sensitivity Analysis
 
-```{r}
-mortality <- read.csv("data/2005_nyc_mortality.csv", stringsAsFactors=FALSE)
-
-
-nycYLL <- calculateYLL(mortality)
-write.csv(nycYLL, "results/sensitivity_analysis/nyc_yll_by_age_sex_race.csv")
-
-nycYLL %<>%
-    group_by(cause_name, sex, ageGroup) %>%
-    summarize(yll = sum(yll))
-write.csv(nycYLL, "results/sensitivity_analysis/nyc_yll_by_age_sex.csv")
-
-disease <- unique(c(nycYLL$cause_name, nycYLD$cause_name))
-drug <- "Cannabis"
-mental <- c("Major depressive disorder", "Anxiety", "Bipolar")
-index <- unique(c(disease, drug, mental))
-
-michaudDALY <- lapply(index, calculateDALY, population, nycYLL=nycYLL, nationalRates=nationalRates)
-michaudDALY <- do.call(rbind.fill, michaudDALY)
-write.csv(michaudDALY, "results/sensitivity_analysis/nyc_daly_michaud.csv")
-```
-### 2005 NYC DALY Estimates, Total
-
-```{r, warning=FALSE, message=FALSE}
+```{r 2005_michaud_total_table, warning=FALSE, message=FALSE}
+michaudDALY <- read.csv("results/sensitivity_analysis/nyc_daly_michaud.csv", stringsAsFactors=FALSE)
 michaudTotal <- segmentDALY(michaudDALY, strata="total")
 knitr::kable(michaudTotal, digits=0)
 ```
 
-```{r daly_total_2005, warning=FALSE, message=FALSE}
+```{r 2005_michaud_total_plot, warning=FALSE, message=FALSE}
 plotDALY(michaudTotal, "Selected Causes of Dalys,\n  NYC 2005")
 plotDALY(michaudTotal, "Selected Causes of Dalys,\n  NYC 2005", stackedBar=TRUE)
 ```
 
 ### 2005 NYC DALY Estimates, Male
 
-```{r}
+```{r 2005_michaud_male_table, warning=FALSE, message=FALSE}
 michaudMale <- segmentDALY(michaudDALY, strata="male")
 knitr::kable(michaudMale, digits=0)
 ```
 
-```{r daly_males_2005, warning=FALSE, message=FALSE}
+```{r 2005_michaud_male_plot, warning=FALSE, message=FALSE}
 plotDALY(michaudMale, "Selected Causes of DALYs in Males,\n NYC 2005")
 plotDALY(michaudMale, "Selected Causes of DALYs in Males,\n NYC 2005", stackedBar=TRUE)
 ```
 
 ### 2005 NYC DALY Estimates, Female
 
-```{r}
+```{r 2005_michaud_female_table, warning=FALSE, message=FALSE}
 michaudFemale <- segmentDALY(michaudDALY, strata="female")
 knitr::kable(michaudFemale, digits=0)
 ```
 
-```{r daly_females_2005, warning=FALSE, message=FALSE}
+```{r 2005_michaud_female_plot, warning=FALSE, message=FALSE}
 plotDALY(michaudFemale, "Selected Causes of DALYs in Females,\n NYC 2005")
 plotDALY(michaudFemale, "Selected Causes of DALYs in Females,\n NYC 2005", stackedBar=TRUE)
 ```
