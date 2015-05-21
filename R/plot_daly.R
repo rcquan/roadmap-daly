@@ -11,6 +11,8 @@
 #############################
 
 library("ggplot2")
+library("dplyr")
+library("reshape2")
 library("grid")
 library("scales")
 library('stringr')
@@ -24,9 +26,11 @@ segmentDALY <- function(dalyObj, strata) {
             arrange(desc(daly)) %>% 
             as.data.frame()
     } else if (strata == "male") {
-        dalyObj %>% filter(sex == "Male") %>% arrange(desc(daly))
+        dalyObj %>% filter(sex == "Male") %>% arrange(desc(daly)) %>%
+            select(-sex)
     } else if (strata == "female") {
-        dalyObj %>% filter(sex == "Female") %>% arrange(desc(daly))
+        dalyObj %>% filter(sex == "Female") %>% arrange(desc(daly)) %>%
+            select(-sex)
     }
 }
 ## -------------------------------------
