@@ -138,6 +138,7 @@ library("dplyr")
 library("reshape2")
 library("magrittr")
 library("ggplot2")
+library("stringr")
 library("grid")
 library("scales")
 dir.create("results")
@@ -299,7 +300,8 @@ calculatePrevalenceDALY <- function(diseaseName, nycYLL, nycYLD) {
             filter(yld != 0) %>%
             mutate(daly = ifelse(is.na(yll), 0 + yld, yll + yld),
                    daly_upper = ifelse(is.na(yll), 0 + yld_upper, yll + yld_upper),
-                   daly_lower = ifelse(is.na(yll), 0 + yld_lower, yll + yld_lower))
+                   daly_lower = ifelse(is.na(yll), 0 + yld_lower, yll + yld_lower)) %>%
+            select(cause_name, sex, daly, daly_lower, daly_upper, yll, yld, yld_lower, yld_upper)
         return(dalys)
 }
 
@@ -348,7 +350,7 @@ calculateDALY <- function(diseaseName, population, nycYLL, nycYLD=NULL, national
             mutate(daly = yll + yld,
                    daly_upper = yll + yld_upper,
                    daly_lower = yll + yld_lower) %>%
-            select(cause_name, sex, yll, yld, yld_upper, yld_lower, daly, daly_upper, daly_lower)
+            select(cause_name, sex, daly, daly_lower, daly_upper, yll, yld, yld_lower, yld_upper)
         return(dalys)
     }
 }
@@ -447,6 +449,20 @@ plotDALY <- function(data, title, stackedBar=FALSE) {
 }
 ```
 
+```{r}
+renameDiseaseLabel <- function(disease) {
+    if (str_detect(disease, " use disorders") & !str_detect(disease, "Alcohol")) {
+        return(str_replace(disease, "use disorders", "use"))
+    } else if (disease == "Osteoarthritis") {
+        return("Arthritis")
+    } else if (disease == "Other musculoskeletal disorders") {
+        return("Other arthritis")
+    } else {
+        return(disease)
+    }
+}
+```
+
 ```{r, cache=TRUE}
 url <- "http://ghdx.healthdata.org/sites/default/files/record-attached-files/IHME_USA_GBD_2010_RESULTS_1990_2010_BY_CAUSE_Y2013M08D29.CSV"
 cause <- readData(url) %>%
@@ -526,6 +542,7 @@ Similar to the section, we implement the prevalence-based YLD approach here usin
 ```{r}
 prevalenceDALY <- lapply(index, calculateDALY, population, nycYLL=nycYLL, nycYLD=nycYLD)
 prevalenceDALY <- do.call(rbind.fill, prevalenceDALY)
+prevalenceDALY$cause_name <- sapply(prevalenceDALY$cause_name, renameDiseaseLabel, USE.NAMES=FALSE)
 write.csv(prevalenceDALY, "results/nyc_daly_prevalence.csv")
 ```
 
@@ -655,63 +672,62 @@ prevalence[prevalence$small_sample == "yes", c("cause_name", "sequlae", "sex", "
 
 # Sensitivity Analysis
 
-# ```{r}
-# mortality <- read.csv("data/2005_nyc_mortality.csv", stringsAsFactors=FALSE)
-# 
-# 
-# nycYLL <- calculateYLL(mortality)
-# write.csv(nycYLL, "results/sensitivity_analysis/nyc_yll_by_age_sex_race.csv")
-# 
-# nycYLL %<>%
-#     group_by(cause_name, sex, ageGroup) %>%
-#     summarize(yll = sum(yll))
-# write.csv(nycYLL, "results/sensitivity_analysis/nyc_yll_by_age_sex.csv")
-# 
-# disease <- unique(c(nycYLL$cause_name, nycYLD$cause_name))
-# drug <- "Cannabis"
-# mental <- c("Major depressive disorder", "Anxiety", "Bipolar")
-# index <- unique(c(disease, drug, mental))
-# 
-# michaudDALY <- lapply(index, calculateDALY, population, nycYLL=nycYLL, nationalRates=nationalRates)
-# michaudDALY <- do.call(rbind.fill, michaudDALY)
-# write.csv(michaudDALY, "results/sensitivity_analysis/nyc_daly_michaud.csv")
-# ```
-# ### 2005 NYC DALY Estimates, Total
-# 
-# ```{r, warning=FALSE, message=FALSE}
-# michaudTotal <- segmentDALY(michaudDALY, strata="total")
-# knitr::kable(michaudTotal, digits=0)
-# ```
-# 
-# ```{r daly_total_2005, warning=FALSE, message=FALSE}
-# plotDALY(michaudTotal, "Selected Causes of Dalys,\n  NYC 2005")
-# plotDALY(michaudTotal, "Selected Causes of Dalys,\n  NYC 2005", stackedBar=TRUE)
-# ```
-# 
-# ### 2005 NYC DALY Estimates, Male
-# 
-# ```{r}
-# michaudMale <- segmentDALY(michaudDALY, strata="male")
-# knitr::kable(michaudMale, digits=0)
-# ```
-# 
-# ```{r daly_males_2005, warning=FALSE, message=FALSE}
-# plotDALY(michaudMale, "Selected Causes of DALYs in Males,\n NYC 2005")
-# plotDALY(michaudMale, "Selected Causes of DALYs in Males,\n NYC 2005", stackedBar=TRUE)
-# ```
-# 
-# ### 2005 NYC DALY Estimates, Female
-# 
-# ```{r}
-# michaudFemale <- segmentDALY(michaudDALY, strata="female")
-# knitr::kable(michaudFemale, digits=0)
-# ```
-# 
-# ```{r daly_females_2005, warning=FALSE, message=FALSE}
-# plotDALY(michaudFemale, "Selected Causes of DALYs in Females,\n NYC 2005")
-# plotDALY(michaudFemale, "Selected Causes of DALYs in Females,\n NYC 2005", stackedBar=TRUE)
-# ```
+```{r}
+mortality <- read.csv("data/2005_nyc_mortality.csv", stringsAsFactors=FALSE)
 
+
+nycYLL <- calculateYLL(mortality)
+write.csv(nycYLL, "results/sensitivity_analysis/nyc_yll_by_age_sex_race.csv")
+
+nycYLL %<>%
+    group_by(cause_name, sex, ageGroup) %>%
+    summarize(yll = sum(yll))
+write.csv(nycYLL, "results/sensitivity_analysis/nyc_yll_by_age_sex.csv")
+
+disease <- unique(c(nycYLL$cause_name, nycYLD$cause_name))
+drug <- "Cannabis"
+mental <- c("Major depressive disorder", "Anxiety", "Bipolar")
+index <- unique(c(disease, drug, mental))
+
+michaudDALY <- lapply(index, calculateDALY, population, nycYLL=nycYLL, nationalRates=nationalRates)
+michaudDALY <- do.call(rbind.fill, michaudDALY)
+write.csv(michaudDALY, "results/sensitivity_analysis/nyc_daly_michaud.csv")
+```
+### 2005 NYC DALY Estimates, Total
+
+```{r, warning=FALSE, message=FALSE}
+michaudTotal <- segmentDALY(michaudDALY, strata="total")
+knitr::kable(michaudTotal, digits=0)
+```
+
+```{r daly_total_2005, warning=FALSE, message=FALSE}
+plotDALY(michaudTotal, "Selected Causes of Dalys,\n  NYC 2005")
+plotDALY(michaudTotal, "Selected Causes of Dalys,\n  NYC 2005", stackedBar=TRUE)
+```
+
+### 2005 NYC DALY Estimates, Male
+
+```{r}
+michaudMale <- segmentDALY(michaudDALY, strata="male")
+knitr::kable(michaudMale, digits=0)
+```
+
+```{r daly_males_2005, warning=FALSE, message=FALSE}
+plotDALY(michaudMale, "Selected Causes of DALYs in Males,\n NYC 2005")
+plotDALY(michaudMale, "Selected Causes of DALYs in Males,\n NYC 2005", stackedBar=TRUE)
+```
+
+### 2005 NYC DALY Estimates, Female
+
+```{r}
+michaudFemale <- segmentDALY(michaudDALY, strata="female")
+knitr::kable(michaudFemale, digits=0)
+```
+
+```{r daly_females_2005, warning=FALSE, message=FALSE}
+plotDALY(michaudFemale, "Selected Causes of DALYs in Females,\n NYC 2005")
+plotDALY(michaudFemale, "Selected Causes of DALYs in Females,\n NYC 2005", stackedBar=TRUE)
+```
 
 # Discussion
 
