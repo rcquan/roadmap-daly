@@ -1,791 +1,791 @@
-"","cause_name","race","sex","ageGroup","mean_age","sle","mortality_5year","mortality","le","yll"
-"1","Poisonings","White","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
-"2","Poisonings","White","Male","15-24",20,80,126,25.2,60,701.148933893867
-"3","Poisonings","White","Male","25-44",35,80,773,154.6,45,3817.38185680484
-"4","Poisonings","White","Male","45-64",55,80,685,137,25,2409.52607581603
-"5","Poisonings","White","Male","65+",72.5,80,25,5,7.5,33.5806302067705
-"6","Poisonings","White","Female","00-14",7.5,82.5,1,0.2,75,5.96400516958757
-"7","Poisonings","White","Female","15-24",20,82.5,37,7.4,62.5,208.839108178251
-"8","Poisonings","White","Female","25-44",35,82.5,220,44,47.5,1113.92092062777
-"9","Poisonings","White","Female","45-64",55,82.5,282,56.4,27.5,1056.1182141659
-"10","Poisonings","White","Female","65+",73.75,82.5,16,3.2,8.75,24.6265211340191
-"11","Poisonings","Black","Male","00-14",7.5,80,2,0.4,72.5,11.8185579510565
-"12","Poisonings","Black","Male","15-24",20,80,10,2,60,55.6467407852276
-"13","Poisonings","Black","Male","25-44",35,80,111,22.2,45,548.16220712204
-"14","Poisonings","Black","Male","45-64",55,80,319,63.8,25,1122.10046450411
-"15","Poisonings","Black","Male","65+",72.5,80,26,5.2,7.5,34.9238554150413
-"16","Poisonings","Black","Female","00-14",7.5,82.5,0,0,75,0
-"17","Poisonings","Black","Female","15-24",20,82.5,7,1.4,62.5,39.5101015472367
-"18","Poisonings","Black","Female","25-44",35,82.5,73,14.6,47.5,369.61921457194
-"19","Poisonings","Black","Female","45-64",55,82.5,172,34.4,27.5,644.157208640192
-"20","Poisonings","Black","Female","65+",73.75,82.5,12,2.4,8.75,18.4698908505144
-"21","Poisonings","Asian","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
-"22","Poisonings","Asian","Male","15-24",20,80,3,0.6,60,16.6940222355683
-"23","Poisonings","Asian","Male","25-44",35,80,16,3.2,45,79.0143721977716
-"24","Poisonings","Asian","Male","45-64",55,80,8,1.6,25,28.1404505204792
-"25","Poisonings","Asian","Male","65+",72.5,80,2,0.4,7.5,2.68645041654164
-"26","Poisonings","Asian","Female","00-14",7.5,82.5,0,0,75,0
-"27","Poisonings","Asian","Female","15-24",20,82.5,0,0,62.5,0
-"28","Poisonings","Asian","Female","25-44",35,82.5,3,0.6,47.5,15.1898307358332
-"29","Poisonings","Asian","Female","45-64",55,82.5,2,0.4,27.5,7.49020010046734
-"30","Poisonings","Asian","Female","65+",73.75,82.5,1,0.2,8.75,1.5391575708762
-"31","Poisonings","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"32","Poisonings","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"33","Poisonings","American Indian/Pacific Islander","Male","25-44",35,80,1,0.2,45,4.93839826236072
-"34","Poisonings","American Indian/Pacific Islander","Male","45-64",55,80,1,0.2,25,3.5175563150599
-"35","Poisonings","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
-"36","Poisonings","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"37","Poisonings","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"38","Poisonings","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"39","Poisonings","American Indian/Pacific Islander","Female","45-64",55,82.5,1,0.2,27.5,3.74510005023367
-"40","Poisonings","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
-"41","Alcohol use disorders","White","Male","00-14",7.5,80,0,0,72.5,0
-"42","Alcohol use disorders","White","Male","15-24",20,80,10,2,60,55.6467407852276
-"43","Alcohol use disorders","White","Male","25-44",35,80,175,35,45,864.219695913127
-"44","Alcohol use disorders","White","Male","45-64",55,80,417,83.4,25,1466.82098337998
-"45","Alcohol use disorders","White","Male","65+",72.5,80,100,20,7.5,134.322520827082
-"46","Alcohol use disorders","White","Female","00-14",7.5,82.5,0,0,75,0
-"47","Alcohol use disorders","White","Female","15-24",20,82.5,1,0.2,62.5,5.64430022103381
-"48","Alcohol use disorders","White","Female","25-44",35,82.5,34,6.8,47.5,172.151415006109
-"49","Alcohol use disorders","White","Female","45-64",55,82.5,110,22,27.5,411.961005525704
-"50","Alcohol use disorders","White","Female","65+",73.75,82.5,26,5.2,8.75,40.0180968427811
-"51","Alcohol use disorders","Black","Male","00-14",7.5,80,0,0,72.5,0
-"52","Alcohol use disorders","Black","Male","15-24",20,80,0,0,60,0
-"53","Alcohol use disorders","Black","Male","25-44",35,80,33,6.6,45,162.967142657904
-"54","Alcohol use disorders","Black","Male","45-64",55,80,198,39.6,25,696.476150381861
-"55","Alcohol use disorders","Black","Male","65+",72.5,80,59,11.8,7.5,79.2502872879784
-"56","Alcohol use disorders","Black","Female","00-14",7.5,82.5,0,0,75,0
-"57","Alcohol use disorders","Black","Female","15-24",20,82.5,1,0.2,62.5,5.64430022103381
-"58","Alcohol use disorders","Black","Female","25-44",35,82.5,23,4.6,47.5,116.455368974721
-"59","Alcohol use disorders","Black","Female","45-64",55,82.5,50,10,27.5,187.255002511684
-"60","Alcohol use disorders","Black","Female","65+",73.75,82.5,18,3.6,8.75,27.7048362757715
-"61","Alcohol use disorders","Asian","Male","00-14",7.5,80,0,0,72.5,0
-"62","Alcohol use disorders","Asian","Male","15-24",20,80,0,0,60,0
-"63","Alcohol use disorders","Asian","Male","25-44",35,80,17,3.4,45,83.9527704601323
-"64","Alcohol use disorders","Asian","Male","45-64",55,80,36,7.2,25,126.632027342156
-"65","Alcohol use disorders","Asian","Male","65+",72.5,80,11,2.2,7.5,14.775477290979
-"66","Alcohol use disorders","Asian","Female","00-14",7.5,82.5,0,0,75,0
-"67","Alcohol use disorders","Asian","Female","15-24",20,82.5,1,0.2,62.5,5.64430022103381
-"68","Alcohol use disorders","Asian","Female","25-44",35,82.5,0,0,47.5,0
-"69","Alcohol use disorders","Asian","Female","45-64",55,82.5,2,0.4,27.5,7.49020010046734
-"70","Alcohol use disorders","Asian","Female","65+",73.75,82.5,0,0,8.75,0
-"71","Alcohol use disorders","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"72","Alcohol use disorders","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"73","Alcohol use disorders","American Indian/Pacific Islander","Male","25-44",35,80,1,0.2,45,4.93839826236072
-"74","Alcohol use disorders","American Indian/Pacific Islander","Male","45-64",55,80,1,0.2,25,3.5175563150599
-"75","Alcohol use disorders","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
-"76","Alcohol use disorders","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"77","Alcohol use disorders","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"78","Alcohol use disorders","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"79","Alcohol use disorders","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
-"80","Alcohol use disorders","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
-"81","Alzheimer's disease and other dementias","White","Male","00-14",7.5,80,4,0.8,72.5,23.637115902113
-"82","Alzheimer's disease and other dementias","White","Male","15-24",20,80,0,0,60,0
-"83","Alzheimer's disease and other dementias","White","Male","25-44",35,80,0,0,45,0
-"84","Alzheimer's disease and other dementias","White","Male","45-64",55,80,41,8.2,25,144.219808917456
-"85","Alzheimer's disease and other dementias","White","Male","65+",72.5,80,1988,397.6,7.5,2670.33171404239
-"86","Alzheimer's disease and other dementias","White","Female","00-14",7.5,82.5,1,0.2,75,5.96400516958757
-"87","Alzheimer's disease and other dementias","White","Female","15-24",20,82.5,0,0,62.5,0
-"88","Alzheimer's disease and other dementias","White","Female","25-44",35,82.5,0,0,47.5,0
-"89","Alzheimer's disease and other dementias","White","Female","45-64",55,82.5,44,8.8,27.5,164.784402210282
-"90","Alzheimer's disease and other dementias","White","Female","65+",73.75,82.5,4539,907.8,8.75,6986.23621420706
-"91","Alzheimer's disease and other dementias","Black","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
-"92","Alzheimer's disease and other dementias","Black","Male","15-24",20,80,0,0,60,0
-"93","Alzheimer's disease and other dementias","Black","Male","25-44",35,80,1,0.2,45,4.93839826236072
-"94","Alzheimer's disease and other dementias","Black","Male","45-64",55,80,22,4.4,25,77.3862389313179
-"95","Alzheimer's disease and other dementias","Black","Male","65+",72.5,80,487,97.4,7.5,654.150676427889
-"96","Alzheimer's disease and other dementias","Black","Female","00-14",7.5,82.5,1,0.2,75,5.96400516958757
-"97","Alzheimer's disease and other dementias","Black","Female","15-24",20,82.5,0,0,62.5,0
-"98","Alzheimer's disease and other dementias","Black","Female","25-44",35,82.5,3,0.6,47.5,15.1898307358332
-"99","Alzheimer's disease and other dementias","Black","Female","45-64",55,82.5,10,2,27.5,37.4510005023367
-"100","Alzheimer's disease and other dementias","Black","Female","65+",73.75,82.5,1382,276.4,8.75,2127.1157629509
-"101","Alzheimer's disease and other dementias","Asian","Male","00-14",7.5,80,0,0,72.5,0
-"102","Alzheimer's disease and other dementias","Asian","Male","15-24",20,80,0,0,60,0
-"103","Alzheimer's disease and other dementias","Asian","Male","25-44",35,80,0,0,45,0
-"104","Alzheimer's disease and other dementias","Asian","Male","45-64",55,80,6,1.2,25,21.1053378903594
-"105","Alzheimer's disease and other dementias","Asian","Male","65+",72.5,80,164,32.8,7.5,220.288934156414
-"106","Alzheimer's disease and other dementias","Asian","Female","00-14",7.5,82.5,0,0,75,0
-"107","Alzheimer's disease and other dementias","Asian","Female","15-24",20,82.5,0,0,62.5,0
-"108","Alzheimer's disease and other dementias","Asian","Female","25-44",35,82.5,0,0,47.5,0
-"109","Alzheimer's disease and other dementias","Asian","Female","45-64",55,82.5,3,0.6,27.5,11.235300150701
-"110","Alzheimer's disease and other dementias","Asian","Female","65+",73.75,82.5,280,56,8.75,430.964119845335
-"111","Alzheimer's disease and other dementias","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"112","Alzheimer's disease and other dementias","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"113","Alzheimer's disease and other dementias","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
-"114","Alzheimer's disease and other dementias","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
-"115","Alzheimer's disease and other dementias","American Indian/Pacific Islander","Male","65+",72.5,80,1,0.2,7.5,1.34322520827082
-"116","Alzheimer's disease and other dementias","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"117","Alzheimer's disease and other dementias","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"118","Alzheimer's disease and other dementias","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"119","Alzheimer's disease and other dementias","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
-"120","Alzheimer's disease and other dementias","American Indian/Pacific Islander","Female","65+",73.75,82.5,3,0.6,8.75,4.61747271262859
-"121","Asthma","White","Male","00-14",7.5,80,10,2,72.5,59.0927897552824
-"122","Asthma","White","Male","15-24",20,80,5,1,60,27.8233703926138
-"123","Asthma","White","Male","25-44",35,80,28,5.6,45,138.2751513461
-"124","Asthma","White","Male","45-64",55,80,83,16.6,25,291.957174149972
-"125","Asthma","White","Male","65+",72.5,80,41,8.2,7.5,55.0722335391036
-"126","Asthma","White","Female","00-14",7.5,82.5,6,1.2,75,35.7840310175254
-"127","Asthma","White","Female","15-24",20,82.5,6,1.2,62.5,33.8658013262029
-"128","Asthma","White","Female","25-44",35,82.5,31,6.2,47.5,156.961584270276
-"129","Asthma","White","Female","45-64",55,82.5,85,17,27.5,318.333504269862
-"130","Asthma","White","Female","65+",73.75,82.5,101,20.2,8.75,155.454914658496
-"131","Asthma","Black","Male","00-14",7.5,80,23,4.6,72.5,135.91341643715
-"132","Asthma","Black","Male","15-24",20,80,24,4.8,60,133.552177884546
-"133","Asthma","Black","Male","25-44",35,80,40,8,45,197.535930494429
-"134","Asthma","Black","Male","45-64",55,80,81,16.2,25,284.922061519852
-"135","Asthma","Black","Male","65+",72.5,80,32,6.4,7.5,42.9832066646662
-"136","Asthma","Black","Female","00-14",7.5,82.5,11,2.2,75,65.6040568654633
-"137","Asthma","Black","Female","15-24",20,82.5,8,1.6,62.5,45.1544017682705
-"138","Asthma","Black","Female","25-44",35,82.5,35,7,47.5,177.214691918054
-"139","Asthma","Black","Female","45-64",55,82.5,77,15.4,27.5,288.372703867993
-"140","Asthma","Black","Female","65+",73.75,82.5,57,11.4,8.75,87.7319815399432
-"141","Asthma","Asian","Male","00-14",7.5,80,0,0,72.5,0
-"142","Asthma","Asian","Male","15-24",20,80,1,0.2,60,5.56467407852276
-"143","Asthma","Asian","Male","25-44",35,80,4,0.8,45,19.7535930494429
-"144","Asthma","Asian","Male","45-64",55,80,15,3,25,52.7633447258985
-"145","Asthma","Asian","Male","65+",72.5,80,14,2.8,7.5,18.8051529157915
-"146","Asthma","Asian","Female","00-14",7.5,82.5,0,0,75,0
-"147","Asthma","Asian","Female","15-24",20,82.5,0,0,62.5,0
-"148","Asthma","Asian","Female","25-44",35,82.5,3,0.6,47.5,15.1898307358332
-"149","Asthma","Asian","Female","45-64",55,82.5,2,0.4,27.5,7.49020010046734
-"150","Asthma","Asian","Female","65+",73.75,82.5,8,1.6,8.75,12.3132605670096
-"151","Asthma","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"152","Asthma","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"153","Asthma","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
-"154","Asthma","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
-"155","Asthma","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
-"156","Asthma","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"157","Asthma","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"158","Asthma","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"159","Asthma","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
-"160","Asthma","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
-"161","Breast cancer","White","Male","00-14",7.5,80,0,0,72.5,0
-"162","Breast cancer","White","Male","15-24",20,80,0,0,60,0
-"163","Breast cancer","White","Male","25-44",35,80,1,0.2,45,4.93839826236072
-"164","Breast cancer","White","Male","45-64",55,80,12,2.4,25,42.2106757807188
-"165","Breast cancer","White","Male","65+",72.5,80,23,4.6,7.5,30.8941797902289
-"166","Breast cancer","White","Female","00-14",7.5,82.5,0,0,75,0
-"167","Breast cancer","White","Female","15-24",20,82.5,2,0.4,62.5,11.2886004420676
-"168","Breast cancer","White","Female","25-44",35,82.5,207,41.4,47.5,1048.09832077249
-"169","Breast cancer","White","Female","45-64",55,82.5,1032,206.4,27.5,3864.94325184115
-"170","Breast cancer","White","Female","65+",73.75,82.5,2076,415.2,8.75,3195.29111713898
-"171","Breast cancer","Black","Male","00-14",7.5,80,0,0,72.5,0
-"172","Breast cancer","Black","Male","15-24",20,80,0,0,60,0
-"173","Breast cancer","Black","Male","25-44",35,80,1,0.2,45,4.93839826236072
-"174","Breast cancer","Black","Male","45-64",55,80,1,0.2,25,3.5175563150599
-"175","Breast cancer","Black","Male","65+",72.5,80,10,2,7.5,13.4322520827082
-"176","Breast cancer","Black","Female","00-14",7.5,82.5,0,0,75,0
-"177","Breast cancer","Black","Female","15-24",20,82.5,0,0,62.5,0
-"178","Breast cancer","Black","Female","25-44",35,82.5,165,33,47.5,835.440690470824
-"179","Breast cancer","Black","Female","45-64",55,82.5,723,144.6,27.5,2707.70733631894
-"180","Breast cancer","Black","Female","65+",73.75,82.5,849,169.8,8.75,1306.74477767389
-"181","Breast cancer","Asian","Male","00-14",7.5,80,0,0,72.5,0
-"182","Breast cancer","Asian","Male","15-24",20,80,0,0,60,0
-"183","Breast cancer","Asian","Male","25-44",35,80,0,0,45,0
-"184","Breast cancer","Asian","Male","45-64",55,80,0,0,25,0
-"185","Breast cancer","Asian","Male","65+",72.5,80,0,0,7.5,0
-"186","Breast cancer","Asian","Female","00-14",7.5,82.5,0,0,75,0
-"187","Breast cancer","Asian","Female","15-24",20,82.5,0,0,62.5,0
-"188","Breast cancer","Asian","Female","25-44",35,82.5,30,6,47.5,151.898307358332
-"189","Breast cancer","Asian","Female","45-64",55,82.5,129,25.8,27.5,483.117906480144
-"190","Breast cancer","Asian","Female","65+",73.75,82.5,102,20.4,8.75,156.994072229372
-"191","Breast cancer","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"192","Breast cancer","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"193","Breast cancer","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
-"194","Breast cancer","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
-"195","Breast cancer","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
-"196","Breast cancer","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"197","Breast cancer","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"198","Breast cancer","American Indian/Pacific Islander","Female","25-44",35,82.5,1,0.2,47.5,5.06327691194439
-"199","Breast cancer","American Indian/Pacific Islander","Female","45-64",55,82.5,1,0.2,27.5,3.74510005023367
-"200","Breast cancer","American Indian/Pacific Islander","Female","65+",73.75,82.5,2,0.4,8.75,3.07831514175239
-"201","Chronic obstructive pulmonary disease","White","Male","00-14",7.5,80,0,0,72.5,0
-"202","Chronic obstructive pulmonary disease","White","Male","15-24",20,80,0,0,60,0
-"203","Chronic obstructive pulmonary disease","White","Male","25-44",35,80,11,2.2,45,54.322380885968
-"204","Chronic obstructive pulmonary disease","White","Male","45-64",55,80,339,67.8,25,1192.45159080531
-"205","Chronic obstructive pulmonary disease","White","Male","65+",72.5,80,2059,411.8,7.5,2765.70070382962
-"206","Chronic obstructive pulmonary disease","White","Female","00-14",7.5,82.5,1,0.2,75,5.96400516958757
-"207","Chronic obstructive pulmonary disease","White","Female","15-24",20,82.5,1,0.2,62.5,5.64430022103381
-"208","Chronic obstructive pulmonary disease","White","Female","25-44",35,82.5,9,1.8,47.5,45.5694922074995
-"209","Chronic obstructive pulmonary disease","White","Female","45-64",55,82.5,272,54.4,27.5,1018.66721366356
-"210","Chronic obstructive pulmonary disease","White","Female","65+",73.75,82.5,2698,539.6,8.75,4152.64712622398
-"211","Chronic obstructive pulmonary disease","Black","Male","00-14",7.5,80,0,0,72.5,0
-"212","Chronic obstructive pulmonary disease","Black","Male","15-24",20,80,0,0,60,0
-"213","Chronic obstructive pulmonary disease","Black","Male","25-44",35,80,9,1.8,45,44.4455843612465
-"214","Chronic obstructive pulmonary disease","Black","Male","45-64",55,80,157,31.4,25,552.256341464405
-"215","Chronic obstructive pulmonary disease","Black","Male","65+",72.5,80,593,118.6,7.5,796.532548504596
-"216","Chronic obstructive pulmonary disease","Black","Female","00-14",7.5,82.5,0,0,75,0
-"217","Chronic obstructive pulmonary disease","Black","Female","15-24",20,82.5,0,0,62.5,0
-"218","Chronic obstructive pulmonary disease","Black","Female","25-44",35,82.5,9,1.8,47.5,45.5694922074995
-"219","Chronic obstructive pulmonary disease","Black","Female","45-64",55,82.5,172,34.4,27.5,644.157208640192
-"220","Chronic obstructive pulmonary disease","Black","Female","65+",73.75,82.5,758,151.6,8.75,1166.68143872416
-"221","Chronic obstructive pulmonary disease","Asian","Male","00-14",7.5,80,0,0,72.5,0
-"222","Chronic obstructive pulmonary disease","Asian","Male","15-24",20,80,0,0,60,0
-"223","Chronic obstructive pulmonary disease","Asian","Male","25-44",35,80,1,0.2,45,4.93839826236072
-"224","Chronic obstructive pulmonary disease","Asian","Male","45-64",55,80,16,3.2,25,56.2809010409584
-"225","Chronic obstructive pulmonary disease","Asian","Male","65+",72.5,80,258,51.6,7.5,346.552103733871
-"226","Chronic obstructive pulmonary disease","Asian","Female","00-14",7.5,82.5,0,0,75,0
-"227","Chronic obstructive pulmonary disease","Asian","Female","15-24",20,82.5,1,0.2,62.5,5.64430022103381
-"228","Chronic obstructive pulmonary disease","Asian","Female","25-44",35,82.5,0,0,47.5,0
-"229","Chronic obstructive pulmonary disease","Asian","Female","45-64",55,82.5,1,0.2,27.5,3.74510005023367
-"230","Chronic obstructive pulmonary disease","Asian","Female","65+",73.75,82.5,133,26.6,8.75,204.707956926534
-"231","Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"232","Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"233","Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
-"234","Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
-"235","Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Male","65+",72.5,80,3,0.6,7.5,4.02967562481246
-"236","Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"237","Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"238","Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"239","Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Female","45-64",55,82.5,1,0.2,27.5,3.74510005023367
-"240","Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Female","65+",73.75,82.5,2,0.4,8.75,3.07831514175239
-"241","Colon and rectum cancers","White","Male","00-14",7.5,80,0,0,72.5,0
-"242","Colon and rectum cancers","White","Male","15-24",20,80,2,0.4,60,11.1293481570455
-"243","Colon and rectum cancers","White","Male","25-44",35,80,75,15,45,370.379869677054
-"244","Colon and rectum cancers","White","Male","45-64",55,80,572,114.4,25,2012.04221221426
-"245","Colon and rectum cancers","White","Male","65+",72.5,80,1462,292.4,7.5,1963.79525449194
-"246","Colon and rectum cancers","White","Female","00-14",7.5,82.5,1,0.2,75,5.96400516958757
-"247","Colon and rectum cancers","White","Female","15-24",20,82.5,3,0.6,62.5,16.9329006631014
-"248","Colon and rectum cancers","White","Female","25-44",35,82.5,47,9.4,47.5,237.974014861386
-"249","Colon and rectum cancers","White","Female","45-64",55,82.5,433,86.6,27.5,1621.62832175118
-"250","Colon and rectum cancers","White","Female","65+",73.75,82.5,1692,338.4,8.75,2604.25460992252
-"251","Colon and rectum cancers","Black","Male","00-14",7.5,80,0,0,72.5,0
-"252","Colon and rectum cancers","Black","Male","15-24",20,80,1,0.2,60,5.56467407852276
-"253","Colon and rectum cancers","Black","Male","25-44",35,80,39,7.8,45,192.597532232068
-"254","Colon and rectum cancers","Black","Male","45-64",55,80,329,65.8,25,1157.27602765471
-"255","Colon and rectum cancers","Black","Male","65+",72.5,80,507,101.4,7.5,681.015180593306
-"256","Colon and rectum cancers","Black","Female","00-14",7.5,82.5,0,0,75,0
-"257","Colon and rectum cancers","Black","Female","15-24",20,82.5,0,0,62.5,0
-"258","Colon and rectum cancers","Black","Female","25-44",35,82.5,44,8.8,47.5,222.784184125553
-"259","Colon and rectum cancers","Black","Female","45-64",55,82.5,280,56,27.5,1048.62801406543
-"260","Colon and rectum cancers","Black","Female","65+",73.75,82.5,678,135.6,8.75,1043.54883305406
-"261","Colon and rectum cancers","Asian","Male","00-14",7.5,80,0,0,72.5,0
-"262","Colon and rectum cancers","Asian","Male","15-24",20,80,1,0.2,60,5.56467407852276
-"263","Colon and rectum cancers","Asian","Male","25-44",35,80,13,2.6,45,64.1991774106894
-"264","Colon and rectum cancers","Asian","Male","45-64",55,80,87,17.4,25,306.027399410211
-"265","Colon and rectum cancers","Asian","Male","65+",72.5,80,187,37.4,7.5,251.183113946643
-"266","Colon and rectum cancers","Asian","Female","00-14",7.5,82.5,0,0,75,0
-"267","Colon and rectum cancers","Asian","Female","15-24",20,82.5,0,0,62.5,0
-"268","Colon and rectum cancers","Asian","Female","25-44",35,82.5,15,3,47.5,75.9491536791658
-"269","Colon and rectum cancers","Asian","Female","45-64",55,82.5,65,13,27.5,243.431503265189
-"270","Colon and rectum cancers","Asian","Female","65+",73.75,82.5,153,30.6,8.75,235.491108344058
-"271","Colon and rectum cancers","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"272","Colon and rectum cancers","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"273","Colon and rectum cancers","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
-"274","Colon and rectum cancers","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
-"275","Colon and rectum cancers","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
-"276","Colon and rectum cancers","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"277","Colon and rectum cancers","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"278","Colon and rectum cancers","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"279","Colon and rectum cancers","American Indian/Pacific Islander","Female","45-64",55,82.5,1,0.2,27.5,3.74510005023367
-"280","Colon and rectum cancers","American Indian/Pacific Islander","Female","65+",73.75,82.5,1,0.2,8.75,1.5391575708762
-"281","Congenital anomalies","White","Male","00-14",7.5,80,200,40,72.5,1181.85579510565
-"282","Congenital anomalies","White","Male","15-24",20,80,21,4.2,60,116.858155648978
-"283","Congenital anomalies","White","Male","25-44",35,80,43,8.6,45,212.351125281511
-"284","Congenital anomalies","White","Male","45-64",55,80,63,12.6,25,221.606047848774
-"285","Congenital anomalies","White","Male","65+",72.5,80,26,5.2,7.5,34.9238554150413
-"286","Congenital anomalies","White","Female","00-14",7.5,82.5,184,36.8,75,1097.37695120411
-"287","Congenital anomalies","White","Female","15-24",20,82.5,16,3.2,62.5,90.308803536541
-"288","Congenital anomalies","White","Female","25-44",35,82.5,34,6.8,47.5,172.151415006109
-"289","Congenital anomalies","White","Female","45-64",55,82.5,39,7.8,27.5,146.058901959113
-"290","Congenital anomalies","White","Female","65+",73.75,82.5,17,3.4,8.75,26.1656787048953
-"291","Congenital anomalies","Black","Male","00-14",7.5,80,113,22.6,72.5,667.748524234691
-"292","Congenital anomalies","Black","Male","15-24",20,80,17,3.4,60,94.5994593348868
-"293","Congenital anomalies","Black","Male","25-44",35,80,24,4.8,45,118.521558296657
-"294","Congenital anomalies","Black","Male","45-64",55,80,22,4.4,25,77.3862389313179
-"295","Congenital anomalies","Black","Male","65+",72.5,80,5,1,7.5,6.7161260413541
-"296","Congenital anomalies","Black","Female","00-14",7.5,82.5,114,22.8,75,679.896589332983
-"297","Congenital anomalies","Black","Female","15-24",20,82.5,11,2.2,62.5,62.0873024313719
-"298","Congenital anomalies","Black","Female","25-44",35,82.5,18,3.6,47.5,91.138984414999
-"299","Congenital anomalies","Black","Female","45-64",55,82.5,20,4,27.5,74.9020010046734
-"300","Congenital anomalies","Black","Female","65+",73.75,82.5,10,2,8.75,15.391575708762
-"301","Congenital anomalies","Asian","Male","00-14",7.5,80,34,6.8,72.5,200.91548516796
-"302","Congenital anomalies","Asian","Male","15-24",20,80,9,1.8,60,50.0820667067048
-"303","Congenital anomalies","Asian","Male","25-44",35,80,6,1.2,45,29.6303895741643
-"304","Congenital anomalies","Asian","Male","45-64",55,80,5,1,25,17.5877815752995
-"305","Congenital anomalies","Asian","Male","65+",72.5,80,4,0.8,7.5,5.37290083308328
-"306","Congenital anomalies","Asian","Female","00-14",7.5,82.5,29,5.8,75,172.95614991804
-"307","Congenital anomalies","Asian","Female","15-24",20,82.5,5,1,62.5,28.2215011051691
-"308","Congenital anomalies","Asian","Female","25-44",35,82.5,4,0.8,47.5,20.2531076477775
-"309","Congenital anomalies","Asian","Female","45-64",55,82.5,8,1.6,27.5,29.9608004018694
-"310","Congenital anomalies","Asian","Female","65+",73.75,82.5,2,0.4,8.75,3.07831514175239
-"311","Congenital anomalies","American Indian/Pacific Islander","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
-"312","Congenital anomalies","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"313","Congenital anomalies","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
-"314","Congenital anomalies","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
-"315","Congenital anomalies","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
-"316","Congenital anomalies","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"317","Congenital anomalies","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"318","Congenital anomalies","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"319","Congenital anomalies","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
-"320","Congenital anomalies","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
-"321","Diabetes mellitus","White","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
-"322","Diabetes mellitus","White","Male","15-24",20,80,4,0.8,60,22.258696314091
-"323","Diabetes mellitus","White","Male","25-44",35,80,77,15.4,45,380.256666201776
-"324","Diabetes mellitus","White","Male","45-64",55,80,616,123.2,25,2166.8146900769
-"325","Diabetes mellitus","White","Male","65+",72.5,80,1478,295.6,7.5,1985.28685782427
-"326","Diabetes mellitus","White","Female","00-14",7.5,82.5,2,0.4,75,11.9280103391751
-"327","Diabetes mellitus","White","Female","15-24",20,82.5,2,0.4,62.5,11.2886004420676
-"328","Diabetes mellitus","White","Female","25-44",35,82.5,35,7,47.5,177.214691918054
-"329","Diabetes mellitus","White","Female","45-64",55,82.5,363,72.6,27.5,1359.47131823482
-"330","Diabetes mellitus","White","Female","65+",73.75,82.5,1747,349.4,8.75,2688.90827632072
-"331","Diabetes mellitus","Black","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
-"332","Diabetes mellitus","Black","Male","15-24",20,80,10,2,60,55.6467407852276
-"333","Diabetes mellitus","Black","Male","25-44",35,80,123,24.6,45,607.422986270369
-"334","Diabetes mellitus","Black","Male","45-64",55,80,496,99.2,25,1744.70793226971
-"335","Diabetes mellitus","Black","Male","65+",72.5,80,880,176,7.5,1182.03818327832
-"336","Diabetes mellitus","Black","Female","00-14",7.5,82.5,4,0.8,75,23.8560206783503
-"337","Diabetes mellitus","Black","Female","15-24",20,82.5,1,0.2,62.5,5.64430022103381
-"338","Diabetes mellitus","Black","Female","25-44",35,82.5,63,12.6,47.5,318.986445452496
-"339","Diabetes mellitus","Black","Female","45-64",55,82.5,426,85.2,27.5,1595.41262139954
-"340","Diabetes mellitus","Black","Female","65+",73.75,82.5,1559,311.8,8.75,2399.54665299599
-"341","Diabetes mellitus","Asian","Male","00-14",7.5,80,0,0,72.5,0
-"342","Diabetes mellitus","Asian","Male","15-24",20,80,0,0,60,0
-"343","Diabetes mellitus","Asian","Male","25-44",35,80,6,1.2,45,29.6303895741643
-"344","Diabetes mellitus","Asian","Male","45-64",55,80,102,20.4,25,358.79074413611
-"345","Diabetes mellitus","Asian","Male","65+",72.5,80,233,46.6,7.5,312.971473527101
-"346","Diabetes mellitus","Asian","Female","00-14",7.5,82.5,0,0,75,0
-"347","Diabetes mellitus","Asian","Female","15-24",20,82.5,0,0,62.5,0
-"348","Diabetes mellitus","Asian","Female","25-44",35,82.5,4,0.8,47.5,20.2531076477775
-"349","Diabetes mellitus","Asian","Female","45-64",55,82.5,35,7,27.5,131.078501758179
-"350","Diabetes mellitus","Asian","Female","65+",73.75,82.5,233,46.6,8.75,358.623714014154
-"351","Diabetes mellitus","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"352","Diabetes mellitus","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"353","Diabetes mellitus","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
-"354","Diabetes mellitus","American Indian/Pacific Islander","Male","45-64",55,80,2,0.4,25,7.03511263011981
-"355","Diabetes mellitus","American Indian/Pacific Islander","Male","65+",72.5,80,4,0.8,7.5,5.37290083308328
-"356","Diabetes mellitus","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"357","Diabetes mellitus","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"358","Diabetes mellitus","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"359","Diabetes mellitus","American Indian/Pacific Islander","Female","45-64",55,82.5,2,0.4,27.5,7.49020010046734
-"360","Diabetes mellitus","American Indian/Pacific Islander","Female","65+",73.75,82.5,3,0.6,8.75,4.61747271262859
-"361","HIV/AIDS","White","Male","00-14",7.5,80,0,0,72.5,0
-"362","HIV/AIDS","White","Male","15-24",20,80,5,1,60,27.8233703926138
-"363","HIV/AIDS","White","Male","25-44",35,80,206,41.2,45,1017.31004204631
-"364","HIV/AIDS","White","Male","45-64",55,80,674,134.8,25,2370.83295635037
-"365","HIV/AIDS","White","Male","65+",72.5,80,110,22,7.5,147.75477290979
-"366","HIV/AIDS","White","Female","00-14",7.5,82.5,0,0,75,0
-"367","HIV/AIDS","White","Female","15-24",20,82.5,13,2.6,62.5,73.3759028734395
-"368","HIV/AIDS","White","Female","25-44",35,82.5,105,21,47.5,531.644075754161
-"369","HIV/AIDS","White","Female","45-64",55,82.5,263,52.6,27.5,984.961313211456
-"370","HIV/AIDS","White","Female","65+",73.75,82.5,38,7.6,8.75,58.4879876932955
-"371","HIV/AIDS","Black","Male","00-14",7.5,80,2,0.4,72.5,11.8185579510565
-"372","HIV/AIDS","Black","Male","15-24",20,80,27,5.4,60,150.246200120114
-"373","HIV/AIDS","Black","Male","25-44",35,80,286,57.2,45,1412.38190303517
-"374","HIV/AIDS","Black","Male","45-64",55,80,872,174.4,25,3067.30910673223
-"375","HIV/AIDS","Black","Male","65+",72.5,80,181,36.2,7.5,243.123762697018
-"376","HIV/AIDS","Black","Female","00-14",7.5,82.5,1,0.2,75,5.96400516958757
-"377","HIV/AIDS","Black","Female","15-24",20,82.5,11,2.2,62.5,62.0873024313719
-"378","HIV/AIDS","Black","Female","25-44",35,82.5,167,33.4,47.5,845.567244294713
-"379","HIV/AIDS","Black","Female","45-64",55,82.5,507,101.4,27.5,1898.76572546847
-"380","HIV/AIDS","Black","Female","65+",73.75,82.5,67,13.4,8.75,103.123557248705
-"381","HIV/AIDS","Asian","Male","00-14",7.5,80,0,0,72.5,0
-"382","HIV/AIDS","Asian","Male","15-24",20,80,1,0.2,60,5.56467407852276
-"383","HIV/AIDS","Asian","Male","25-44",35,80,5,1,45,24.6919913118036
-"384","HIV/AIDS","Asian","Male","45-64",55,80,7,1.4,25,24.6228942054193
-"385","HIV/AIDS","Asian","Male","65+",72.5,80,3,0.6,7.5,4.02967562481246
-"386","HIV/AIDS","Asian","Female","00-14",7.5,82.5,0,0,75,0
-"387","HIV/AIDS","Asian","Female","15-24",20,82.5,0,0,62.5,0
-"388","HIV/AIDS","Asian","Female","25-44",35,82.5,6,1.2,47.5,30.3796614716663
-"389","HIV/AIDS","Asian","Female","45-64",55,82.5,4,0.8,27.5,14.9804002009347
-"390","HIV/AIDS","Asian","Female","65+",73.75,82.5,0,0,8.75,0
-"391","HIV/AIDS","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"392","HIV/AIDS","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"393","HIV/AIDS","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
-"394","HIV/AIDS","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
-"395","HIV/AIDS","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
-"396","HIV/AIDS","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"397","HIV/AIDS","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"398","HIV/AIDS","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"399","HIV/AIDS","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
-"400","HIV/AIDS","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
-"401","Homicide","White","Male","00-14",7.5,80,16,3.2,72.5,94.5484636084519
-"402","Homicide","White","Male","15-24",20,80,187,37.4,60,1040.59405268376
-"403","Homicide","White","Male","25-44",35,80,237,47.4,45,1170.40038817949
-"404","Homicide","White","Male","45-64",55,80,107,21.4,25,376.37852571141
-"405","Homicide","White","Male","65+",72.5,80,36,7.2,7.5,48.3561074977495
-"406","Homicide","White","Female","00-14",7.5,82.5,10,2,75,59.6400516958757
-"407","Homicide","White","Female","15-24",20,82.5,27,5.4,62.5,152.396105967913
-"408","Homicide","White","Female","25-44",35,82.5,65,13,47.5,329.112999276385
-"409","Homicide","White","Female","45-64",55,82.5,39,7.8,27.5,146.058901959113
-"410","Homicide","White","Female","65+",73.75,82.5,16,3.2,8.75,24.6265211340191
-"411","Homicide","Black","Male","00-14",7.5,80,43,8.6,72.5,254.098995947714
-"412","Homicide","Black","Male","15-24",20,80,453,90.6,60,2520.79735757081
-"413","Homicide","Black","Male","25-44",35,80,610,122,45,3012.42294004004
-"414","Homicide","Black","Male","45-64",55,80,129,25.8,25,453.764764642727
-"415","Homicide","Black","Male","65+",72.5,80,24,4.8,7.5,32.2374049984997
-"416","Homicide","Black","Female","00-14",7.5,82.5,26,5.2,75,155.064134409277
-"417","Homicide","Black","Female","15-24",20,82.5,41,8.2,62.5,231.416309062386
-"418","Homicide","Black","Female","25-44",35,82.5,62,12.4,47.5,313.923168540552
-"419","Homicide","Black","Female","45-64",55,82.5,56,11.2,27.5,209.725602813086
-"420","Homicide","Black","Female","65+",73.75,82.5,10,2,8.75,15.391575708762
-"421","Homicide","Asian","Male","00-14",7.5,80,4,0.8,72.5,23.637115902113
-"422","Homicide","Asian","Male","15-24",20,80,3,0.6,60,16.6940222355683
-"423","Homicide","Asian","Male","25-44",35,80,17,3.4,45,83.9527704601323
-"424","Homicide","Asian","Male","45-64",55,80,12,2.4,25,42.2106757807188
-"425","Homicide","Asian","Male","65+",72.5,80,4,0.8,7.5,5.37290083308328
-"426","Homicide","Asian","Female","00-14",7.5,82.5,3,0.6,75,17.8920155087627
-"427","Homicide","Asian","Female","15-24",20,82.5,5,1,62.5,28.2215011051691
-"428","Homicide","Asian","Female","25-44",35,82.5,8,1.6,47.5,40.5062152955551
-"429","Homicide","Asian","Female","45-64",55,82.5,8,1.6,27.5,29.9608004018694
-"430","Homicide","Asian","Female","65+",73.75,82.5,4,0.8,8.75,6.15663028350479
-"431","Homicide","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"432","Homicide","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"433","Homicide","American Indian/Pacific Islander","Male","25-44",35,80,2,0.4,45,9.87679652472145
-"434","Homicide","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
-"435","Homicide","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
-"436","Homicide","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"437","Homicide","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"438","Homicide","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"439","Homicide","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
-"440","Homicide","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
-"441","Hypertensive heart disease","White","Male","00-14",7.5,80,0,0,72.5,0
-"442","Hypertensive heart disease","White","Male","15-24",20,80,2,0.4,60,11.1293481570455
-"443","Hypertensive heart disease","White","Male","25-44",35,80,138,27.6,45,681.49896020578
-"444","Hypertensive heart disease","White","Male","45-64",55,80,932,186.4,25,3278.36248563583
-"445","Hypertensive heart disease","White","Male","65+",72.5,80,2160,432,7.5,2901.36644986497
-"446","Hypertensive heart disease","White","Female","00-14",7.5,82.5,0,0,75,0
-"447","Hypertensive heart disease","White","Female","15-24",20,82.5,3,0.6,62.5,16.9329006631014
-"448","Hypertensive heart disease","White","Female","25-44",35,82.5,39,7.8,47.5,197.467799565831
-"449","Hypertensive heart disease","White","Female","45-64",55,82.5,463,92.6,27.5,1733.98132325819
-"450","Hypertensive heart disease","White","Female","65+",73.75,82.5,3272,654.4,8.75,5036.12357190691
-"451","Hypertensive heart disease","Black","Male","00-14",7.5,80,0,0,72.5,0
-"452","Hypertensive heart disease","Black","Male","15-24",20,80,8,1.6,60,44.5173926281821
-"453","Hypertensive heart disease","Black","Male","25-44",35,80,172,34.4,45,849.404501126044
-"454","Hypertensive heart disease","Black","Male","45-64",55,80,930,186,25,3271.32737300571
-"455","Hypertensive heart disease","Black","Male","65+",72.5,80,1204,240.8,7.5,1617.24315075807
-"456","Hypertensive heart disease","Black","Female","00-14",7.5,82.5,0,0,75,0
-"457","Hypertensive heart disease","Black","Female","15-24",20,82.5,6,1.2,62.5,33.8658013262029
-"458","Hypertensive heart disease","Black","Female","25-44",35,82.5,102,20.4,47.5,516.454245018327
-"459","Hypertensive heart disease","Black","Female","45-64",55,82.5,664,132.8,27.5,2486.74643335516
-"460","Hypertensive heart disease","Black","Female","65+",73.75,82.5,2036,407.2,8.75,3133.72481430394
-"461","Hypertensive heart disease","Asian","Male","00-14",7.5,80,0,0,72.5,0
-"462","Hypertensive heart disease","Asian","Male","15-24",20,80,1,0.2,60,5.56467407852276
-"463","Hypertensive heart disease","Asian","Male","25-44",35,80,12,2.4,45,59.2607791483287
-"464","Hypertensive heart disease","Asian","Male","45-64",55,80,86,17.2,25,302.509843095152
-"465","Hypertensive heart disease","Asian","Male","65+",72.5,80,246,49.2,7.5,330.433401234622
-"466","Hypertensive heart disease","Asian","Female","00-14",7.5,82.5,0,0,75,0
-"467","Hypertensive heart disease","Asian","Female","15-24",20,82.5,0,0,62.5,0
-"468","Hypertensive heart disease","Asian","Female","25-44",35,82.5,4,0.8,47.5,20.2531076477775
-"469","Hypertensive heart disease","Asian","Female","45-64",55,82.5,48,9.6,27.5,179.764802411216
-"470","Hypertensive heart disease","Asian","Female","65+",73.75,82.5,314,62.8,8.75,483.295477255126
-"471","Hypertensive heart disease","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"472","Hypertensive heart disease","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"473","Hypertensive heart disease","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
-"474","Hypertensive heart disease","American Indian/Pacific Islander","Male","45-64",55,80,1,0.2,25,3.5175563150599
-"475","Hypertensive heart disease","American Indian/Pacific Islander","Male","65+",72.5,80,1,0.2,7.5,1.34322520827082
-"476","Hypertensive heart disease","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"477","Hypertensive heart disease","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"478","Hypertensive heart disease","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"479","Hypertensive heart disease","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
-"480","Hypertensive heart disease","American Indian/Pacific Islander","Female","65+",73.75,82.5,3,0.6,8.75,4.61747271262859
-"481","Ischemic heart disease","White","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
-"482","Ischemic heart disease","White","Male","15-24",20,80,5,1,60,27.8233703926138
-"483","Ischemic heart disease","White","Male","25-44",35,80,286,57.2,45,1412.38190303517
-"484","Ischemic heart disease","White","Male","45-64",55,80,3785,757,25,13313.9506525017
-"485","Ischemic heart disease","White","Male","65+",72.5,80,18921,3784.2,7.5,25415.1641656922
-"486","Ischemic heart disease","White","Female","00-14",7.5,82.5,0,0,75,0
-"487","Ischemic heart disease","White","Female","15-24",20,82.5,3,0.6,62.5,16.9329006631014
-"488","Ischemic heart disease","White","Female","25-44",35,82.5,59,11.8,47.5,298.733337804719
-"489","Ischemic heart disease","White","Female","45-64",55,82.5,1341,268.2,27.5,5022.17916736335
-"490","Ischemic heart disease","White","Female","65+",73.75,82.5,24792,4958.4,8.75,38158.7944971627
-"491","Ischemic heart disease","Black","Male","00-14",7.5,80,0,0,72.5,0
-"492","Ischemic heart disease","Black","Male","15-24",20,80,8,1.6,60,44.5173926281821
-"493","Ischemic heart disease","Black","Male","25-44",35,80,201,40.2,45,992.618050734505
-"494","Ischemic heart disease","Black","Male","45-64",55,80,1990,398,25,6999.93706696921
-"495","Ischemic heart disease","Black","Male","65+",72.5,80,5086,1017.2,7.5,6831.64340926539
-"496","Ischemic heart disease","Black","Female","00-14",7.5,82.5,1,0.2,75,5.96400516958757
-"497","Ischemic heart disease","Black","Female","15-24",20,82.5,5,1,62.5,28.2215011051691
-"498","Ischemic heart disease","Black","Female","25-44",35,82.5,77,15.4,47.5,389.872322219718
-"499","Ischemic heart disease","Black","Female","45-64",55,82.5,1170,234,27.5,4381.7670587734
-"500","Ischemic heart disease","Black","Female","65+",73.75,82.5,7751,1550.2,8.75,11930.0103318614
-"501","Ischemic heart disease","Asian","Male","00-14",7.5,80,0,0,72.5,0
-"502","Ischemic heart disease","Asian","Male","15-24",20,80,0,0,60,0
-"503","Ischemic heart disease","Asian","Male","25-44",35,80,50,10,45,246.919913118036
-"504","Ischemic heart disease","Asian","Male","45-64",55,80,509,101.8,25,1790.43616436549
-"505","Ischemic heart disease","Asian","Male","65+",72.5,80,1518,303.6,7.5,2039.0158661551
-"506","Ischemic heart disease","Asian","Female","00-14",7.5,82.5,0,0,75,0
-"507","Ischemic heart disease","Asian","Female","15-24",20,82.5,0,0,62.5,0
-"508","Ischemic heart disease","Asian","Female","25-44",35,82.5,13,2.6,47.5,65.822599855277
-"509","Ischemic heart disease","Asian","Female","45-64",55,82.5,136,27.2,27.5,509.333606831779
-"510","Ischemic heart disease","Asian","Female","65+",73.75,82.5,1497,299.4,8.75,2304.11888360167
-"511","Ischemic heart disease","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"512","Ischemic heart disease","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"513","Ischemic heart disease","American Indian/Pacific Islander","Male","25-44",35,80,1,0.2,45,4.93839826236072
-"514","Ischemic heart disease","American Indian/Pacific Islander","Male","45-64",55,80,7,1.4,25,24.6228942054193
-"515","Ischemic heart disease","American Indian/Pacific Islander","Male","65+",72.5,80,16,3.2,7.5,21.4916033323331
-"516","Ischemic heart disease","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"517","Ischemic heart disease","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"518","Ischemic heart disease","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"519","Ischemic heart disease","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
-"520","Ischemic heart disease","American Indian/Pacific Islander","Female","65+",73.75,82.5,28,5.6,8.75,43.0964119845335
-"521","Lower respiratory infections","White","Male","00-14",7.5,80,22,4.4,72.5,130.004137461621
-"522","Lower respiratory infections","White","Male","15-24",20,80,3,0.6,60,16.6940222355683
-"523","Lower respiratory infections","White","Male","25-44",35,80,64,12.8,45,316.057488791086
-"524","Lower respiratory infections","White","Male","45-64",55,80,452,90.4,25,1589.93545440708
-"525","Lower respiratory infections","White","Male","65+",72.5,80,3340,668,7.5,4486.37219562454
-"526","Lower respiratory infections","White","Female","00-14",7.5,82.5,12,2.4,75,71.5680620350508
-"527","Lower respiratory infections","White","Female","15-24",20,82.5,3,0.6,62.5,16.9329006631014
-"528","Lower respiratory infections","White","Female","25-44",35,82.5,36,7.2,47.5,182.277968829998
-"529","Lower respiratory infections","White","Female","45-64",55,82.5,261,52.2,27.5,977.471113110988
-"530","Lower respiratory infections","White","Female","65+",73.75,82.5,3846,769.2,8.75,5919.60001758985
-"531","Lower respiratory infections","Black","Male","00-14",7.5,80,17,3.4,72.5,100.45774258398
-"532","Lower respiratory infections","Black","Male","15-24",20,80,5,1,60,27.8233703926138
-"533","Lower respiratory infections","Black","Male","25-44",35,80,27,5.4,45,133.33675308374
-"534","Lower respiratory infections","Black","Male","45-64",55,80,279,55.8,25,981.398211901713
-"535","Lower respiratory infections","Black","Male","65+",72.5,80,882,176.4,7.5,1184.72463369486
-"536","Lower respiratory infections","Black","Female","00-14",7.5,82.5,10,2,75,59.6400516958757
-"537","Lower respiratory infections","Black","Female","15-24",20,82.5,5,1,62.5,28.2215011051691
-"538","Lower respiratory infections","Black","Female","25-44",35,82.5,43,8.6,47.5,217.720907213609
-"539","Lower respiratory infections","Black","Female","45-64",55,82.5,196,39.2,27.5,734.0396098458
-"540","Lower respiratory infections","Black","Female","65+",73.75,82.5,1199,239.8,8.75,1845.44992748056
-"541","Lower respiratory infections","Asian","Male","00-14",7.5,80,6,1.2,72.5,35.4556738531695
-"542","Lower respiratory infections","Asian","Male","15-24",20,80,0,0,60,0
-"543","Lower respiratory infections","Asian","Male","25-44",35,80,4,0.8,45,19.7535930494429
-"544","Lower respiratory infections","Asian","Male","45-64",55,80,50,10,25,175.877815752995
-"545","Lower respiratory infections","Asian","Male","65+",72.5,80,403,80.6,7.5,541.31975893314
-"546","Lower respiratory infections","Asian","Female","00-14",7.5,82.5,6,1.2,75,35.7840310175254
-"547","Lower respiratory infections","Asian","Female","15-24",20,82.5,3,0.6,62.5,16.9329006631014
-"548","Lower respiratory infections","Asian","Female","25-44",35,82.5,4,0.8,47.5,20.2531076477775
-"549","Lower respiratory infections","Asian","Female","45-64",55,82.5,36,7.2,27.5,134.823601808412
-"550","Lower respiratory infections","Asian","Female","65+",73.75,82.5,343,68.6,8.75,527.931046810535
-"551","Lower respiratory infections","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"552","Lower respiratory infections","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"553","Lower respiratory infections","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
-"554","Lower respiratory infections","American Indian/Pacific Islander","Male","45-64",55,80,4,0.8,25,14.0702252602396
-"555","Lower respiratory infections","American Indian/Pacific Islander","Male","65+",72.5,80,2,0.4,7.5,2.68645041654164
-"556","Lower respiratory infections","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"557","Lower respiratory infections","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"558","Lower respiratory infections","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"559","Lower respiratory infections","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
-"560","Lower respiratory infections","American Indian/Pacific Islander","Female","65+",73.75,82.5,6,1.2,8.75,9.23494542525718
-"561","Lung cancer","White","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
-"562","Lung cancer","White","Male","15-24",20,80,1,0.2,60,5.56467407852276
-"563","Lung cancer","White","Male","25-44",35,80,53,10.6,45,261.735107905118
-"564","Lung cancer","White","Male","45-64",55,80,1248,249.6,25,4389.91028119476
-"565","Lung cancer","White","Male","65+",72.5,80,3580,716,7.5,4808.74624560953
-"566","Lung cancer","White","Female","00-14",7.5,82.5,0,0,75,0
-"567","Lung cancer","White","Female","15-24",20,82.5,0,0,62.5,0
-"568","Lung cancer","White","Female","25-44",35,82.5,47,9.4,47.5,237.974014861386
-"569","Lung cancer","White","Female","45-64",55,82.5,1018,203.6,27.5,3812.51185113788
-"570","Lung cancer","White","Female","65+",73.75,82.5,3374,674.8,8.75,5193.11764413629
-"571","Lung cancer","Black","Male","00-14",7.5,80,0,0,72.5,0
-"572","Lung cancer","Black","Male","15-24",20,80,3,0.6,60,16.6940222355683
-"573","Lung cancer","Black","Male","25-44",35,80,29,5.8,45,143.213549608461
-"574","Lung cancer","Black","Male","45-64",55,80,743,148.6,25,2613.54434208951
-"575","Lung cancer","Black","Male","65+",72.5,80,1128,225.6,7.5,1515.15803492948
-"576","Lung cancer","Black","Female","00-14",7.5,82.5,0,0,75,0
-"577","Lung cancer","Black","Female","15-24",20,82.5,1,0.2,62.5,5.64430022103381
-"578","Lung cancer","Black","Female","25-44",35,82.5,33,6.6,47.5,167.088138094165
-"579","Lung cancer","Black","Female","45-64",55,82.5,594,118.8,27.5,2224.5894298388
-"580","Lung cancer","Black","Female","65+",73.75,82.5,1074,214.8,8.75,1653.05523112104
-"581","Lung cancer","Asian","Male","00-14",7.5,80,0,0,72.5,0
-"582","Lung cancer","Asian","Male","15-24",20,80,1,0.2,60,5.56467407852276
-"583","Lung cancer","Asian","Male","25-44",35,80,20,4,45,98.7679652472145
-"584","Lung cancer","Asian","Male","45-64",55,80,220,44,25,773.862389313178
-"585","Lung cancer","Asian","Male","65+",72.5,80,526,105.2,7.5,706.536459550451
-"586","Lung cancer","Asian","Female","00-14",7.5,82.5,0,0,75,0
-"587","Lung cancer","Asian","Female","15-24",20,82.5,0,0,62.5,0
-"588","Lung cancer","Asian","Female","25-44",35,82.5,13,2.6,47.5,65.822599855277
-"589","Lung cancer","Asian","Female","45-64",55,82.5,129,25.8,27.5,483.117906480144
-"590","Lung cancer","Asian","Female","65+",73.75,82.5,296,59.2,8.75,455.590640979354
-"591","Lung cancer","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"592","Lung cancer","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"593","Lung cancer","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
-"594","Lung cancer","American Indian/Pacific Islander","Male","45-64",55,80,1,0.2,25,3.5175563150599
-"595","Lung cancer","American Indian/Pacific Islander","Male","65+",72.5,80,2,0.4,7.5,2.68645041654164
-"596","Lung cancer","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"597","Lung cancer","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"598","Lung cancer","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"599","Lung cancer","American Indian/Pacific Islander","Female","45-64",55,82.5,3,0.6,27.5,11.235300150701
-"600","Lung cancer","American Indian/Pacific Islander","Female","65+",73.75,82.5,2,0.4,8.75,3.07831514175239
-"601","Motor vehicle accidents","White","Male","00-14",7.5,80,21,4.2,72.5,124.094858486093
-"602","Motor vehicle accidents","White","Male","15-24",20,80,101,20.2,60,562.032081930798
-"603","Motor vehicle accidents","White","Male","25-44",35,80,183,36.6,45,903.726882012012
-"604","Motor vehicle accidents","White","Male","45-64",55,80,156,31.2,25,548.738785149345
-"605","Motor vehicle accidents","White","Male","65+",72.5,80,145,29,7.5,194.767655199269
-"606","Motor vehicle accidents","White","Female","00-14",7.5,82.5,13,2.6,75,77.5320672046384
-"607","Motor vehicle accidents","White","Female","15-24",20,82.5,40,8,62.5,225.772008841352
-"608","Motor vehicle accidents","White","Female","25-44",35,82.5,45,9,47.5,227.847461037497
-"609","Motor vehicle accidents","White","Female","45-64",55,82.5,50,10,27.5,187.255002511684
-"610","Motor vehicle accidents","White","Female","65+",73.75,82.5,113,22.6,8.75,173.92480550901
-"611","Motor vehicle accidents","Black","Male","00-14",7.5,80,11,2.2,72.5,65.0020687308107
-"612","Motor vehicle accidents","Black","Male","15-24",20,80,46,9.2,60,255.975007612047
-"613","Motor vehicle accidents","Black","Male","25-44",35,80,104,20.8,45,513.593419285515
-"614","Motor vehicle accidents","Black","Male","45-64",55,80,71,14.2,25,249.746498369253
-"615","Motor vehicle accidents","Black","Male","65+",72.5,80,28,5.6,7.5,37.6103058315829
-"616","Motor vehicle accidents","Black","Female","00-14",7.5,82.5,6,1.2,75,35.7840310175254
-"617","Motor vehicle accidents","Black","Female","15-24",20,82.5,11,2.2,62.5,62.0873024313719
-"618","Motor vehicle accidents","Black","Female","25-44",35,82.5,25,5,47.5,126.58192279861
-"619","Motor vehicle accidents","Black","Female","45-64",55,82.5,28,5.6,27.5,104.862801406543
-"620","Motor vehicle accidents","Black","Female","65+",73.75,82.5,27,5.4,8.75,41.5572544136573
-"621","Motor vehicle accidents","Asian","Male","00-14",7.5,80,3,0.6,72.5,17.7278369265847
-"622","Motor vehicle accidents","Asian","Male","15-24",20,80,13,2.6,60,72.3407630207958
-"623","Motor vehicle accidents","Asian","Male","25-44",35,80,21,4.2,45,103.706363509575
-"624","Motor vehicle accidents","Asian","Male","45-64",55,80,31,6.2,25,109.044245766857
-"625","Motor vehicle accidents","Asian","Male","65+",72.5,80,31,6.2,7.5,41.6399814563954
-"626","Motor vehicle accidents","Asian","Female","00-14",7.5,82.5,4,0.8,75,23.8560206783503
-"627","Motor vehicle accidents","Asian","Female","15-24",20,82.5,6,1.2,62.5,33.8658013262029
-"628","Motor vehicle accidents","Asian","Female","25-44",35,82.5,18,3.6,47.5,91.138984414999
-"629","Motor vehicle accidents","Asian","Female","45-64",55,82.5,15,3,27.5,56.1765007535051
-"630","Motor vehicle accidents","Asian","Female","65+",73.75,82.5,29,5.8,8.75,44.6355695554097
-"631","Motor vehicle accidents","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"632","Motor vehicle accidents","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"633","Motor vehicle accidents","American Indian/Pacific Islander","Male","25-44",35,80,1,0.2,45,4.93839826236072
-"634","Motor vehicle accidents","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
-"635","Motor vehicle accidents","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
-"636","Motor vehicle accidents","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"637","Motor vehicle accidents","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"638","Motor vehicle accidents","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"639","Motor vehicle accidents","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
-"640","Motor vehicle accidents","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
-"641","Osteoarthritis","White","Male","00-14",7.5,80,0,0,72.5,0
-"642","Osteoarthritis","White","Male","15-24",20,80,0,0,60,0
-"643","Osteoarthritis","White","Male","25-44",35,80,0,0,45,0
-"644","Osteoarthritis","White","Male","45-64",55,80,6,1.2,25,21.1053378903594
-"645","Osteoarthritis","White","Male","65+",72.5,80,11,2.2,7.5,14.775477290979
-"646","Osteoarthritis","White","Female","00-14",7.5,82.5,0,0,75,0
-"647","Osteoarthritis","White","Female","15-24",20,82.5,0,0,62.5,0
-"648","Osteoarthritis","White","Female","25-44",35,82.5,0,0,47.5,0
-"649","Osteoarthritis","White","Female","45-64",55,82.5,5,1,27.5,18.7255002511684
-"650","Osteoarthritis","White","Female","65+",73.75,82.5,16,3.2,8.75,24.6265211340191
-"651","Osteoarthritis","Black","Male","00-14",7.5,80,0,0,72.5,0
-"652","Osteoarthritis","Black","Male","15-24",20,80,0,0,60,0
-"653","Osteoarthritis","Black","Male","25-44",35,80,0,0,45,0
-"654","Osteoarthritis","Black","Male","45-64",55,80,5,1,25,17.5877815752995
-"655","Osteoarthritis","Black","Male","65+",72.5,80,4,0.8,7.5,5.37290083308328
-"656","Osteoarthritis","Black","Female","00-14",7.5,82.5,0,0,75,0
-"657","Osteoarthritis","Black","Female","15-24",20,82.5,0,0,62.5,0
-"658","Osteoarthritis","Black","Female","25-44",35,82.5,0,0,47.5,0
-"659","Osteoarthritis","Black","Female","45-64",55,82.5,1,0.2,27.5,3.74510005023367
-"660","Osteoarthritis","Black","Female","65+",73.75,82.5,12,2.4,8.75,18.4698908505144
-"661","Osteoarthritis","Asian","Male","00-14",7.5,80,0,0,72.5,0
-"662","Osteoarthritis","Asian","Male","15-24",20,80,0,0,60,0
-"663","Osteoarthritis","Asian","Male","25-44",35,80,0,0,45,0
-"664","Osteoarthritis","Asian","Male","45-64",55,80,0,0,25,0
-"665","Osteoarthritis","Asian","Male","65+",72.5,80,2,0.4,7.5,2.68645041654164
-"666","Osteoarthritis","Asian","Female","00-14",7.5,82.5,0,0,75,0
-"667","Osteoarthritis","Asian","Female","15-24",20,82.5,0,0,62.5,0
-"668","Osteoarthritis","Asian","Female","25-44",35,82.5,0,0,47.5,0
-"669","Osteoarthritis","Asian","Female","45-64",55,82.5,0,0,27.5,0
-"670","Osteoarthritis","Asian","Female","65+",73.75,82.5,1,0.2,8.75,1.5391575708762
-"671","Osteoarthritis","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"672","Osteoarthritis","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"673","Osteoarthritis","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
-"674","Osteoarthritis","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
-"675","Osteoarthritis","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
-"676","Osteoarthritis","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"677","Osteoarthritis","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"678","Osteoarthritis","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"679","Osteoarthritis","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
-"680","Osteoarthritis","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
-"681","Other musculoskeletal disorders","White","Male","00-14",7.5,80,0,0,72.5,0
-"682","Other musculoskeletal disorders","White","Male","15-24",20,80,2,0.4,60,11.1293481570455
-"683","Other musculoskeletal disorders","White","Male","25-44",35,80,14,2.8,45,69.1375756730501
-"684","Other musculoskeletal disorders","White","Male","45-64",55,80,67,13.4,25,235.676273109013
-"685","Other musculoskeletal disorders","White","Male","65+",72.5,80,147,29.4,7.5,197.45410561581
-"686","Other musculoskeletal disorders","White","Female","00-14",7.5,82.5,3,0.6,75,17.8920155087627
-"687","Other musculoskeletal disorders","White","Female","15-24",20,82.5,5,1,62.5,28.2215011051691
-"688","Other musculoskeletal disorders","White","Female","25-44",35,82.5,34,6.8,47.5,172.151415006109
-"689","Other musculoskeletal disorders","White","Female","45-64",55,82.5,91,18.2,27.5,340.804104571264
-"690","Other musculoskeletal disorders","White","Female","65+",73.75,82.5,219,43.8,8.75,337.075508021887
-"691","Other musculoskeletal disorders","Black","Male","00-14",7.5,80,2,0.4,72.5,11.8185579510565
-"692","Other musculoskeletal disorders","Black","Male","15-24",20,80,7,1.4,60,38.9527185496593
-"693","Other musculoskeletal disorders","Black","Male","25-44",35,80,19,3.8,45,93.8295669848537
-"694","Other musculoskeletal disorders","Black","Male","45-64",55,80,59,11.8,25,207.535822588534
-"695","Other musculoskeletal disorders","Black","Male","65+",72.5,80,41,8.2,7.5,55.0722335391036
-"696","Other musculoskeletal disorders","Black","Female","00-14",7.5,82.5,3,0.6,75,17.8920155087627
-"697","Other musculoskeletal disorders","Black","Female","15-24",20,82.5,10,2,62.5,56.4430022103381
-"698","Other musculoskeletal disorders","Black","Female","25-44",35,82.5,63,12.6,47.5,318.986445452496
-"699","Other musculoskeletal disorders","Black","Female","45-64",55,82.5,86,17.2,27.5,322.078604320096
-"700","Other musculoskeletal disorders","Black","Female","65+",73.75,82.5,105,21,8.75,161.611544942001
-"701","Other musculoskeletal disorders","Asian","Male","00-14",7.5,80,0,0,72.5,0
-"702","Other musculoskeletal disorders","Asian","Male","15-24",20,80,0,0,60,0
-"703","Other musculoskeletal disorders","Asian","Male","25-44",35,80,3,0.6,45,14.8151947870822
-"704","Other musculoskeletal disorders","Asian","Male","45-64",55,80,4,0.8,25,14.0702252602396
-"705","Other musculoskeletal disorders","Asian","Male","65+",72.5,80,16,3.2,7.5,21.4916033323331
-"706","Other musculoskeletal disorders","Asian","Female","00-14",7.5,82.5,0,0,75,0
-"707","Other musculoskeletal disorders","Asian","Female","15-24",20,82.5,0,0,62.5,0
-"708","Other musculoskeletal disorders","Asian","Female","25-44",35,82.5,3,0.6,47.5,15.1898307358332
-"709","Other musculoskeletal disorders","Asian","Female","45-64",55,82.5,10,2,27.5,37.4510005023367
-"710","Other musculoskeletal disorders","Asian","Female","65+",73.75,82.5,25,5,8.75,38.4789392719049
-"711","Other musculoskeletal disorders","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"712","Other musculoskeletal disorders","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"713","Other musculoskeletal disorders","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
-"714","Other musculoskeletal disorders","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
-"715","Other musculoskeletal disorders","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
-"716","Other musculoskeletal disorders","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"717","Other musculoskeletal disorders","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"718","Other musculoskeletal disorders","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"719","Other musculoskeletal disorders","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
-"720","Other musculoskeletal disorders","American Indian/Pacific Islander","Female","65+",73.75,82.5,1,0.2,8.75,1.5391575708762
-"721","Ischemic stroke","White","Male","00-14",7.5,80,12,2.4,72.5,70.9113477063389
-"722","Ischemic stroke","White","Male","15-24",20,80,4,0.8,60,22.258696314091
-"723","Ischemic stroke","White","Male","25-44",35,80,73,14.6,45,360.503073152333
-"724","Ischemic stroke","White","Male","45-64",55,80,419,83.8,25,1473.8560960101
-"725","Ischemic stroke","White","Male","65+",72.5,80,1451,290.2,7.5,1949.01977720096
-"726","Ischemic stroke","White","Female","00-14",7.5,82.5,5,1,75,29.8200258479379
-"727","Ischemic stroke","White","Female","15-24",20,82.5,3,0.6,62.5,16.9329006631014
-"728","Ischemic stroke","White","Female","25-44",35,82.5,46,9.2,47.5,232.910737949442
-"729","Ischemic stroke","White","Female","45-64",55,82.5,274,54.8,27.5,1026.15741376403
-"730","Ischemic stroke","White","Female","65+",73.75,82.5,2530,506,8.75,3894.06865431678
-"731","Ischemic stroke","Black","Male","00-14",7.5,80,7,1.4,72.5,41.3649528286977
-"732","Ischemic stroke","Black","Male","15-24",20,80,7,1.4,60,38.9527185496593
-"733","Ischemic stroke","Black","Male","25-44",35,80,56,11.2,45,276.5503026922
-"734","Ischemic stroke","Black","Male","45-64",55,80,346,69.2,25,1217.07448501073
-"735","Ischemic stroke","Black","Male","65+",72.5,80,492,98.4,7.5,660.866802469243
-"736","Ischemic stroke","Black","Female","00-14",7.5,82.5,4,0.8,75,23.8560206783503
-"737","Ischemic stroke","Black","Female","15-24",20,82.5,5,1,62.5,28.2215011051691
-"738","Ischemic stroke","Black","Female","25-44",35,82.5,53,10.6,47.5,268.353676333052
-"739","Ischemic stroke","Black","Female","45-64",55,82.5,321,64.2,27.5,1202.17711612501
-"740","Ischemic stroke","Black","Female","65+",73.75,82.5,985,197,8.75,1516.07020731305
-"741","Ischemic stroke","Asian","Male","00-14",7.5,80,0,0,72.5,0
-"742","Ischemic stroke","Asian","Male","15-24",20,80,0,0,60,0
-"743","Ischemic stroke","Asian","Male","25-44",35,80,18,3.6,45,88.891168722493
-"744","Ischemic stroke","Asian","Male","45-64",55,80,99,19.8,25,348.23807519093
-"745","Ischemic stroke","Asian","Male","65+",72.5,80,244,48.8,7.5,327.74695081808
-"746","Ischemic stroke","Asian","Female","00-14",7.5,82.5,0,0,75,0
-"747","Ischemic stroke","Asian","Female","15-24",20,82.5,0,0,62.5,0
-"748","Ischemic stroke","Asian","Female","25-44",35,82.5,16,3.2,47.5,81.0124305911102
-"749","Ischemic stroke","Asian","Female","45-64",55,82.5,55,11,27.5,205.980502762852
-"750","Ischemic stroke","Asian","Female","65+",73.75,82.5,358,71.6,8.75,551.018410373678
-"751","Ischemic stroke","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
-"752","Ischemic stroke","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
-"753","Ischemic stroke","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
-"754","Ischemic stroke","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
-"755","Ischemic stroke","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
-"756","Ischemic stroke","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
-"757","Ischemic stroke","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
-"758","Ischemic stroke","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
-"759","Ischemic stroke","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
-"760","Ischemic stroke","American Indian/Pacific Islander","Female","65+",73.75,82.5,3,0.6,8.75,4.61747271262859
-"761","Opioid use disorders","","Male","00-14",7.5,80,0,0,72.5,0
-"762","Opioid use disorders","","Male","15-24",20,80,127,25.4,60,706.71360797239
-"763","Opioid use disorders","","Male","25-44",35,80,779,155.8,45,3847.012246379
-"764","Opioid use disorders","","Male","45-64",55,80,881,176.2,25,3098.96711356777
-"765","Opioid use disorders","","Male","65+",72.5,80,36,7.2,7.5,48.3561074977495
-"766","Opioid use disorders","","Female","00-14",7.5,82.5,0,0,75,0
-"767","Opioid use disorders","","Female","15-24",20,82.5,39,7.8,62.5,220.127708620319
-"768","Opioid use disorders","","Female","25-44",35,82.5,260,52,47.5,1316.45199710554
-"769","Opioid use disorders","","Female","45-64",55,82.5,374,74.8,27.5,1400.66741878739
-"770","Opioid use disorders","","Female","65+",73.75,82.5,10,2,8.75,15.391575708762
-"771","Cocaine use disorders","","Male","00-14",7.5,80,0,0,72.5,0
-"772","Cocaine use disorders","","Male","15-24",20,80,61,12.2,60,339.445118789888
-"773","Cocaine use disorders","","Male","25-44",35,80,470,94,45,2321.04718330954
-"774","Cocaine use disorders","","Male","45-64",55,80,625,125,25,2198.47269691244
-"775","Cocaine use disorders","","Male","65+",72.5,80,38,7.6,7.5,51.0425579142911
-"776","Cocaine use disorders","","Female","00-14",7.5,82.5,0,0,75,0
-"777","Cocaine use disorders","","Female","15-24",20,82.5,17,3.4,62.5,95.9531037575748
-"778","Cocaine use disorders","","Female","25-44",35,82.5,146,29.2,47.5,739.23842914388
-"779","Cocaine use disorders","","Female","45-64",55,82.5,261,52.2,27.5,977.471113110988
-"780","Cocaine use disorders","","Female","65+",73.75,82.5,10,2,8.75,15.391575708762
-"781","Other drug use disorders","","Male","00-14",7.5,80,0,0,72.5,0
-"782","Other drug use disorders","","Male","15-24",20,80,75,15,60,417.350555889207
-"783","Other drug use disorders","","Male","25-44",35,80,414,82.8,45,2044.49688061734
-"784","Other drug use disorders","","Male","45-64",55,80,397,79.4,25,1396.46985707878
-"785","Other drug use disorders","","Male","65+",72.5,80,12,2.4,7.5,16.1187024992498
-"786","Other drug use disorders","","Female","00-14",7.5,82.5,0,0,75,0
-"787","Other drug use disorders","","Female","15-24",20,82.5,20,4,62.5,112.886004420676
-"788","Other drug use disorders","","Female","25-44",35,82.5,141,28.2,47.5,713.922044584158
-"789","Other drug use disorders","","Female","45-64",55,82.5,177,35.4,27.5,662.88270889136
-"790","Other drug use disorders","","Female","65+",73.75,82.5,6,1.2,8.75,9.23494542525718
+"cause_name","race","sex","ageGroup","mean_age","sle","mortality_5year","mortality","le","yll"
+"Poisonings","White","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
+"Poisonings","White","Male","15-24",20,80,126,25.2,60,701.148933893867
+"Poisonings","White","Male","25-44",35,80,773,154.6,45,3817.38185680484
+"Poisonings","White","Male","45-64",55,80,685,137,25,2409.52607581603
+"Poisonings","White","Male","65+",72.5,80,25,5,7.5,33.5806302067705
+"Poisonings","White","Female","00-14",7.5,82.5,1,0.2,75,5.96400516958757
+"Poisonings","White","Female","15-24",20,82.5,37,7.4,62.5,208.839108178251
+"Poisonings","White","Female","25-44",35,82.5,220,44,47.5,1113.92092062777
+"Poisonings","White","Female","45-64",55,82.5,282,56.4,27.5,1056.1182141659
+"Poisonings","White","Female","65+",73.75,82.5,16,3.2,8.75,24.6265211340191
+"Poisonings","Black","Male","00-14",7.5,80,2,0.4,72.5,11.8185579510565
+"Poisonings","Black","Male","15-24",20,80,10,2,60,55.6467407852276
+"Poisonings","Black","Male","25-44",35,80,111,22.2,45,548.16220712204
+"Poisonings","Black","Male","45-64",55,80,319,63.8,25,1122.10046450411
+"Poisonings","Black","Male","65+",72.5,80,26,5.2,7.5,34.9238554150413
+"Poisonings","Black","Female","00-14",7.5,82.5,0,0,75,0
+"Poisonings","Black","Female","15-24",20,82.5,7,1.4,62.5,39.5101015472367
+"Poisonings","Black","Female","25-44",35,82.5,73,14.6,47.5,369.61921457194
+"Poisonings","Black","Female","45-64",55,82.5,172,34.4,27.5,644.157208640192
+"Poisonings","Black","Female","65+",73.75,82.5,12,2.4,8.75,18.4698908505144
+"Poisonings","Asian","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
+"Poisonings","Asian","Male","15-24",20,80,3,0.6,60,16.6940222355683
+"Poisonings","Asian","Male","25-44",35,80,16,3.2,45,79.0143721977716
+"Poisonings","Asian","Male","45-64",55,80,8,1.6,25,28.1404505204792
+"Poisonings","Asian","Male","65+",72.5,80,2,0.4,7.5,2.68645041654164
+"Poisonings","Asian","Female","00-14",7.5,82.5,0,0,75,0
+"Poisonings","Asian","Female","15-24",20,82.5,0,0,62.5,0
+"Poisonings","Asian","Female","25-44",35,82.5,3,0.6,47.5,15.1898307358332
+"Poisonings","Asian","Female","45-64",55,82.5,2,0.4,27.5,7.49020010046734
+"Poisonings","Asian","Female","65+",73.75,82.5,1,0.2,8.75,1.5391575708762
+"Poisonings","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Poisonings","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Poisonings","American Indian/Pacific Islander","Male","25-44",35,80,1,0.2,45,4.93839826236072
+"Poisonings","American Indian/Pacific Islander","Male","45-64",55,80,1,0.2,25,3.5175563150599
+"Poisonings","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
+"Poisonings","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Poisonings","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Poisonings","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Poisonings","American Indian/Pacific Islander","Female","45-64",55,82.5,1,0.2,27.5,3.74510005023367
+"Poisonings","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
+"Alcohol use disorders","White","Male","00-14",7.5,80,0,0,72.5,0
+"Alcohol use disorders","White","Male","15-24",20,80,10,2,60,55.6467407852276
+"Alcohol use disorders","White","Male","25-44",35,80,175,35,45,864.219695913127
+"Alcohol use disorders","White","Male","45-64",55,80,417,83.4,25,1466.82098337998
+"Alcohol use disorders","White","Male","65+",72.5,80,100,20,7.5,134.322520827082
+"Alcohol use disorders","White","Female","00-14",7.5,82.5,0,0,75,0
+"Alcohol use disorders","White","Female","15-24",20,82.5,1,0.2,62.5,5.64430022103381
+"Alcohol use disorders","White","Female","25-44",35,82.5,34,6.8,47.5,172.151415006109
+"Alcohol use disorders","White","Female","45-64",55,82.5,110,22,27.5,411.961005525704
+"Alcohol use disorders","White","Female","65+",73.75,82.5,26,5.2,8.75,40.0180968427811
+"Alcohol use disorders","Black","Male","00-14",7.5,80,0,0,72.5,0
+"Alcohol use disorders","Black","Male","15-24",20,80,0,0,60,0
+"Alcohol use disorders","Black","Male","25-44",35,80,33,6.6,45,162.967142657904
+"Alcohol use disorders","Black","Male","45-64",55,80,198,39.6,25,696.476150381861
+"Alcohol use disorders","Black","Male","65+",72.5,80,59,11.8,7.5,79.2502872879784
+"Alcohol use disorders","Black","Female","00-14",7.5,82.5,0,0,75,0
+"Alcohol use disorders","Black","Female","15-24",20,82.5,1,0.2,62.5,5.64430022103381
+"Alcohol use disorders","Black","Female","25-44",35,82.5,23,4.6,47.5,116.455368974721
+"Alcohol use disorders","Black","Female","45-64",55,82.5,50,10,27.5,187.255002511684
+"Alcohol use disorders","Black","Female","65+",73.75,82.5,18,3.6,8.75,27.7048362757715
+"Alcohol use disorders","Asian","Male","00-14",7.5,80,0,0,72.5,0
+"Alcohol use disorders","Asian","Male","15-24",20,80,0,0,60,0
+"Alcohol use disorders","Asian","Male","25-44",35,80,17,3.4,45,83.9527704601323
+"Alcohol use disorders","Asian","Male","45-64",55,80,36,7.2,25,126.632027342156
+"Alcohol use disorders","Asian","Male","65+",72.5,80,11,2.2,7.5,14.775477290979
+"Alcohol use disorders","Asian","Female","00-14",7.5,82.5,0,0,75,0
+"Alcohol use disorders","Asian","Female","15-24",20,82.5,1,0.2,62.5,5.64430022103381
+"Alcohol use disorders","Asian","Female","25-44",35,82.5,0,0,47.5,0
+"Alcohol use disorders","Asian","Female","45-64",55,82.5,2,0.4,27.5,7.49020010046734
+"Alcohol use disorders","Asian","Female","65+",73.75,82.5,0,0,8.75,0
+"Alcohol use disorders","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Alcohol use disorders","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Alcohol use disorders","American Indian/Pacific Islander","Male","25-44",35,80,1,0.2,45,4.93839826236072
+"Alcohol use disorders","American Indian/Pacific Islander","Male","45-64",55,80,1,0.2,25,3.5175563150599
+"Alcohol use disorders","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
+"Alcohol use disorders","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Alcohol use disorders","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Alcohol use disorders","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Alcohol use disorders","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
+"Alcohol use disorders","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
+"Alzheimer's disease and other dementias","White","Male","00-14",7.5,80,4,0.8,72.5,23.637115902113
+"Alzheimer's disease and other dementias","White","Male","15-24",20,80,0,0,60,0
+"Alzheimer's disease and other dementias","White","Male","25-44",35,80,0,0,45,0
+"Alzheimer's disease and other dementias","White","Male","45-64",55,80,41,8.2,25,144.219808917456
+"Alzheimer's disease and other dementias","White","Male","65+",72.5,80,1988,397.6,7.5,2670.33171404239
+"Alzheimer's disease and other dementias","White","Female","00-14",7.5,82.5,1,0.2,75,5.96400516958757
+"Alzheimer's disease and other dementias","White","Female","15-24",20,82.5,0,0,62.5,0
+"Alzheimer's disease and other dementias","White","Female","25-44",35,82.5,0,0,47.5,0
+"Alzheimer's disease and other dementias","White","Female","45-64",55,82.5,44,8.8,27.5,164.784402210282
+"Alzheimer's disease and other dementias","White","Female","65+",73.75,82.5,4539,907.8,8.75,6986.23621420706
+"Alzheimer's disease and other dementias","Black","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
+"Alzheimer's disease and other dementias","Black","Male","15-24",20,80,0,0,60,0
+"Alzheimer's disease and other dementias","Black","Male","25-44",35,80,1,0.2,45,4.93839826236072
+"Alzheimer's disease and other dementias","Black","Male","45-64",55,80,22,4.4,25,77.3862389313179
+"Alzheimer's disease and other dementias","Black","Male","65+",72.5,80,487,97.4,7.5,654.150676427889
+"Alzheimer's disease and other dementias","Black","Female","00-14",7.5,82.5,1,0.2,75,5.96400516958757
+"Alzheimer's disease and other dementias","Black","Female","15-24",20,82.5,0,0,62.5,0
+"Alzheimer's disease and other dementias","Black","Female","25-44",35,82.5,3,0.6,47.5,15.1898307358332
+"Alzheimer's disease and other dementias","Black","Female","45-64",55,82.5,10,2,27.5,37.4510005023367
+"Alzheimer's disease and other dementias","Black","Female","65+",73.75,82.5,1382,276.4,8.75,2127.1157629509
+"Alzheimer's disease and other dementias","Asian","Male","00-14",7.5,80,0,0,72.5,0
+"Alzheimer's disease and other dementias","Asian","Male","15-24",20,80,0,0,60,0
+"Alzheimer's disease and other dementias","Asian","Male","25-44",35,80,0,0,45,0
+"Alzheimer's disease and other dementias","Asian","Male","45-64",55,80,6,1.2,25,21.1053378903594
+"Alzheimer's disease and other dementias","Asian","Male","65+",72.5,80,164,32.8,7.5,220.288934156414
+"Alzheimer's disease and other dementias","Asian","Female","00-14",7.5,82.5,0,0,75,0
+"Alzheimer's disease and other dementias","Asian","Female","15-24",20,82.5,0,0,62.5,0
+"Alzheimer's disease and other dementias","Asian","Female","25-44",35,82.5,0,0,47.5,0
+"Alzheimer's disease and other dementias","Asian","Female","45-64",55,82.5,3,0.6,27.5,11.235300150701
+"Alzheimer's disease and other dementias","Asian","Female","65+",73.75,82.5,280,56,8.75,430.964119845335
+"Alzheimer's disease and other dementias","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Alzheimer's disease and other dementias","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Alzheimer's disease and other dementias","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
+"Alzheimer's disease and other dementias","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
+"Alzheimer's disease and other dementias","American Indian/Pacific Islander","Male","65+",72.5,80,1,0.2,7.5,1.34322520827082
+"Alzheimer's disease and other dementias","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Alzheimer's disease and other dementias","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Alzheimer's disease and other dementias","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Alzheimer's disease and other dementias","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
+"Alzheimer's disease and other dementias","American Indian/Pacific Islander","Female","65+",73.75,82.5,3,0.6,8.75,4.61747271262859
+"Asthma","White","Male","00-14",7.5,80,10,2,72.5,59.0927897552824
+"Asthma","White","Male","15-24",20,80,5,1,60,27.8233703926138
+"Asthma","White","Male","25-44",35,80,28,5.6,45,138.2751513461
+"Asthma","White","Male","45-64",55,80,83,16.6,25,291.957174149972
+"Asthma","White","Male","65+",72.5,80,41,8.2,7.5,55.0722335391036
+"Asthma","White","Female","00-14",7.5,82.5,6,1.2,75,35.7840310175254
+"Asthma","White","Female","15-24",20,82.5,6,1.2,62.5,33.8658013262029
+"Asthma","White","Female","25-44",35,82.5,31,6.2,47.5,156.961584270276
+"Asthma","White","Female","45-64",55,82.5,85,17,27.5,318.333504269862
+"Asthma","White","Female","65+",73.75,82.5,101,20.2,8.75,155.454914658496
+"Asthma","Black","Male","00-14",7.5,80,23,4.6,72.5,135.91341643715
+"Asthma","Black","Male","15-24",20,80,24,4.8,60,133.552177884546
+"Asthma","Black","Male","25-44",35,80,40,8,45,197.535930494429
+"Asthma","Black","Male","45-64",55,80,81,16.2,25,284.922061519852
+"Asthma","Black","Male","65+",72.5,80,32,6.4,7.5,42.9832066646662
+"Asthma","Black","Female","00-14",7.5,82.5,11,2.2,75,65.6040568654633
+"Asthma","Black","Female","15-24",20,82.5,8,1.6,62.5,45.1544017682705
+"Asthma","Black","Female","25-44",35,82.5,35,7,47.5,177.214691918054
+"Asthma","Black","Female","45-64",55,82.5,77,15.4,27.5,288.372703867993
+"Asthma","Black","Female","65+",73.75,82.5,57,11.4,8.75,87.7319815399432
+"Asthma","Asian","Male","00-14",7.5,80,0,0,72.5,0
+"Asthma","Asian","Male","15-24",20,80,1,0.2,60,5.56467407852276
+"Asthma","Asian","Male","25-44",35,80,4,0.8,45,19.7535930494429
+"Asthma","Asian","Male","45-64",55,80,15,3,25,52.7633447258985
+"Asthma","Asian","Male","65+",72.5,80,14,2.8,7.5,18.8051529157915
+"Asthma","Asian","Female","00-14",7.5,82.5,0,0,75,0
+"Asthma","Asian","Female","15-24",20,82.5,0,0,62.5,0
+"Asthma","Asian","Female","25-44",35,82.5,3,0.6,47.5,15.1898307358332
+"Asthma","Asian","Female","45-64",55,82.5,2,0.4,27.5,7.49020010046734
+"Asthma","Asian","Female","65+",73.75,82.5,8,1.6,8.75,12.3132605670096
+"Asthma","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Asthma","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Asthma","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
+"Asthma","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
+"Asthma","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
+"Asthma","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Asthma","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Asthma","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Asthma","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
+"Asthma","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
+"Breast cancer","White","Male","00-14",7.5,80,0,0,72.5,0
+"Breast cancer","White","Male","15-24",20,80,0,0,60,0
+"Breast cancer","White","Male","25-44",35,80,1,0.2,45,4.93839826236072
+"Breast cancer","White","Male","45-64",55,80,12,2.4,25,42.2106757807188
+"Breast cancer","White","Male","65+",72.5,80,23,4.6,7.5,30.8941797902289
+"Breast cancer","White","Female","00-14",7.5,82.5,0,0,75,0
+"Breast cancer","White","Female","15-24",20,82.5,2,0.4,62.5,11.2886004420676
+"Breast cancer","White","Female","25-44",35,82.5,207,41.4,47.5,1048.09832077249
+"Breast cancer","White","Female","45-64",55,82.5,1032,206.4,27.5,3864.94325184115
+"Breast cancer","White","Female","65+",73.75,82.5,2076,415.2,8.75,3195.29111713898
+"Breast cancer","Black","Male","00-14",7.5,80,0,0,72.5,0
+"Breast cancer","Black","Male","15-24",20,80,0,0,60,0
+"Breast cancer","Black","Male","25-44",35,80,1,0.2,45,4.93839826236072
+"Breast cancer","Black","Male","45-64",55,80,1,0.2,25,3.5175563150599
+"Breast cancer","Black","Male","65+",72.5,80,10,2,7.5,13.4322520827082
+"Breast cancer","Black","Female","00-14",7.5,82.5,0,0,75,0
+"Breast cancer","Black","Female","15-24",20,82.5,0,0,62.5,0
+"Breast cancer","Black","Female","25-44",35,82.5,165,33,47.5,835.440690470824
+"Breast cancer","Black","Female","45-64",55,82.5,723,144.6,27.5,2707.70733631894
+"Breast cancer","Black","Female","65+",73.75,82.5,849,169.8,8.75,1306.74477767389
+"Breast cancer","Asian","Male","00-14",7.5,80,0,0,72.5,0
+"Breast cancer","Asian","Male","15-24",20,80,0,0,60,0
+"Breast cancer","Asian","Male","25-44",35,80,0,0,45,0
+"Breast cancer","Asian","Male","45-64",55,80,0,0,25,0
+"Breast cancer","Asian","Male","65+",72.5,80,0,0,7.5,0
+"Breast cancer","Asian","Female","00-14",7.5,82.5,0,0,75,0
+"Breast cancer","Asian","Female","15-24",20,82.5,0,0,62.5,0
+"Breast cancer","Asian","Female","25-44",35,82.5,30,6,47.5,151.898307358332
+"Breast cancer","Asian","Female","45-64",55,82.5,129,25.8,27.5,483.117906480144
+"Breast cancer","Asian","Female","65+",73.75,82.5,102,20.4,8.75,156.994072229372
+"Breast cancer","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Breast cancer","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Breast cancer","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
+"Breast cancer","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
+"Breast cancer","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
+"Breast cancer","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Breast cancer","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Breast cancer","American Indian/Pacific Islander","Female","25-44",35,82.5,1,0.2,47.5,5.06327691194439
+"Breast cancer","American Indian/Pacific Islander","Female","45-64",55,82.5,1,0.2,27.5,3.74510005023367
+"Breast cancer","American Indian/Pacific Islander","Female","65+",73.75,82.5,2,0.4,8.75,3.07831514175239
+"Chronic obstructive pulmonary disease","White","Male","00-14",7.5,80,0,0,72.5,0
+"Chronic obstructive pulmonary disease","White","Male","15-24",20,80,0,0,60,0
+"Chronic obstructive pulmonary disease","White","Male","25-44",35,80,11,2.2,45,54.322380885968
+"Chronic obstructive pulmonary disease","White","Male","45-64",55,80,339,67.8,25,1192.45159080531
+"Chronic obstructive pulmonary disease","White","Male","65+",72.5,80,2059,411.8,7.5,2765.70070382962
+"Chronic obstructive pulmonary disease","White","Female","00-14",7.5,82.5,1,0.2,75,5.96400516958757
+"Chronic obstructive pulmonary disease","White","Female","15-24",20,82.5,1,0.2,62.5,5.64430022103381
+"Chronic obstructive pulmonary disease","White","Female","25-44",35,82.5,9,1.8,47.5,45.5694922074995
+"Chronic obstructive pulmonary disease","White","Female","45-64",55,82.5,272,54.4,27.5,1018.66721366356
+"Chronic obstructive pulmonary disease","White","Female","65+",73.75,82.5,2698,539.6,8.75,4152.64712622398
+"Chronic obstructive pulmonary disease","Black","Male","00-14",7.5,80,0,0,72.5,0
+"Chronic obstructive pulmonary disease","Black","Male","15-24",20,80,0,0,60,0
+"Chronic obstructive pulmonary disease","Black","Male","25-44",35,80,9,1.8,45,44.4455843612465
+"Chronic obstructive pulmonary disease","Black","Male","45-64",55,80,157,31.4,25,552.256341464405
+"Chronic obstructive pulmonary disease","Black","Male","65+",72.5,80,593,118.6,7.5,796.532548504596
+"Chronic obstructive pulmonary disease","Black","Female","00-14",7.5,82.5,0,0,75,0
+"Chronic obstructive pulmonary disease","Black","Female","15-24",20,82.5,0,0,62.5,0
+"Chronic obstructive pulmonary disease","Black","Female","25-44",35,82.5,9,1.8,47.5,45.5694922074995
+"Chronic obstructive pulmonary disease","Black","Female","45-64",55,82.5,172,34.4,27.5,644.157208640192
+"Chronic obstructive pulmonary disease","Black","Female","65+",73.75,82.5,758,151.6,8.75,1166.68143872416
+"Chronic obstructive pulmonary disease","Asian","Male","00-14",7.5,80,0,0,72.5,0
+"Chronic obstructive pulmonary disease","Asian","Male","15-24",20,80,0,0,60,0
+"Chronic obstructive pulmonary disease","Asian","Male","25-44",35,80,1,0.2,45,4.93839826236072
+"Chronic obstructive pulmonary disease","Asian","Male","45-64",55,80,16,3.2,25,56.2809010409584
+"Chronic obstructive pulmonary disease","Asian","Male","65+",72.5,80,258,51.6,7.5,346.552103733871
+"Chronic obstructive pulmonary disease","Asian","Female","00-14",7.5,82.5,0,0,75,0
+"Chronic obstructive pulmonary disease","Asian","Female","15-24",20,82.5,1,0.2,62.5,5.64430022103381
+"Chronic obstructive pulmonary disease","Asian","Female","25-44",35,82.5,0,0,47.5,0
+"Chronic obstructive pulmonary disease","Asian","Female","45-64",55,82.5,1,0.2,27.5,3.74510005023367
+"Chronic obstructive pulmonary disease","Asian","Female","65+",73.75,82.5,133,26.6,8.75,204.707956926534
+"Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
+"Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
+"Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Male","65+",72.5,80,3,0.6,7.5,4.02967562481246
+"Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Female","45-64",55,82.5,1,0.2,27.5,3.74510005023367
+"Chronic obstructive pulmonary disease","American Indian/Pacific Islander","Female","65+",73.75,82.5,2,0.4,8.75,3.07831514175239
+"Colon and rectum cancers","White","Male","00-14",7.5,80,0,0,72.5,0
+"Colon and rectum cancers","White","Male","15-24",20,80,2,0.4,60,11.1293481570455
+"Colon and rectum cancers","White","Male","25-44",35,80,75,15,45,370.379869677054
+"Colon and rectum cancers","White","Male","45-64",55,80,572,114.4,25,2012.04221221426
+"Colon and rectum cancers","White","Male","65+",72.5,80,1462,292.4,7.5,1963.79525449194
+"Colon and rectum cancers","White","Female","00-14",7.5,82.5,0,0,75,0
+"Colon and rectum cancers","White","Female","15-24",20,82.5,3,0.6,62.5,16.9329006631014
+"Colon and rectum cancers","White","Female","25-44",35,82.5,47,9.4,47.5,237.974014861386
+"Colon and rectum cancers","White","Female","45-64",55,82.5,433,86.6,27.5,1621.62832175118
+"Colon and rectum cancers","White","Female","65+",73.75,82.5,1692,338.4,8.75,2604.25460992252
+"Colon and rectum cancers","Black","Male","00-14",7.5,80,0,0,72.5,0
+"Colon and rectum cancers","Black","Male","15-24",20,80,1,0.2,60,5.56467407852276
+"Colon and rectum cancers","Black","Male","25-44",35,80,39,7.8,45,192.597532232068
+"Colon and rectum cancers","Black","Male","45-64",55,80,329,65.8,25,1157.27602765471
+"Colon and rectum cancers","Black","Male","65+",72.5,80,507,101.4,7.5,681.015180593306
+"Colon and rectum cancers","Black","Female","00-14",7.5,82.5,0,0,75,0
+"Colon and rectum cancers","Black","Female","15-24",20,82.5,0,0,62.5,0
+"Colon and rectum cancers","Black","Female","25-44",35,82.5,44,8.8,47.5,222.784184125553
+"Colon and rectum cancers","Black","Female","45-64",55,82.5,280,56,27.5,1048.62801406543
+"Colon and rectum cancers","Black","Female","65+",73.75,82.5,678,135.6,8.75,1043.54883305406
+"Colon and rectum cancers","Asian","Male","00-14",7.5,80,0,0,72.5,0
+"Colon and rectum cancers","Asian","Male","15-24",20,80,1,0.2,60,5.56467407852276
+"Colon and rectum cancers","Asian","Male","25-44",35,80,13,2.6,45,64.1991774106894
+"Colon and rectum cancers","Asian","Male","45-64",55,80,87,17.4,25,306.027399410211
+"Colon and rectum cancers","Asian","Male","65+",72.5,80,187,37.4,7.5,251.183113946643
+"Colon and rectum cancers","Asian","Female","00-14",7.5,82.5,0,0,75,0
+"Colon and rectum cancers","Asian","Female","15-24",20,82.5,0,0,62.5,0
+"Colon and rectum cancers","Asian","Female","25-44",35,82.5,15,3,47.5,75.9491536791658
+"Colon and rectum cancers","Asian","Female","45-64",55,82.5,65,13,27.5,243.431503265189
+"Colon and rectum cancers","Asian","Female","65+",73.75,82.5,153,30.6,8.75,235.491108344058
+"Colon and rectum cancers","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Colon and rectum cancers","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Colon and rectum cancers","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
+"Colon and rectum cancers","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
+"Colon and rectum cancers","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
+"Colon and rectum cancers","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Colon and rectum cancers","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Colon and rectum cancers","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Colon and rectum cancers","American Indian/Pacific Islander","Female","45-64",55,82.5,1,0.2,27.5,3.74510005023367
+"Colon and rectum cancers","American Indian/Pacific Islander","Female","65+",73.75,82.5,1,0.2,8.75,1.5391575708762
+"Congenital anomalies","White","Male","00-14",7.5,80,200,40,72.5,1181.85579510565
+"Congenital anomalies","White","Male","15-24",20,80,21,4.2,60,116.858155648978
+"Congenital anomalies","White","Male","25-44",35,80,43,8.6,45,212.351125281511
+"Congenital anomalies","White","Male","45-64",55,80,63,12.6,25,221.606047848774
+"Congenital anomalies","White","Male","65+",72.5,80,26,5.2,7.5,34.9238554150413
+"Congenital anomalies","White","Female","00-14",7.5,82.5,184,36.8,75,1097.37695120411
+"Congenital anomalies","White","Female","15-24",20,82.5,16,3.2,62.5,90.308803536541
+"Congenital anomalies","White","Female","25-44",35,82.5,34,6.8,47.5,172.151415006109
+"Congenital anomalies","White","Female","45-64",55,82.5,39,7.8,27.5,146.058901959113
+"Congenital anomalies","White","Female","65+",73.75,82.5,17,3.4,8.75,26.1656787048953
+"Congenital anomalies","Black","Male","00-14",7.5,80,113,22.6,72.5,667.748524234691
+"Congenital anomalies","Black","Male","15-24",20,80,17,3.4,60,94.5994593348868
+"Congenital anomalies","Black","Male","25-44",35,80,24,4.8,45,118.521558296657
+"Congenital anomalies","Black","Male","45-64",55,80,22,4.4,25,77.3862389313179
+"Congenital anomalies","Black","Male","65+",72.5,80,5,1,7.5,6.7161260413541
+"Congenital anomalies","Black","Female","00-14",7.5,82.5,114,22.8,75,679.896589332983
+"Congenital anomalies","Black","Female","15-24",20,82.5,11,2.2,62.5,62.0873024313719
+"Congenital anomalies","Black","Female","25-44",35,82.5,18,3.6,47.5,91.138984414999
+"Congenital anomalies","Black","Female","45-64",55,82.5,20,4,27.5,74.9020010046734
+"Congenital anomalies","Black","Female","65+",73.75,82.5,10,2,8.75,15.391575708762
+"Congenital anomalies","Asian","Male","00-14",7.5,80,34,6.8,72.5,200.91548516796
+"Congenital anomalies","Asian","Male","15-24",20,80,9,1.8,60,50.0820667067048
+"Congenital anomalies","Asian","Male","25-44",35,80,6,1.2,45,29.6303895741643
+"Congenital anomalies","Asian","Male","45-64",55,80,5,1,25,17.5877815752995
+"Congenital anomalies","Asian","Male","65+",72.5,80,4,0.8,7.5,5.37290083308328
+"Congenital anomalies","Asian","Female","00-14",7.5,82.5,29,5.8,75,172.95614991804
+"Congenital anomalies","Asian","Female","15-24",20,82.5,5,1,62.5,28.2215011051691
+"Congenital anomalies","Asian","Female","25-44",35,82.5,4,0.8,47.5,20.2531076477775
+"Congenital anomalies","Asian","Female","45-64",55,82.5,8,1.6,27.5,29.9608004018694
+"Congenital anomalies","Asian","Female","65+",73.75,82.5,2,0.4,8.75,3.07831514175239
+"Congenital anomalies","American Indian/Pacific Islander","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
+"Congenital anomalies","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Congenital anomalies","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
+"Congenital anomalies","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
+"Congenital anomalies","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
+"Congenital anomalies","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Congenital anomalies","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Congenital anomalies","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Congenital anomalies","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
+"Congenital anomalies","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
+"Diabetes mellitus","White","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
+"Diabetes mellitus","White","Male","15-24",20,80,4,0.8,60,22.258696314091
+"Diabetes mellitus","White","Male","25-44",35,80,77,15.4,45,380.256666201776
+"Diabetes mellitus","White","Male","45-64",55,80,616,123.2,25,2166.8146900769
+"Diabetes mellitus","White","Male","65+",72.5,80,1478,295.6,7.5,1985.28685782427
+"Diabetes mellitus","White","Female","00-14",7.5,82.5,2,0.4,75,11.9280103391751
+"Diabetes mellitus","White","Female","15-24",20,82.5,2,0.4,62.5,11.2886004420676
+"Diabetes mellitus","White","Female","25-44",35,82.5,35,7,47.5,177.214691918054
+"Diabetes mellitus","White","Female","45-64",55,82.5,363,72.6,27.5,1359.47131823482
+"Diabetes mellitus","White","Female","65+",73.75,82.5,1747,349.4,8.75,2688.90827632072
+"Diabetes mellitus","Black","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
+"Diabetes mellitus","Black","Male","15-24",20,80,10,2,60,55.6467407852276
+"Diabetes mellitus","Black","Male","25-44",35,80,123,24.6,45,607.422986270369
+"Diabetes mellitus","Black","Male","45-64",55,80,496,99.2,25,1744.70793226971
+"Diabetes mellitus","Black","Male","65+",72.5,80,880,176,7.5,1182.03818327832
+"Diabetes mellitus","Black","Female","00-14",7.5,82.5,4,0.8,75,23.8560206783503
+"Diabetes mellitus","Black","Female","15-24",20,82.5,1,0.2,62.5,5.64430022103381
+"Diabetes mellitus","Black","Female","25-44",35,82.5,63,12.6,47.5,318.986445452496
+"Diabetes mellitus","Black","Female","45-64",55,82.5,426,85.2,27.5,1595.41262139954
+"Diabetes mellitus","Black","Female","65+",73.75,82.5,1559,311.8,8.75,2399.54665299599
+"Diabetes mellitus","Asian","Male","00-14",7.5,80,0,0,72.5,0
+"Diabetes mellitus","Asian","Male","15-24",20,80,0,0,60,0
+"Diabetes mellitus","Asian","Male","25-44",35,80,6,1.2,45,29.6303895741643
+"Diabetes mellitus","Asian","Male","45-64",55,80,102,20.4,25,358.79074413611
+"Diabetes mellitus","Asian","Male","65+",72.5,80,233,46.6,7.5,312.971473527101
+"Diabetes mellitus","Asian","Female","00-14",7.5,82.5,0,0,75,0
+"Diabetes mellitus","Asian","Female","15-24",20,82.5,0,0,62.5,0
+"Diabetes mellitus","Asian","Female","25-44",35,82.5,4,0.8,47.5,20.2531076477775
+"Diabetes mellitus","Asian","Female","45-64",55,82.5,35,7,27.5,131.078501758179
+"Diabetes mellitus","Asian","Female","65+",73.75,82.5,233,46.6,8.75,358.623714014154
+"Diabetes mellitus","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Diabetes mellitus","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Diabetes mellitus","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
+"Diabetes mellitus","American Indian/Pacific Islander","Male","45-64",55,80,2,0.4,25,7.03511263011981
+"Diabetes mellitus","American Indian/Pacific Islander","Male","65+",72.5,80,4,0.8,7.5,5.37290083308328
+"Diabetes mellitus","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Diabetes mellitus","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Diabetes mellitus","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Diabetes mellitus","American Indian/Pacific Islander","Female","45-64",55,82.5,2,0.4,27.5,7.49020010046734
+"Diabetes mellitus","American Indian/Pacific Islander","Female","65+",73.75,82.5,3,0.6,8.75,4.61747271262859
+"HIV/AIDS","White","Male","00-14",7.5,80,0,0,72.5,0
+"HIV/AIDS","White","Male","15-24",20,80,5,1,60,27.8233703926138
+"HIV/AIDS","White","Male","25-44",35,80,206,41.2,45,1017.31004204631
+"HIV/AIDS","White","Male","45-64",55,80,674,134.8,25,2370.83295635037
+"HIV/AIDS","White","Male","65+",72.5,80,110,22,7.5,147.75477290979
+"HIV/AIDS","White","Female","00-14",7.5,82.5,0,0,75,0
+"HIV/AIDS","White","Female","15-24",20,82.5,13,2.6,62.5,73.3759028734395
+"HIV/AIDS","White","Female","25-44",35,82.5,105,21,47.5,531.644075754161
+"HIV/AIDS","White","Female","45-64",55,82.5,263,52.6,27.5,984.961313211456
+"HIV/AIDS","White","Female","65+",73.75,82.5,38,7.6,8.75,58.4879876932955
+"HIV/AIDS","Black","Male","00-14",7.5,80,2,0.4,72.5,11.8185579510565
+"HIV/AIDS","Black","Male","15-24",20,80,27,5.4,60,150.246200120114
+"HIV/AIDS","Black","Male","25-44",35,80,286,57.2,45,1412.38190303517
+"HIV/AIDS","Black","Male","45-64",55,80,872,174.4,25,3067.30910673223
+"HIV/AIDS","Black","Male","65+",72.5,80,181,36.2,7.5,243.123762697018
+"HIV/AIDS","Black","Female","00-14",7.5,82.5,1,0.2,75,5.96400516958757
+"HIV/AIDS","Black","Female","15-24",20,82.5,11,2.2,62.5,62.0873024313719
+"HIV/AIDS","Black","Female","25-44",35,82.5,167,33.4,47.5,845.567244294713
+"HIV/AIDS","Black","Female","45-64",55,82.5,507,101.4,27.5,1898.76572546847
+"HIV/AIDS","Black","Female","65+",73.75,82.5,67,13.4,8.75,103.123557248705
+"HIV/AIDS","Asian","Male","00-14",7.5,80,0,0,72.5,0
+"HIV/AIDS","Asian","Male","15-24",20,80,1,0.2,60,5.56467407852276
+"HIV/AIDS","Asian","Male","25-44",35,80,5,1,45,24.6919913118036
+"HIV/AIDS","Asian","Male","45-64",55,80,7,1.4,25,24.6228942054193
+"HIV/AIDS","Asian","Male","65+",72.5,80,3,0.6,7.5,4.02967562481246
+"HIV/AIDS","Asian","Female","00-14",7.5,82.5,0,0,75,0
+"HIV/AIDS","Asian","Female","15-24",20,82.5,0,0,62.5,0
+"HIV/AIDS","Asian","Female","25-44",35,82.5,6,1.2,47.5,30.3796614716663
+"HIV/AIDS","Asian","Female","45-64",55,82.5,4,0.8,27.5,14.9804002009347
+"HIV/AIDS","Asian","Female","65+",73.75,82.5,0,0,8.75,0
+"HIV/AIDS","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"HIV/AIDS","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"HIV/AIDS","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
+"HIV/AIDS","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
+"HIV/AIDS","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
+"HIV/AIDS","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"HIV/AIDS","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"HIV/AIDS","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"HIV/AIDS","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
+"HIV/AIDS","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
+"Homicide","White","Male","00-14",7.5,80,16,3.2,72.5,94.5484636084519
+"Homicide","White","Male","15-24",20,80,187,37.4,60,1040.59405268376
+"Homicide","White","Male","25-44",35,80,237,47.4,45,1170.40038817949
+"Homicide","White","Male","45-64",55,80,107,21.4,25,376.37852571141
+"Homicide","White","Male","65+",72.5,80,36,7.2,7.5,48.3561074977495
+"Homicide","White","Female","00-14",7.5,82.5,10,2,75,59.6400516958757
+"Homicide","White","Female","15-24",20,82.5,27,5.4,62.5,152.396105967913
+"Homicide","White","Female","25-44",35,82.5,65,13,47.5,329.112999276385
+"Homicide","White","Female","45-64",55,82.5,39,7.8,27.5,146.058901959113
+"Homicide","White","Female","65+",73.75,82.5,16,3.2,8.75,24.6265211340191
+"Homicide","Black","Male","00-14",7.5,80,43,8.6,72.5,254.098995947714
+"Homicide","Black","Male","15-24",20,80,453,90.6,60,2520.79735757081
+"Homicide","Black","Male","25-44",35,80,610,122,45,3012.42294004004
+"Homicide","Black","Male","45-64",55,80,129,25.8,25,453.764764642727
+"Homicide","Black","Male","65+",72.5,80,24,4.8,7.5,32.2374049984997
+"Homicide","Black","Female","00-14",7.5,82.5,26,5.2,75,155.064134409277
+"Homicide","Black","Female","15-24",20,82.5,41,8.2,62.5,231.416309062386
+"Homicide","Black","Female","25-44",35,82.5,62,12.4,47.5,313.923168540552
+"Homicide","Black","Female","45-64",55,82.5,56,11.2,27.5,209.725602813086
+"Homicide","Black","Female","65+",73.75,82.5,10,2,8.75,15.391575708762
+"Homicide","Asian","Male","00-14",7.5,80,4,0.8,72.5,23.637115902113
+"Homicide","Asian","Male","15-24",20,80,3,0.6,60,16.6940222355683
+"Homicide","Asian","Male","25-44",35,80,17,3.4,45,83.9527704601323
+"Homicide","Asian","Male","45-64",55,80,12,2.4,25,42.2106757807188
+"Homicide","Asian","Male","65+",72.5,80,4,0.8,7.5,5.37290083308328
+"Homicide","Asian","Female","00-14",7.5,82.5,3,0.6,75,17.8920155087627
+"Homicide","Asian","Female","15-24",20,82.5,5,1,62.5,28.2215011051691
+"Homicide","Asian","Female","25-44",35,82.5,8,1.6,47.5,40.5062152955551
+"Homicide","Asian","Female","45-64",55,82.5,8,1.6,27.5,29.9608004018694
+"Homicide","Asian","Female","65+",73.75,82.5,4,0.8,8.75,6.15663028350479
+"Homicide","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Homicide","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Homicide","American Indian/Pacific Islander","Male","25-44",35,80,2,0.4,45,9.87679652472145
+"Homicide","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
+"Homicide","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
+"Homicide","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Homicide","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Homicide","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Homicide","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
+"Homicide","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
+"Hypertensive heart disease","White","Male","00-14",7.5,80,0,0,72.5,0
+"Hypertensive heart disease","White","Male","15-24",20,80,2,0.4,60,11.1293481570455
+"Hypertensive heart disease","White","Male","25-44",35,80,138,27.6,45,681.49896020578
+"Hypertensive heart disease","White","Male","45-64",55,80,932,186.4,25,3278.36248563583
+"Hypertensive heart disease","White","Male","65+",72.5,80,2160,432,7.5,2901.36644986497
+"Hypertensive heart disease","White","Female","00-14",7.5,82.5,0,0,75,0
+"Hypertensive heart disease","White","Female","15-24",20,82.5,3,0.6,62.5,16.9329006631014
+"Hypertensive heart disease","White","Female","25-44",35,82.5,39,7.8,47.5,197.467799565831
+"Hypertensive heart disease","White","Female","45-64",55,82.5,463,92.6,27.5,1733.98132325819
+"Hypertensive heart disease","White","Female","65+",73.75,82.5,3272,654.4,8.75,5036.12357190691
+"Hypertensive heart disease","Black","Male","00-14",7.5,80,0,0,72.5,0
+"Hypertensive heart disease","Black","Male","15-24",20,80,8,1.6,60,44.5173926281821
+"Hypertensive heart disease","Black","Male","25-44",35,80,172,34.4,45,849.404501126044
+"Hypertensive heart disease","Black","Male","45-64",55,80,930,186,25,3271.32737300571
+"Hypertensive heart disease","Black","Male","65+",72.5,80,1204,240.8,7.5,1617.24315075807
+"Hypertensive heart disease","Black","Female","00-14",7.5,82.5,0,0,75,0
+"Hypertensive heart disease","Black","Female","15-24",20,82.5,6,1.2,62.5,33.8658013262029
+"Hypertensive heart disease","Black","Female","25-44",35,82.5,102,20.4,47.5,516.454245018327
+"Hypertensive heart disease","Black","Female","45-64",55,82.5,664,132.8,27.5,2486.74643335516
+"Hypertensive heart disease","Black","Female","65+",73.75,82.5,2036,407.2,8.75,3133.72481430394
+"Hypertensive heart disease","Asian","Male","00-14",7.5,80,0,0,72.5,0
+"Hypertensive heart disease","Asian","Male","15-24",20,80,1,0.2,60,5.56467407852276
+"Hypertensive heart disease","Asian","Male","25-44",35,80,12,2.4,45,59.2607791483287
+"Hypertensive heart disease","Asian","Male","45-64",55,80,86,17.2,25,302.509843095152
+"Hypertensive heart disease","Asian","Male","65+",72.5,80,246,49.2,7.5,330.433401234622
+"Hypertensive heart disease","Asian","Female","00-14",7.5,82.5,0,0,75,0
+"Hypertensive heart disease","Asian","Female","15-24",20,82.5,0,0,62.5,0
+"Hypertensive heart disease","Asian","Female","25-44",35,82.5,4,0.8,47.5,20.2531076477775
+"Hypertensive heart disease","Asian","Female","45-64",55,82.5,48,9.6,27.5,179.764802411216
+"Hypertensive heart disease","Asian","Female","65+",73.75,82.5,314,62.8,8.75,483.295477255126
+"Hypertensive heart disease","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Hypertensive heart disease","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Hypertensive heart disease","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
+"Hypertensive heart disease","American Indian/Pacific Islander","Male","45-64",55,80,1,0.2,25,3.5175563150599
+"Hypertensive heart disease","American Indian/Pacific Islander","Male","65+",72.5,80,1,0.2,7.5,1.34322520827082
+"Hypertensive heart disease","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Hypertensive heart disease","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Hypertensive heart disease","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Hypertensive heart disease","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
+"Hypertensive heart disease","American Indian/Pacific Islander","Female","65+",73.75,82.5,3,0.6,8.75,4.61747271262859
+"Ischemic heart disease","White","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
+"Ischemic heart disease","White","Male","15-24",20,80,5,1,60,27.8233703926138
+"Ischemic heart disease","White","Male","25-44",35,80,286,57.2,45,1412.38190303517
+"Ischemic heart disease","White","Male","45-64",55,80,3785,757,25,13313.9506525017
+"Ischemic heart disease","White","Male","65+",72.5,80,18921,3784.2,7.5,25415.1641656922
+"Ischemic heart disease","White","Female","00-14",7.5,82.5,0,0,75,0
+"Ischemic heart disease","White","Female","15-24",20,82.5,3,0.6,62.5,16.9329006631014
+"Ischemic heart disease","White","Female","25-44",35,82.5,59,11.8,47.5,298.733337804719
+"Ischemic heart disease","White","Female","45-64",55,82.5,1341,268.2,27.5,5022.17916736335
+"Ischemic heart disease","White","Female","65+",73.75,82.5,24792,4958.4,8.75,38158.7944971627
+"Ischemic heart disease","Black","Male","00-14",7.5,80,0,0,72.5,0
+"Ischemic heart disease","Black","Male","15-24",20,80,8,1.6,60,44.5173926281821
+"Ischemic heart disease","Black","Male","25-44",35,80,201,40.2,45,992.618050734505
+"Ischemic heart disease","Black","Male","45-64",55,80,1990,398,25,6999.93706696921
+"Ischemic heart disease","Black","Male","65+",72.5,80,5086,1017.2,7.5,6831.64340926539
+"Ischemic heart disease","Black","Female","00-14",7.5,82.5,1,0.2,75,5.96400516958757
+"Ischemic heart disease","Black","Female","15-24",20,82.5,5,1,62.5,28.2215011051691
+"Ischemic heart disease","Black","Female","25-44",35,82.5,77,15.4,47.5,389.872322219718
+"Ischemic heart disease","Black","Female","45-64",55,82.5,1170,234,27.5,4381.7670587734
+"Ischemic heart disease","Black","Female","65+",73.75,82.5,7751,1550.2,8.75,11930.0103318614
+"Ischemic heart disease","Asian","Male","00-14",7.5,80,0,0,72.5,0
+"Ischemic heart disease","Asian","Male","15-24",20,80,0,0,60,0
+"Ischemic heart disease","Asian","Male","25-44",35,80,50,10,45,246.919913118036
+"Ischemic heart disease","Asian","Male","45-64",55,80,509,101.8,25,1790.43616436549
+"Ischemic heart disease","Asian","Male","65+",72.5,80,1518,303.6,7.5,2039.0158661551
+"Ischemic heart disease","Asian","Female","00-14",7.5,82.5,0,0,75,0
+"Ischemic heart disease","Asian","Female","15-24",20,82.5,0,0,62.5,0
+"Ischemic heart disease","Asian","Female","25-44",35,82.5,13,2.6,47.5,65.822599855277
+"Ischemic heart disease","Asian","Female","45-64",55,82.5,136,27.2,27.5,509.333606831779
+"Ischemic heart disease","Asian","Female","65+",73.75,82.5,1497,299.4,8.75,2304.11888360167
+"Ischemic heart disease","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Ischemic heart disease","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Ischemic heart disease","American Indian/Pacific Islander","Male","25-44",35,80,1,0.2,45,4.93839826236072
+"Ischemic heart disease","American Indian/Pacific Islander","Male","45-64",55,80,7,1.4,25,24.6228942054193
+"Ischemic heart disease","American Indian/Pacific Islander","Male","65+",72.5,80,16,3.2,7.5,21.4916033323331
+"Ischemic heart disease","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Ischemic heart disease","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Ischemic heart disease","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Ischemic heart disease","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
+"Ischemic heart disease","American Indian/Pacific Islander","Female","65+",73.75,82.5,28,5.6,8.75,43.0964119845335
+"Lower respiratory infections","White","Male","00-14",7.5,80,22,4.4,72.5,130.004137461621
+"Lower respiratory infections","White","Male","15-24",20,80,3,0.6,60,16.6940222355683
+"Lower respiratory infections","White","Male","25-44",35,80,64,12.8,45,316.057488791086
+"Lower respiratory infections","White","Male","45-64",55,80,452,90.4,25,1589.93545440708
+"Lower respiratory infections","White","Male","65+",72.5,80,3340,668,7.5,4486.37219562454
+"Lower respiratory infections","White","Female","00-14",7.5,82.5,12,2.4,75,71.5680620350508
+"Lower respiratory infections","White","Female","15-24",20,82.5,3,0.6,62.5,16.9329006631014
+"Lower respiratory infections","White","Female","25-44",35,82.5,36,7.2,47.5,182.277968829998
+"Lower respiratory infections","White","Female","45-64",55,82.5,261,52.2,27.5,977.471113110988
+"Lower respiratory infections","White","Female","65+",73.75,82.5,3846,769.2,8.75,5919.60001758985
+"Lower respiratory infections","Black","Male","00-14",7.5,80,17,3.4,72.5,100.45774258398
+"Lower respiratory infections","Black","Male","15-24",20,80,5,1,60,27.8233703926138
+"Lower respiratory infections","Black","Male","25-44",35,80,27,5.4,45,133.33675308374
+"Lower respiratory infections","Black","Male","45-64",55,80,279,55.8,25,981.398211901713
+"Lower respiratory infections","Black","Male","65+",72.5,80,882,176.4,7.5,1184.72463369486
+"Lower respiratory infections","Black","Female","00-14",7.5,82.5,10,2,75,59.6400516958757
+"Lower respiratory infections","Black","Female","15-24",20,82.5,5,1,62.5,28.2215011051691
+"Lower respiratory infections","Black","Female","25-44",35,82.5,43,8.6,47.5,217.720907213609
+"Lower respiratory infections","Black","Female","45-64",55,82.5,196,39.2,27.5,734.0396098458
+"Lower respiratory infections","Black","Female","65+",73.75,82.5,1199,239.8,8.75,1845.44992748056
+"Lower respiratory infections","Asian","Male","00-14",7.5,80,6,1.2,72.5,35.4556738531695
+"Lower respiratory infections","Asian","Male","15-24",20,80,0,0,60,0
+"Lower respiratory infections","Asian","Male","25-44",35,80,4,0.8,45,19.7535930494429
+"Lower respiratory infections","Asian","Male","45-64",55,80,50,10,25,175.877815752995
+"Lower respiratory infections","Asian","Male","65+",72.5,80,403,80.6,7.5,541.31975893314
+"Lower respiratory infections","Asian","Female","00-14",7.5,82.5,6,1.2,75,35.7840310175254
+"Lower respiratory infections","Asian","Female","15-24",20,82.5,3,0.6,62.5,16.9329006631014
+"Lower respiratory infections","Asian","Female","25-44",35,82.5,4,0.8,47.5,20.2531076477775
+"Lower respiratory infections","Asian","Female","45-64",55,82.5,36,7.2,27.5,134.823601808412
+"Lower respiratory infections","Asian","Female","65+",73.75,82.5,343,68.6,8.75,527.931046810535
+"Lower respiratory infections","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Lower respiratory infections","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Lower respiratory infections","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
+"Lower respiratory infections","American Indian/Pacific Islander","Male","45-64",55,80,4,0.8,25,14.0702252602396
+"Lower respiratory infections","American Indian/Pacific Islander","Male","65+",72.5,80,2,0.4,7.5,2.68645041654164
+"Lower respiratory infections","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Lower respiratory infections","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Lower respiratory infections","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Lower respiratory infections","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
+"Lower respiratory infections","American Indian/Pacific Islander","Female","65+",73.75,82.5,6,1.2,8.75,9.23494542525718
+"Lung cancer","White","Male","00-14",7.5,80,1,0.2,72.5,5.90927897552824
+"Lung cancer","White","Male","15-24",20,80,1,0.2,60,5.56467407852276
+"Lung cancer","White","Male","25-44",35,80,53,10.6,45,261.735107905118
+"Lung cancer","White","Male","45-64",55,80,1248,249.6,25,4389.91028119476
+"Lung cancer","White","Male","65+",72.5,80,3580,716,7.5,4808.74624560953
+"Lung cancer","White","Female","00-14",7.5,82.5,0,0,75,0
+"Lung cancer","White","Female","15-24",20,82.5,0,0,62.5,0
+"Lung cancer","White","Female","25-44",35,82.5,47,9.4,47.5,237.974014861386
+"Lung cancer","White","Female","45-64",55,82.5,1018,203.6,27.5,3812.51185113788
+"Lung cancer","White","Female","65+",73.75,82.5,3374,674.8,8.75,5193.11764413629
+"Lung cancer","Black","Male","00-14",7.5,80,0,0,72.5,0
+"Lung cancer","Black","Male","15-24",20,80,3,0.6,60,16.6940222355683
+"Lung cancer","Black","Male","25-44",35,80,29,5.8,45,143.213549608461
+"Lung cancer","Black","Male","45-64",55,80,743,148.6,25,2613.54434208951
+"Lung cancer","Black","Male","65+",72.5,80,1128,225.6,7.5,1515.15803492948
+"Lung cancer","Black","Female","00-14",7.5,82.5,0,0,75,0
+"Lung cancer","Black","Female","15-24",20,82.5,1,0.2,62.5,5.64430022103381
+"Lung cancer","Black","Female","25-44",35,82.5,33,6.6,47.5,167.088138094165
+"Lung cancer","Black","Female","45-64",55,82.5,594,118.8,27.5,2224.5894298388
+"Lung cancer","Black","Female","65+",73.75,82.5,1074,214.8,8.75,1653.05523112104
+"Lung cancer","Asian","Male","00-14",7.5,80,0,0,72.5,0
+"Lung cancer","Asian","Male","15-24",20,80,1,0.2,60,5.56467407852276
+"Lung cancer","Asian","Male","25-44",35,80,20,4,45,98.7679652472145
+"Lung cancer","Asian","Male","45-64",55,80,220,44,25,773.862389313178
+"Lung cancer","Asian","Male","65+",72.5,80,526,105.2,7.5,706.536459550451
+"Lung cancer","Asian","Female","00-14",7.5,82.5,0,0,75,0
+"Lung cancer","Asian","Female","15-24",20,82.5,0,0,62.5,0
+"Lung cancer","Asian","Female","25-44",35,82.5,13,2.6,47.5,65.822599855277
+"Lung cancer","Asian","Female","45-64",55,82.5,129,25.8,27.5,483.117906480144
+"Lung cancer","Asian","Female","65+",73.75,82.5,296,59.2,8.75,455.590640979354
+"Lung cancer","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Lung cancer","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Lung cancer","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
+"Lung cancer","American Indian/Pacific Islander","Male","45-64",55,80,1,0.2,25,3.5175563150599
+"Lung cancer","American Indian/Pacific Islander","Male","65+",72.5,80,2,0.4,7.5,2.68645041654164
+"Lung cancer","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Lung cancer","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Lung cancer","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Lung cancer","American Indian/Pacific Islander","Female","45-64",55,82.5,3,0.6,27.5,11.235300150701
+"Lung cancer","American Indian/Pacific Islander","Female","65+",73.75,82.5,2,0.4,8.75,3.07831514175239
+"Motor vehicle accidents","White","Male","00-14",7.5,80,21,4.2,72.5,124.094858486093
+"Motor vehicle accidents","White","Male","15-24",20,80,101,20.2,60,562.032081930798
+"Motor vehicle accidents","White","Male","25-44",35,80,183,36.6,45,903.726882012012
+"Motor vehicle accidents","White","Male","45-64",55,80,156,31.2,25,548.738785149345
+"Motor vehicle accidents","White","Male","65+",72.5,80,145,29,7.5,194.767655199269
+"Motor vehicle accidents","White","Female","00-14",7.5,82.5,13,2.6,75,77.5320672046384
+"Motor vehicle accidents","White","Female","15-24",20,82.5,40,8,62.5,225.772008841352
+"Motor vehicle accidents","White","Female","25-44",35,82.5,45,9,47.5,227.847461037497
+"Motor vehicle accidents","White","Female","45-64",55,82.5,50,10,27.5,187.255002511684
+"Motor vehicle accidents","White","Female","65+",73.75,82.5,113,22.6,8.75,173.92480550901
+"Motor vehicle accidents","Black","Male","00-14",7.5,80,11,2.2,72.5,65.0020687308107
+"Motor vehicle accidents","Black","Male","15-24",20,80,46,9.2,60,255.975007612047
+"Motor vehicle accidents","Black","Male","25-44",35,80,104,20.8,45,513.593419285515
+"Motor vehicle accidents","Black","Male","45-64",55,80,71,14.2,25,249.746498369253
+"Motor vehicle accidents","Black","Male","65+",72.5,80,28,5.6,7.5,37.6103058315829
+"Motor vehicle accidents","Black","Female","00-14",7.5,82.5,6,1.2,75,35.7840310175254
+"Motor vehicle accidents","Black","Female","15-24",20,82.5,11,2.2,62.5,62.0873024313719
+"Motor vehicle accidents","Black","Female","25-44",35,82.5,25,5,47.5,126.58192279861
+"Motor vehicle accidents","Black","Female","45-64",55,82.5,28,5.6,27.5,104.862801406543
+"Motor vehicle accidents","Black","Female","65+",73.75,82.5,27,5.4,8.75,41.5572544136573
+"Motor vehicle accidents","Asian","Male","00-14",7.5,80,3,0.6,72.5,17.7278369265847
+"Motor vehicle accidents","Asian","Male","15-24",20,80,13,2.6,60,72.3407630207958
+"Motor vehicle accidents","Asian","Male","25-44",35,80,21,4.2,45,103.706363509575
+"Motor vehicle accidents","Asian","Male","45-64",55,80,31,6.2,25,109.044245766857
+"Motor vehicle accidents","Asian","Male","65+",72.5,80,31,6.2,7.5,41.6399814563954
+"Motor vehicle accidents","Asian","Female","00-14",7.5,82.5,4,0.8,75,23.8560206783503
+"Motor vehicle accidents","Asian","Female","15-24",20,82.5,6,1.2,62.5,33.8658013262029
+"Motor vehicle accidents","Asian","Female","25-44",35,82.5,18,3.6,47.5,91.138984414999
+"Motor vehicle accidents","Asian","Female","45-64",55,82.5,15,3,27.5,56.1765007535051
+"Motor vehicle accidents","Asian","Female","65+",73.75,82.5,29,5.8,8.75,44.6355695554097
+"Motor vehicle accidents","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Motor vehicle accidents","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Motor vehicle accidents","American Indian/Pacific Islander","Male","25-44",35,80,1,0.2,45,4.93839826236072
+"Motor vehicle accidents","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
+"Motor vehicle accidents","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
+"Motor vehicle accidents","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Motor vehicle accidents","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Motor vehicle accidents","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Motor vehicle accidents","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
+"Motor vehicle accidents","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
+"Osteoarthritis","White","Male","00-14",7.5,80,0,0,72.5,0
+"Osteoarthritis","White","Male","15-24",20,80,0,0,60,0
+"Osteoarthritis","White","Male","25-44",35,80,0,0,45,0
+"Osteoarthritis","White","Male","45-64",55,80,6,1.2,25,21.1053378903594
+"Osteoarthritis","White","Male","65+",72.5,80,11,2.2,7.5,14.775477290979
+"Osteoarthritis","White","Female","00-14",7.5,82.5,0,0,75,0
+"Osteoarthritis","White","Female","15-24",20,82.5,0,0,62.5,0
+"Osteoarthritis","White","Female","25-44",35,82.5,0,0,47.5,0
+"Osteoarthritis","White","Female","45-64",55,82.5,5,1,27.5,18.7255002511684
+"Osteoarthritis","White","Female","65+",73.75,82.5,16,3.2,8.75,24.6265211340191
+"Osteoarthritis","Black","Male","00-14",7.5,80,0,0,72.5,0
+"Osteoarthritis","Black","Male","15-24",20,80,0,0,60,0
+"Osteoarthritis","Black","Male","25-44",35,80,0,0,45,0
+"Osteoarthritis","Black","Male","45-64",55,80,5,1,25,17.5877815752995
+"Osteoarthritis","Black","Male","65+",72.5,80,4,0.8,7.5,5.37290083308328
+"Osteoarthritis","Black","Female","00-14",7.5,82.5,0,0,75,0
+"Osteoarthritis","Black","Female","15-24",20,82.5,0,0,62.5,0
+"Osteoarthritis","Black","Female","25-44",35,82.5,0,0,47.5,0
+"Osteoarthritis","Black","Female","45-64",55,82.5,1,0.2,27.5,3.74510005023367
+"Osteoarthritis","Black","Female","65+",73.75,82.5,12,2.4,8.75,18.4698908505144
+"Osteoarthritis","Asian","Male","00-14",7.5,80,0,0,72.5,0
+"Osteoarthritis","Asian","Male","15-24",20,80,0,0,60,0
+"Osteoarthritis","Asian","Male","25-44",35,80,0,0,45,0
+"Osteoarthritis","Asian","Male","45-64",55,80,0,0,25,0
+"Osteoarthritis","Asian","Male","65+",72.5,80,2,0.4,7.5,2.68645041654164
+"Osteoarthritis","Asian","Female","00-14",7.5,82.5,0,0,75,0
+"Osteoarthritis","Asian","Female","15-24",20,82.5,0,0,62.5,0
+"Osteoarthritis","Asian","Female","25-44",35,82.5,0,0,47.5,0
+"Osteoarthritis","Asian","Female","45-64",55,82.5,0,0,27.5,0
+"Osteoarthritis","Asian","Female","65+",73.75,82.5,1,0.2,8.75,1.5391575708762
+"Osteoarthritis","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Osteoarthritis","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Osteoarthritis","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
+"Osteoarthritis","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
+"Osteoarthritis","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
+"Osteoarthritis","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Osteoarthritis","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Osteoarthritis","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Osteoarthritis","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
+"Osteoarthritis","American Indian/Pacific Islander","Female","65+",73.75,82.5,0,0,8.75,0
+"Other musculoskeletal disorders","White","Male","00-14",7.5,80,0,0,72.5,0
+"Other musculoskeletal disorders","White","Male","15-24",20,80,2,0.4,60,11.1293481570455
+"Other musculoskeletal disorders","White","Male","25-44",35,80,14,2.8,45,69.1375756730501
+"Other musculoskeletal disorders","White","Male","45-64",55,80,67,13.4,25,235.676273109013
+"Other musculoskeletal disorders","White","Male","65+",72.5,80,147,29.4,7.5,197.45410561581
+"Other musculoskeletal disorders","White","Female","00-14",7.5,82.5,3,0.6,75,17.8920155087627
+"Other musculoskeletal disorders","White","Female","15-24",20,82.5,5,1,62.5,28.2215011051691
+"Other musculoskeletal disorders","White","Female","25-44",35,82.5,34,6.8,47.5,172.151415006109
+"Other musculoskeletal disorders","White","Female","45-64",55,82.5,91,18.2,27.5,340.804104571264
+"Other musculoskeletal disorders","White","Female","65+",73.75,82.5,219,43.8,8.75,337.075508021887
+"Other musculoskeletal disorders","Black","Male","00-14",7.5,80,2,0.4,72.5,11.8185579510565
+"Other musculoskeletal disorders","Black","Male","15-24",20,80,7,1.4,60,38.9527185496593
+"Other musculoskeletal disorders","Black","Male","25-44",35,80,19,3.8,45,93.8295669848537
+"Other musculoskeletal disorders","Black","Male","45-64",55,80,59,11.8,25,207.535822588534
+"Other musculoskeletal disorders","Black","Male","65+",72.5,80,41,8.2,7.5,55.0722335391036
+"Other musculoskeletal disorders","Black","Female","00-14",7.5,82.5,3,0.6,75,17.8920155087627
+"Other musculoskeletal disorders","Black","Female","15-24",20,82.5,10,2,62.5,56.4430022103381
+"Other musculoskeletal disorders","Black","Female","25-44",35,82.5,63,12.6,47.5,318.986445452496
+"Other musculoskeletal disorders","Black","Female","45-64",55,82.5,86,17.2,27.5,322.078604320096
+"Other musculoskeletal disorders","Black","Female","65+",73.75,82.5,105,21,8.75,161.611544942001
+"Other musculoskeletal disorders","Asian","Male","00-14",7.5,80,0,0,72.5,0
+"Other musculoskeletal disorders","Asian","Male","15-24",20,80,0,0,60,0
+"Other musculoskeletal disorders","Asian","Male","25-44",35,80,3,0.6,45,14.8151947870822
+"Other musculoskeletal disorders","Asian","Male","45-64",55,80,4,0.8,25,14.0702252602396
+"Other musculoskeletal disorders","Asian","Male","65+",72.5,80,16,3.2,7.5,21.4916033323331
+"Other musculoskeletal disorders","Asian","Female","00-14",7.5,82.5,0,0,75,0
+"Other musculoskeletal disorders","Asian","Female","15-24",20,82.5,0,0,62.5,0
+"Other musculoskeletal disorders","Asian","Female","25-44",35,82.5,3,0.6,47.5,15.1898307358332
+"Other musculoskeletal disorders","Asian","Female","45-64",55,82.5,10,2,27.5,37.4510005023367
+"Other musculoskeletal disorders","Asian","Female","65+",73.75,82.5,25,5,8.75,38.4789392719049
+"Other musculoskeletal disorders","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Other musculoskeletal disorders","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Other musculoskeletal disorders","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
+"Other musculoskeletal disorders","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
+"Other musculoskeletal disorders","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
+"Other musculoskeletal disorders","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Other musculoskeletal disorders","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Other musculoskeletal disorders","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Other musculoskeletal disorders","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
+"Other musculoskeletal disorders","American Indian/Pacific Islander","Female","65+",73.75,82.5,1,0.2,8.75,1.5391575708762
+"Ischemic stroke","White","Male","00-14",7.5,80,12,2.4,72.5,70.9113477063389
+"Ischemic stroke","White","Male","15-24",20,80,4,0.8,60,22.258696314091
+"Ischemic stroke","White","Male","25-44",35,80,73,14.6,45,360.503073152333
+"Ischemic stroke","White","Male","45-64",55,80,419,83.8,25,1473.8560960101
+"Ischemic stroke","White","Male","65+",72.5,80,1451,290.2,7.5,1949.01977720096
+"Ischemic stroke","White","Female","00-14",7.5,82.5,5,1,75,29.8200258479379
+"Ischemic stroke","White","Female","15-24",20,82.5,3,0.6,62.5,16.9329006631014
+"Ischemic stroke","White","Female","25-44",35,82.5,46,9.2,47.5,232.910737949442
+"Ischemic stroke","White","Female","45-64",55,82.5,274,54.8,27.5,1026.15741376403
+"Ischemic stroke","White","Female","65+",73.75,82.5,2530,506,8.75,3894.06865431678
+"Ischemic stroke","Black","Male","00-14",7.5,80,7,1.4,72.5,41.3649528286977
+"Ischemic stroke","Black","Male","15-24",20,80,7,1.4,60,38.9527185496593
+"Ischemic stroke","Black","Male","25-44",35,80,56,11.2,45,276.5503026922
+"Ischemic stroke","Black","Male","45-64",55,80,346,69.2,25,1217.07448501073
+"Ischemic stroke","Black","Male","65+",72.5,80,492,98.4,7.5,660.866802469243
+"Ischemic stroke","Black","Female","00-14",7.5,82.5,4,0.8,75,23.8560206783503
+"Ischemic stroke","Black","Female","15-24",20,82.5,5,1,62.5,28.2215011051691
+"Ischemic stroke","Black","Female","25-44",35,82.5,53,10.6,47.5,268.353676333052
+"Ischemic stroke","Black","Female","45-64",55,82.5,321,64.2,27.5,1202.17711612501
+"Ischemic stroke","Black","Female","65+",73.75,82.5,985,197,8.75,1516.07020731305
+"Ischemic stroke","Asian","Male","00-14",7.5,80,0,0,72.5,0
+"Ischemic stroke","Asian","Male","15-24",20,80,0,0,60,0
+"Ischemic stroke","Asian","Male","25-44",35,80,18,3.6,45,88.891168722493
+"Ischemic stroke","Asian","Male","45-64",55,80,99,19.8,25,348.23807519093
+"Ischemic stroke","Asian","Male","65+",72.5,80,244,48.8,7.5,327.74695081808
+"Ischemic stroke","Asian","Female","00-14",7.5,82.5,0,0,75,0
+"Ischemic stroke","Asian","Female","15-24",20,82.5,0,0,62.5,0
+"Ischemic stroke","Asian","Female","25-44",35,82.5,16,3.2,47.5,81.0124305911102
+"Ischemic stroke","Asian","Female","45-64",55,82.5,55,11,27.5,205.980502762852
+"Ischemic stroke","Asian","Female","65+",73.75,82.5,358,71.6,8.75,551.018410373678
+"Ischemic stroke","American Indian/Pacific Islander","Male","00-14",7.5,80,0,0,72.5,0
+"Ischemic stroke","American Indian/Pacific Islander","Male","15-24",20,80,0,0,60,0
+"Ischemic stroke","American Indian/Pacific Islander","Male","25-44",35,80,0,0,45,0
+"Ischemic stroke","American Indian/Pacific Islander","Male","45-64",55,80,0,0,25,0
+"Ischemic stroke","American Indian/Pacific Islander","Male","65+",72.5,80,0,0,7.5,0
+"Ischemic stroke","American Indian/Pacific Islander","Female","00-14",7.5,82.5,0,0,75,0
+"Ischemic stroke","American Indian/Pacific Islander","Female","15-24",20,82.5,0,0,62.5,0
+"Ischemic stroke","American Indian/Pacific Islander","Female","25-44",35,82.5,0,0,47.5,0
+"Ischemic stroke","American Indian/Pacific Islander","Female","45-64",55,82.5,0,0,27.5,0
+"Ischemic stroke","American Indian/Pacific Islander","Female","65+",73.75,82.5,3,0.6,8.75,4.61747271262859
+"Opioid use disorders","","Male","00-14",7.5,80,0,0,72.5,0
+"Opioid use disorders","","Male","15-24",20,80,127,25.4,60,706.71360797239
+"Opioid use disorders","","Male","25-44",35,80,779,155.8,45,3847.012246379
+"Opioid use disorders","","Male","45-64",55,80,881,176.2,25,3098.96711356777
+"Opioid use disorders","","Male","65+",72.5,80,36,7.2,7.5,48.3561074977495
+"Opioid use disorders","","Female","00-14",7.5,82.5,0,0,75,0
+"Opioid use disorders","","Female","15-24",20,82.5,39,7.8,62.5,220.127708620319
+"Opioid use disorders","","Female","25-44",35,82.5,260,52,47.5,1316.45199710554
+"Opioid use disorders","","Female","45-64",55,82.5,374,74.8,27.5,1400.66741878739
+"Opioid use disorders","","Female","65+",73.75,82.5,10,2,8.75,15.391575708762
+"Cocaine use disorders","","Male","00-14",7.5,80,0,0,72.5,0
+"Cocaine use disorders","","Male","15-24",20,80,61,12.2,60,339.445118789888
+"Cocaine use disorders","","Male","25-44",35,80,470,94,45,2321.04718330954
+"Cocaine use disorders","","Male","45-64",55,80,625,125,25,2198.47269691244
+"Cocaine use disorders","","Male","65+",72.5,80,38,7.6,7.5,51.0425579142911
+"Cocaine use disorders","","Female","00-14",7.5,82.5,0,0,75,0
+"Cocaine use disorders","","Female","15-24",20,82.5,17,3.4,62.5,95.9531037575748
+"Cocaine use disorders","","Female","25-44",35,82.5,146,29.2,47.5,739.23842914388
+"Cocaine use disorders","","Female","45-64",55,82.5,261,52.2,27.5,977.471113110988
+"Cocaine use disorders","","Female","65+",73.75,82.5,10,2,8.75,15.391575708762
+"Other drug use disorders","","Male","00-14",7.5,80,0,0,72.5,0
+"Other drug use disorders","","Male","15-24",20,80,75,15,60,417.350555889207
+"Other drug use disorders","","Male","25-44",35,80,414,82.8,45,2044.49688061734
+"Other drug use disorders","","Male","45-64",55,80,397,79.4,25,1396.46985707878
+"Other drug use disorders","","Male","65+",72.5,80,12,2.4,7.5,16.1187024992498
+"Other drug use disorders","","Female","00-14",7.5,82.5,0,0,75,0
+"Other drug use disorders","","Female","15-24",20,82.5,20,4,62.5,112.886004420676
+"Other drug use disorders","","Female","25-44",35,82.5,141,28.2,47.5,713.922044584158
+"Other drug use disorders","","Female","45-64",55,82.5,177,35.4,27.5,662.88270889136
+"Other drug use disorders","","Female","65+",73.75,82.5,6,1.2,8.75,9.23494542525718

@@ -1,44 +1,33 @@
-"","cause_name","sex","yld","yld_upper","yld_lower"
-"1","Alcohol use disorders","Female",63206.14762,87610.06562,42950.89568
-"2","Alcohol use disorders","Male",72957.716216,101126.718616,49577.444224
-"3","Amphetamine use disorders","Female",1510.48347,2246.46975,919.98285
-"4","Amphetamine use disorders","Male",2514.4543,3739.6275,1531.4665
-"5","Anxiety","Female",19353.15,30965.04,10966.785
-"6","Anxiety","Male",11398.98,18238.368,6459.422
-"7","Asthma","Female",12789.252,21315.42,7105.14
-"8","Asthma","Male",7268.832,12114.72,4038.24
-"9","Breast cancer","Female",24768.618,34625.517,16765.153
-"10","Breast cancer","Male",0,0,0
-"11","Cannabis use disorders","Female",4441.5,6142.5,3010.5
-"12","Cannabis use disorders","Male",8053.92,11138.4,5459.04
-"13","Chronic obstructive pulmonary disease","Female",31757.568,44824.484,21337.116
-"14","Chronic obstructive pulmonary disease","Male",32495.04,45865.395,21832.605
-"15","Cocaine use disorders","Female",9764.658336,14361.319308,6102.91146
-"16","Cocaine use disorders","Male",12568.069968,18484.422054,7855.04373
-"17","Colon and rectum cancers","Female",2636.298,3685.437,1784.433
-"18","Colon and rectum cancers","Male",1835.148,2565.462,1242.158
-"19","Diabetes mellitus","Female",5349.255,6419.106,4279.404
-"20","Diabetes mellitus","Male",4769.88,5723.856,3815.904
-"21","High blood pressure","Female",0,0,0
-"22","High blood pressure","Male",0,0,0
-"23","Ischemic heart disease","Female",17106.768,19550.592,13712.568
-"24","Ischemic heart disease","Male",13079.052,14947.488,10484.002
-"25","Ischemic stroke","Female",1212.351,2136.047,635.041
-"26","Ischemic stroke","Male",607.635,1070.595,318.285
-"27","Lung cancer","Female",3011.442,4209.873,2038.357
-"28","Lung cancer","Male",1925.994,2692.461,1303.649
-"29","Major depressive disorder","Female",85478.437,114431.62335,58620.9019
-"30","Major depressive disorder","Male",40351.91435,54451.53175,27532.79595
-"31","Opioid use disorders","Female",8089.562943,10134.039069,5792.682357
-"32","Opioid use disorders","Male",9979.689258,12501.857214,7146.142542
-"33","Osteoarthritis","Female",38863.398,54204.213,26249.839
-"34","Osteoarthritis","Male",18723.474,26114.319,12646.557
-"35","Other arthritis","Female",57554.61,80273.535,38874.605
-"36","Other arthritis","Male",31036.614,43287.909,20963.327
-"37","Sedative use","Female",0,0,0
-"38","Sedative use disorders","Female",0,0,0
-"39","Sedative use disorders","Male",0,0,0
-"40","Stimulant use disorders","Female",938.98,1396.5,571.9
-"41","Stimulant use disorders","Male",1609.68,2394,980.4
-"42","Tranquilizer use disorders","Female",0,0,0
-"43","Tranquilizer use disorders","Male",0,0,0
+"cause_name","sex","yld","yld_upper","yld_lower"
+"Alcohol use disorders","Female",4626.776,6413.176,3144.064
+"Alcohol use disorders","Male",9213.666,12771.066,6261.024
+"Amphetamine use disorders","Female",1510.48347,2246.46975,919.98285
+"Amphetamine use disorders","Male",2514.4543,3739.6275,1531.4665
+"Asthma","Female",12789.252,21315.42,7105.14
+"Asthma","Male",7268.832,12114.72,4038.24
+"Breast cancer","Female",24768.618,34625.517,16765.153
+"Breast cancer","Male",0,0,0
+"Chronic obstructive pulmonary disease","Female",31757.568,44824.484,21337.116
+"Chronic obstructive pulmonary disease","Male",32495.04,45865.395,21832.605
+"Cocaine use disorders","Female",9764.658336,14361.319308,6102.91146
+"Cocaine use disorders","Male",12568.069968,18484.422054,7855.04373
+"Colon and rectum cancers","Female",2636.298,3685.437,1784.433
+"Colon and rectum cancers","Male",1835.148,2565.462,1242.158
+"Diabetes mellitus","Female",5349.255,6419.106,4279.404
+"Diabetes mellitus","Male",4769.88,5723.856,3815.904
+"Ischemic heart disease","Female",17106.768,19550.592,13712.568
+"Ischemic heart disease","Male",13079.052,14947.488,10484.002
+"Ischemic stroke","Female",1212.351,2136.047,635.041
+"Ischemic stroke","Male",607.635,1070.595,318.285
+"Lung cancer","Female",3011.442,4209.873,2038.357
+"Lung cancer","Male",1925.994,2692.461,1303.649
+"Major depressive disorder","Female",53757.9108,71778.63165,36928.2507
+"Major depressive disorder","Male",22152.24165,29756.3079,15159.19515
+"Opioid use disorders","Female",8089.562943,10134.039069,5792.682357
+"Opioid use disorders","Male",9979.689258,12501.857214,7146.142542
+"Osteoarthritis","Female",38863.398,54204.213,26249.839
+"Osteoarthritis","Male",18723.474,26114.319,12646.557
+"Other musculoskeletal disorders","Female",57554.61,80273.535,38874.605
+"Other musculoskeletal disorders","Male",31036.614,43287.909,20963.327
+"Stimulant use disorders","Female",938.98,1396.5,571.9
+"Stimulant use disorders","Male",1609.68,2394,980.4
