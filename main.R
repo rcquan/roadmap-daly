@@ -36,26 +36,26 @@ nationalRates <- rbind(cause, risk) %>%
     mutate(cause_name = ifelse(cause_name == "Road injury", "Motor vehicle accidents", cause_name),
            cause_name = ifelse(cause_name == "Trachea, bronchus, and lung cancers", "Lung cancer", cause_name)) %>% 
     arrange(cause_name)
-write.csv(nationalRates, "results/national_yldyll_rates.csv")
+write.csv(nationalRates, "results/national_yldyll_rates.csv", row.names=FALSE)
 
 ## Preprocessing -----------------------------------------------
 nycYLL <- calculateYLL(mortality)
-write.csv(nycYLL, "results/nyc_yll_by_age_sex_race.csv")
+write.csv(nycYLL, "results/nyc_yll_by_age_sex_race.csv", row.names=FALSE)
 
 nycYLL %<>%
     group_by(cause_name, sex, ageGroup) %>%
     summarize(yll = sum(yll))
-write.csv(nycYLL, "results/nyc_yll_by_age_sex.csv")
+write.csv(nycYLL, "results/nyc_yll_by_age_sex.csv", row.names=FALSE)
 
 nycYLD <- calculatePrevalenceYLD(prevalence)
-write.csv(nycYLD, "results/nyc_yld_by_age_sex.csv")
+write.csv(nycYLD, "results/nyc_yld_by_age_sex.csv", row.names=FALSE)
 
 nycYLD %<>%
     group_by(cause_name, sex) %>%
     summarize(yld = sum(yld, na.rm=TRUE),
               yld_upper = sum(yld_upper, na.rm=TRUE),
               yld_lower = sum(yld_lower, na.rm=TRUE))
-write.csv(nycYLD, "results/nyc_yld_by_sex.csv")
+write.csv(nycYLD, "results/nyc_yld_by_sex.csv", row.names=FALSE)
 
 ## DALY Estimation -------------------------------------
 
@@ -78,7 +78,7 @@ index <- unique(c(disease, drug, mental))
 
 michaudDALY <- lapply(index, calculateDALY, population, nycYLL=nycYLL, nationalRates=nationalRates)
 michaudDALY <- do.call(rbind.fill, michaudDALY)
-write.csv(michaudDALY, "results/nyc_daly_michaud.csv")
+write.csv(michaudDALY, "results/nyc_daly_michaud.csv", row.names=FALSE)
 
 ### Prevalence-Based YLD Approach --------------------------------------
 
@@ -88,19 +88,19 @@ write.csv(michaudDALY, "results/nyc_daly_michaud.csv")
 prevalenceDALY <- lapply(index, calculateDALY, population, nycYLL=nycYLL, nycYLD=nycYLD)
 prevalenceDALY <- do.call(rbind.fill, prevalenceDALY)
 prevalenceDALY$cause_name <- sapply(prevalenceDALY$cause_name, renameDiseaseLabel, USE.NAMES=FALSE)
-write.csv(prevalenceDALY, "results/nyc_daly_prevalence.csv")
+write.csv(prevalenceDALY, "results/nyc_daly_prevalence.csv", row.names=FALSE)
 
 ### Sensitivity Analysis ---------------------------------------------
 
 sensitivity <- read.csv("data/2005_nyc_mortality.csv", stringsAsFactors=FALSE)
 
 nycYLLSensitivity <- calculateYLL(sensitivity)
-write.csv(nycYLLSensitivity, "results/sensitivity_analysis/nyc_yll_by_age_sex_race.csv")
+write.csv(nycYLLSensitivity, "results/sensitivity_analysis/nyc_yll_by_age_sex_race.csv", row.names=FALSE)
 
 nycYLLSensitivity %<>%
     group_by(cause_name, sex, ageGroup) %>%
     summarize(yll = sum(yll))
-write.csv(nycYLLSensitivity, "results/sensitivity_analysis/nyc_yll_by_age_sex.csv")
+write.csv(nycYLLSensitivity, "results/sensitivity_analysis/nyc_yll_by_age_sex.csv", row.names=FALSE)
 
 disease <- unique(c(nycYLL$cause_name, nycYLD$cause_name))
 drug <- "Cannabis"
@@ -108,7 +108,7 @@ mental <- c("Major depressive disorder", "Anxiety", "Bipolar")
 index <- unique(c(disease, drug, mental))
 
 michaudDALYSensitivity <- lapply(index, calculateDALY, population, nycYLL=nycYLL, nationalRates=nationalRates)
-michaudDALYSensitivity <- do.call(rbind.fill, michaudDALY)
-write.csv(michaudDALYSensitivity, "results/sensitivity_analysis/nyc_daly_michaud.csv")
+michaudDALYSensitivity <- do.call(rbind.fill, michaudDALYSensitivity)
+write.csv(michaudDALYSensitivity, "results/sensitivity_analysis/nyc_daly_michaud.csv", row.names=FALSE)
 
 ## END SCRIPT -------------------------------------------------------------
