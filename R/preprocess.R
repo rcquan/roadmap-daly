@@ -15,7 +15,7 @@ library("dplyr")
 library("reshape2")
 library("magrittr")
 
-# ------------------------------------------
+## -------------------------------------
 readData <- function(url) {
     ## Reads CSV data from input URL string
     filename <- tail(unlist(strsplit(url, "/")), 1)
@@ -26,8 +26,7 @@ readData <- function(url) {
     data <- read.csv(filepath, stringsAsFactors=FALSE)
     return(data)
 }
-
-# ------------------------------------------
+## -------------------------------------
 assignAgeGroup <- function(ageVar) {
     ## logic for childhood, teenage, young adult, adult, and later-life age groups
     if (ageVar %in% c("Under 5 years", "5-14 years")) {
@@ -44,7 +43,7 @@ assignAgeGroup <- function(ageVar) {
         return("")
     }
 }
-# ------------------------------------------
+## -------------------------------------
 addAgeGroup <- function(data, ageVar="age_name") {
     ## replaces age grouping in current data.frame to childhood, teenage, YA, adult, later-life
     ## Args:
@@ -59,7 +58,7 @@ addAgeGroup <- function(data, ageVar="age_name") {
     data$ageGroup <- ageGroup
     return(data)
 }
-# ------------------------------------------
+## -------------------------------------
 preprocessGBD <- function(data) {
     ## extracts YLD and YLL rates from 2010 Global Burden of Disase data
     ## Args:
@@ -85,4 +84,22 @@ preprocessGBD <- function(data) {
         group_by(cause_name, sex, ageGroup) %>%
         summarise_each(funs(mean))
     return(data)
+}
+## -------------------------------------
+getDiseaseIndex <- function(diseaseName, data) {
+    ## searches disease index and returns indices of the first match
+    ## Args:
+    ##      diseaseName: string vector denoting diseases of interest
+    ##      data: data.frame to be searched
+    ## Returns:
+    ##      indices of the first string match
+    index <- grep(diseaseName, data$cause_name)
+    pattern <- unique(data$cause_name[index])[1]
+    return(which(data$cause_name == pattern))
+}
+## -------------------------------------
+subsetDataByDisease <- function(diseaseName, data) {
+    ## subsets data frame from first string match
+    index <- getDiseaseIndex(diseaseName, data)
+    return(data[index, ])
 }

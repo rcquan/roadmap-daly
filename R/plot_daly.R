@@ -13,8 +13,24 @@
 library("ggplot2")
 library("grid")
 library("scales")
+library('stringr')
 
-# ------------------------------------------
+## -------------------------------------
+segmentDALY <- function(dalyObj, strata) {
+    ## helper function to subset DALY data
+    if (strata == "total") {
+        dalyObj %>% group_by(cause_name) %>% 
+            summarise_each(funs(sum(., na.rm=TRUE)), -c(sex)) %>% 
+            arrange(desc(daly)) %>% 
+            as.data.frame()
+    } else if (strata == "male") {
+        dalyObj %>% filter(sex == "Male") %>% arrange(desc(daly))
+    } else if (strata == "female") {
+        dalyObj %>% filter(sex == "Female") %>% arrange(desc(daly))
+    }
+}
+## -------------------------------------
+
 # Multiple plot function
 #
 # ggplot objects can be passed in ..., or to plotlist (as a list of ggplot objects)
@@ -24,6 +40,7 @@ library("scales")
 # If the layout is something like matrix(c(1,2,3,3), nrow=2, byrow=TRUE),
 # then plot 1 will go in the upper left, 2 will go in the upper right, and
 # 3 will go all the way across the bottom.
+#
 multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
     library(grid)
     
@@ -59,8 +76,7 @@ multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
         }
     }
 }
-
-#------------------------------------------
+## -------------------------------------
 plotDALY <- function(data, title, stackedBar=FALSE) {
     ## plot function for DALY object
     if (stackedBar) {
@@ -69,7 +85,7 @@ plotDALY <- function(data, title, stackedBar=FALSE) {
             geom_bar(stat="identity") +
             ggtitle(title) +
             ylab("Disability-Adjusted Life Years (DALYs)") + xlab("Causes") +
-            scale_y_continuous(breaks=seq(0, max(data$daly_upper, na.rm=TRUE), by=50000), labels=comma) +
+            scale_y_continuous(breaks=seq(0, max(data$daly_upper, na.rm=TRUE), by=100000), labels=comma) +
             scale_fill_brewer() + 
             coord_flip() +
             theme_bw()
@@ -79,8 +95,20 @@ plotDALY <- function(data, title, stackedBar=FALSE) {
             geom_pointrange(limits) + 
             ggtitle(title) +
             ylab("Disability-Adjusted Life Years (DALYs)") + xlab("Causes") +
-            scale_y_continuous(breaks=seq(0, max(data$daly_upper, na.rm=TRUE), by=50000), labels=comma) +
+            scale_y_continuous(breaks=seq(0, max(data$daly_upper, na.rm=TRUE), by=100000), labels=comma) +
             coord_flip() +
             theme_bw()
+    }
+}
+## -------------------------------------
+renameDiseaseLabel <- function(disease) {
+    if (str_detect(disease, " use disorders") & !str_detect(disease, "Alcohol")) {
+        return(str_replace(disease, "use disorders", "use"))
+    } else if (disease == "Osteoarthritis") {
+        return("Arthritis")
+    } else if (disease == "Other musculoskeletal disorders") {
+        return("Other arthritis")
+    } else {
+        return(disease)
     }
 }
