@@ -66,10 +66,10 @@ write.csv(nycYLD, "results/nyc_yld_by_sex.csv", row.names=FALSE)
 ## containing all the disease conditions of interest. 
 
 ## create a search index
-disease <- unique(c(nycYLL$cause_name, nycYLD$cause_name))
-drug <- "Cannabis"
+disease <- unique(c(nycYLL$cause_name, nycYLD$cause_name, 
+                    "High blood pressure", "Cannabis use disorders"))
 mental <- c("Major depressive disorder", "Anxiety", "Bipolar")
-index <- unique(c(disease, drug, mental))
+index <- unique(c(disease, mental))
 
 ## This search index is then fed through the `calculateDALY` workhorse function to 
 ## estimate DALYs for each disease condition. The result is a `data.frame` object containing the 
@@ -84,6 +84,10 @@ write.csv(michaudDALY, "results/nyc_daly_michaud.csv", row.names=FALSE)
 
 ## Similar to the section, we implement the prevalence-based YLD approach 
 ## here using the same search index.
+
+disease <- unique(c(nycYLL$cause_name, nycYLD$cause_name))
+mental <- c("Major depressive disorder", "Bipolar")
+index <- unique(c(disease, mental))
 
 prevalenceDALY <- lapply(index, calculateDALY, population, nycYLL=nycYLL, nycYLD=nycYLD)
 prevalenceDALY <- do.call(rbind.fill, prevalenceDALY)

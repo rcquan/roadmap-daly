@@ -3,17 +3,17 @@ title: 'DOHMH Roadmap: DALY Estimates'
 author: "Ryan Quan (rcq2102@columbia.edu)"
 date: "May 20, 2015"
 output:
-  word_document: default
-  pdf_document:
-    toc: yes
   html_document:
     theme: cosmo
     toc: yes
+  pdf_document:
+    toc: yes
+  word_document: default
 ---
 
 ```{r setup, cache=FALSE, include=FALSE}
 library(knitr)
-opts_chunk$set(echo=FALSE, cache=TRUE)
+opts_chunk$set(echo=FALSE)
 ```
 
 ```{r, message=FALSE, warning=FALSE}
@@ -66,7 +66,7 @@ $$
 ## Data Sources
 
 * 2013 NYCHANES - prevalence estimates
-* 2002-2008 NSDUH - drug use prevalence estimates
+* 2002-2008 NSDUH – drug use and alcohol use disorders prevalence estimates
 * 2013 NYC Vital Statistics - mortality estimates
 * 2010 Global Burden of Disease Study - national YLD/YLL rates
 * 2013 NYC American Community Survey - population estimates
@@ -123,14 +123,13 @@ However, we should note that since the DALY estimations are not inclusive of all
 
 Prevalence estimates of substance use cannot be directly substituted for prevalence of drug dependence or abuse disorders. We make the following assumptions about the average proportion of dependence among users ([National Addiction Centre, 2003](http://www.nta.nhs.uk/uploads/dangerousnessofdrugsdh_4086293.pdf)):
 
-* Alcohol - 15.4%
 * Cocaine - 16.7%
 * Heroin - 23.1%
 * Cannabis - 9.1%
 
-## Estimation of Major Depressive Disorder Using PHQ-9
+## Estimation of Major Depressive Disorder
 
-Prevalence estimates for 2-week depression was obtained for 2013 NYCHANES. While 2-week depression prevalence would lead to underestimation of 1-year depression, the use of PHQ-9 scores can also overestimate both MDD and any depressive disorder due to its low positive predictive value (~55%) for PHQ-9 scores below 10, the cutoff between mild and moderate depression ([Kroenke, 2002](http://www.lphi.org/LPHIadmin/uploads/.PHQ-9-Review-Kroenke-63754.PDF)). To adjust for this in the prevalence-based YLD approach, we did not consider PHQ-9 scores below 10 and assumed - from expert opinion - that only half of those with PHQ-9 scores above 10 were actually diagnosed with MDD. 
+Prevalence of Major Depressive Disorder (MDD) was obtained by projecting New York City estimates using data from NHAES 2011-12. Specifically, we first assessed three-level depressive disorders (moderate depression, moderately severe depression, and severe depression) using PHQ-9 scores and built age group- and sex-specific logistic regression models with each of depression outcomes and socioeconomic status (education and household income) as covariates. For each age group and sex, we then entered NYC information about socioeconomic status into the regression equations, which in turn generated projected estimates of NYC prevalence of MDD.
 
 ## Sensitivity Analysis
 
@@ -300,7 +299,7 @@ plotDALY(michaudFemale, "Selected Causes of DALYs in Females,\n NYC 2005", stack
 
 ## Limitations
 
-There are key limitations to this analysis. First and foremost, the magnitude of the DALY scores should be interpreted and reported with caution. Due to the small sample size of NYC prevalence estimates and the uncertainty around disability weights and national YLL/YLD rates for some conditions, DALY estimates can assume a wide range of values, changing how one condition ranks against the others (for example, `alcohol use disorders` and `diabetes mellitus`). For this reason, DALY magnitudes obtained via Michaud approach and the Prevalence-based YLDs cannot be directly compared. 
+There are key limitations to this analysis. First and foremost, the magnitude of the DALY scores should be interpreted and reported with caution. Due to the small sample size of NYC prevalence estimates and the uncertainty around disability weights and national YLL/YLD rates for some conditions, DALY estimates can assume a wide range of values, changing how one condition ranks against the others (for example, `diabetes mellitus`). For this reason, DALY magnitudes obtained via Michaud approach and the Prevalence-based YLDs cannot be directly compared. 
 
 Moreover, the accuracy of DALY estimations suffers from potential biases introduced in the data collection and computation processes. For example, comorbidities with respect to chronic diseases means that DALY estimates based on Vital Statistics mortality counts are overestimating the contribution of YLLs. Summation of prevalence YLDs across all causes can result in overestimation of the total average severity-weighted health state prevalence because of comorbidity between conditions ([Mathers, 2006](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC547900/)). Over-reporting of some conditions due to misclassification (e.g. where symptoms such as joint pain are labeled as osteoarthritis or occasional wheezing as asthma), under-reporting of undiagnosed conditions (e.g. most mental health problems), and lack of information on condition severity (resulting in high prevalences due to inclusion of very minor conditions or minor symptoms) may also contribute to biased DALY estimates. 
 
@@ -318,9 +317,8 @@ Lozano, Rafael, Mohsen Naghavi, Kyle Foreman, Stephen Lim, Kenji Shibuya, Victor
 
 Michaud, Catherine M, Matthew T McKenna, Stephen Begg, Niels Tomijima, Meghna Majmudar, Maria T Bulzacchelli, Shahul Ebrahim, et al. “The Burden of Disease and Injury in the United States 1996.” Population Health Metrics 4 (October 18, 2006): 11. doi:10.1186/1478-7954-4-11.
 
-Kroenke, Kurt, and Robert L. Spitzer. “The PHQ-9: A New Depression Diagnostic and Severity Measure.” Psychiatric Annals 32, no. 9 (2002): 509–15.
-
 Schroeder, S Andrew. “Incidence, Prevalence, and Hybrid Approaches to Calculating Disability-Adjusted Life Years.” Population Health Metrics 10 (September 12, 2012): 19. doi:10.1186/1478-7954-10-19.
 
 U.S. Department of Health and Human Services, Substance Abuse and Mental Health Services Administration, and Center for Behavioral Health Statistics and Quality. “Results from the 2012 NSDUH: Summary of National Findings, SAMHSA, CBHSQ.” Accessed April 18, 2015. http://archive.samhsa.gov/data/NSDUH/2012SummNatFindDetTables/NationalFindings/NSDUHresults2012.htm.
+
 Üstün, T. B., J. L. Ayuso-Mateos, S. Chatterji, C. Mathers, and C. J. L. Murray. “Global Burden of Depressive Disorders in the Year 2000.” The British Journal of Psychiatry 184, no. 5 (May 1, 2004): 386–92. doi:10.1192/bjp.184.5.386.

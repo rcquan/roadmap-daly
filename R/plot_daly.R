@@ -104,15 +104,3 @@ plotDALY <- function(data, title, stackedBar=FALSE) {
             theme_bw()
     }
 }
-## -------------------------------------
-renameDiseaseLabel <- function(disease) {
-    if (str_detect(disease, " use disorders") & !str_detect(disease, "Alcohol")) {
-        return(str_replace(disease, "use disorders", "use"))
-    } else if (disease == "Osteoarthritis") {
-        return("Arthritis")
-    } else if (disease == "Other musculoskeletal disorders") {
-        return("Other arthritis")
-    } else {
-        return(disease)
-    }
-}
